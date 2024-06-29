@@ -1,0 +1,474 @@
+<html>
+    <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet"type="text/css"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/5.15.1/css/all.min.css"
+rel="stylesheet"
+/>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>      
+ <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    </head>
+      <style>
+.profile-title{
+           font-size: 17px;
+           color: white;
+          }          
+.profile-title p{
+           font-size: ;
+           color: crimson;
+           font-style: italic;
+           font-family: monospace;
+           font-weight: bolder;
+           text-align: center
+          }        
+ .font-15{
+              font-size: 15px;
+              color: white;
+              font-weight: 600;
+              font-family: serif;
+              letter-spacing: normal;
+          }
+        
+.font-12{
+             font-size: 12px;
+             line-height: 1px;
+             margin-right: 5px;
+        }
+.profile {
+             font-size: 15px;
+             font-weight: bold;
+             text-transform: uppercase;
+             color: #999999;
+             margin-bottom: 10px;
+        }
+.profile span{
+              font-size: 12px;
+              color: white;
+              text-transform: capitalize;
+          } 
+ /* Clear floats after the columns */
+.player-profile-section row:after {
+  content: "";
+  display: table;
+  clear: both;
+}         
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+          
+.player-profile-section ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.player-card{
+    width: 150px;
+    height: 200px;
+          }
+.padding-lg {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 60px;
+}
+.practice-area.padding-lg {
+    padding-bottom: 55px;
+    padding-top: 55px;
+}
+.practice-area .inner{ 
+     border:1px solid #999999; 
+	 text-align:center; 
+	 margin-bottom:28px; 
+	 padding:40px 25px;
+}
+.player-profile-section .player-card:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    border: 0;
+}
+.practice-area .inner h3{ 
+    color:#3c3c3c; 
+	font-size:14px; 
+	font-weight:500;
+	font-family: 'Poppins', sans-serif;
+	padding: 10px 0;
+}
+.practice-area .inner p{ 
+    font-size:14px; 
+	line-height:22px; 
+	font-weight:400;
+}
+.practice-area .inner img{
+	display:inline-block;
+}
+
+.player-profile-section .player-card{ 
+   float:left; 
+   width:100%; 
+   background:whitesmoke; 
+   padding:20px 10px; 
+   text-align:center; 
+   border:2px solid #d5d5d5;
+   margin: 0 0 18px;
+}
+.player-profile-section .player-card figure{
+   width:100px; 
+   height:100px; 
+   border-radius:100%; 
+   display:inline-block;
+   margin-bottom: 15px;
+}
+.player-profile-section .player-card img{ 
+   width:90px; 
+   height:90px; 
+   border-radius:50%; 
+}
+.player-profile-section .player-card h3{ 
+   color:#2a2a2a; 
+   font-size:12px; 
+   font-weight:bold; 
+   padding:3px 0;
+   text-transform:uppercase;
+}
+.player-profile-section .player-card p{ 
+   color:crimson; 
+   font-size:13px; 
+   line-height:; 
+   font-weight:bold;
+   text-transform: uppercase;
+}
+.jersey-number{
+    position: absolute;
+    left: 100px;
+    bottom: 200px;
+    top: 0;
+    right: 0;
+    color: red;
+    font-weight: bolder;
+      
+          }   
+
+       
+      </style>
+    <body style="background-color: black">
+        <div class="container">
+            <div class="row" style="background-color: #999999">
+            <div class="col">
+                <div class="profile-title font-18" text-center >
+                    <img src="teams_flag/mucg.png" alt="" style="width: 100px; border-radius: 50%; margin-top:10px ;">  
+                </div>
+                </div>
+                <div class="col profile-title font-15 text-center mt-4" style="">METHODIST UNIVERSITY GHANA
+                    <p class="fw-bolder"><q>THE BULLS</q></p>
+                </div>
+            </div>
+            <br/>
+            <h2 class="font-15 text-center text-underline">PROFILE</h2>
+            <div class="col">
+            <p class=" font-weight-normal" style="color: white; font-size: 12px;">The Methodist University College Ghana is a private university in Ghana. It is located at Accra in the Greater Accra Region. It was established in October 2000 by the Methodist Church Ghana after being granted accreditation by the National Accreditation Board in August 2000.Academic work started in November 2000 at the Wesley Grammar School campus</p>
+        </div>
+            <div class="row">
+                <div class="profile col-sm-4">
+                    COLOURS : <span>Blue, Crimson & White</span>
+                </div>
+                <div class="profile col-sm-4">
+                    ARENA/PARK : <span>School Park, Dansoman</span>
+                </div>
+                <div class="profile col-sm-4">
+                    coach : <span>Ben Taylor</span>
+                </div>
+            </div>
+             <div class="row">
+                <div class="profile col-sm-4">
+                    titles won: <span>0</span>
+                </div>
+                <div class="profile col-sm-4">
+                    best position : <span>Semis</span>
+                </div>
+                <div class="profile col-sm-4">
+                    rank : <span>12th</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="profile col-sm-4">
+                    squad size: <span>23</span>
+                </div>
+                <div class="profile col-sm-4">
+                    Average age: <span>18.5yrs</span>
+                </div>
+                <div class="profile col-sm-4">
+                    League level : <span>Champions League</span>
+                </div>
+            </div>
+              <h2 class="font-15 text-center">SQUAD LIST <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+  <option selected>Select season</option>
+  <option value="1">22/23</option>
+  <option value="2">23/24</option>
+  <option value="3">24/25</option>
+</select>
+            </h2>
+            
+            
+<section class="player-profile-section padding-lg">
+  <div class="container">
+
+<div id="btnswitcher">
+  
+  <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid View</button>
+</div>
+<br>
+         <ul class="row">
+      <li class="col"><a href="forward.html">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/cr7.jpeg" alt=""class="img-responsive" alt="">  <span class="position-absolute top-0 start-100 translate-middle p-1 text-danger font-weight-bold font-12">7
+  </span>
+</figure>
+            <h3>Cristiano Ronaldo</h3>
+              <p>forward</p>
+          </div>
+          </a>
+      </li>
+     <li class="col"><a href="goalkeeper.html">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/onana.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle p-1 text-danger font-weight-bold font-12">11
+  </span></figure>
+            <h3>Andre Onana</h3>
+            <p>goalkeeper</p>
+          </div>
+         </a>
+      </li>
+      <li class="col"><a href="defender.html">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/lucha.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle p-1 text-danger font-weight-bold font-12">6
+  </span></figure>
+            <h3>Lisandro Martinez</h3>
+            <p>defender</p>
+          </div>
+          </a>
+      </li>
+     <li class="col"><a href="Midfielder.html">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/bruno.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle p-1 text-danger font-weight-bold font-12">5
+  </span></figure>
+            <h3>Bruno Fernandes</h3>
+            <p>Midfielder</p>
+          </div>
+         </a>
+      </li>
+          <li class="col"><a href="forward.html">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/cr7.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle p-1 text-danger font-weight-bold font-12">23
+  </span></figure>
+            <h3>Cristian Ronaldo</h3>
+            <p>Forward</p>
+          </div>
+              </a>
+      </li>
+     <li class="col">
+          <div class="player-card equal-height equal-width" style="height: 200px; width:">
+            <figure><img src="images/cr7.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle mr-4 p-1 text-danger font-weight-bold font-12">17
+  </span></figure>
+            <h3>Paul Pogba</h3>
+            <p>midfielder</p>
+          </div>
+      </li>
+           <li class="col">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/messi.png" alt=""class="img-responsive" alt="">  <span class="position-absolute top-0 start-100 translate-middle p-1 text-danger font-weight-bold font-12">7
+  </span>
+</figure>
+            <h3>Cristiano Ronaldo</h3>
+              <p>forward</p>
+          </div>
+      </li>
+     <li class="col">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/cr7.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle p-1 text-danger font-weight-bold font-12">11
+  </span></figure>
+            <h3>Dea Gea</h3>
+            <p>goalkeeper</p>
+          </div>
+      </li>
+      <li class="col">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/cr7.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle p-1 text-danger font-weight-bold font-12">6
+  </span></figure>
+            <h3>Eric Baily</h3>
+            <p>defender</p>
+          </div>
+      </li>
+     <li class="col">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/cr7.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle p-1 text-danger font-weight-bold font-12">5
+  </span></figure>
+            <h3>Dean Henderson</h3>
+            <p>goalkeeper</p>
+          </div>
+      </li>
+          <li class="col">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/cr7.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle p-1 text-danger font-weight-bold font-12">23
+  </span></figure>
+            <h3>Bruno Fernandez</h3>
+            <p>Midfielder</p>
+          </div>
+      </li>
+     <li class="col">
+          <div class="player-card equal-height equal-width" style="height: 200px; width: ">
+            <figure><img src="images/cr7.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle p-1 text-danger font-weight-bold font-12">17
+  </span></figure>
+            <h3>Paul Pogba</h3>
+            <p>midfielder</p>
+          </div>
+      </li>
+           <li class="col">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/messi.png" alt=""class="img-responsive" alt="">  <span class="position-absolute top-0 start-100 translate-middle p-2 text-danger font-weight-bold font-12">7
+  </span>
+</figure>
+            <h3>Cristiano Ronaldo</h3>
+              <p>forward</p>
+          </div>
+      </li>
+     <li class="col">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/cr7.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle p-2 text-danger font-weight-bold font-12">11
+  </span></figure>
+            <h3>Dea Gea</h3>
+            <p>goalkeeper</p>
+          </div>
+      </li>
+      <li class="col">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/cr7.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle p-2 text-danger font-weight-bold font-12">6
+  </span></figure>
+            <h3>Eric Baily</h3>
+            <p>defender</p>
+          </div>
+      </li>
+     <li class="col">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/cr7.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle p-2 text-danger font-weight-bold font-12">5
+  </span></figure>
+            <h3>Dean Henderson</h3>
+            <p>goalkeeper</p>
+          </div>
+      </li>
+          <li class="col">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/cr7.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle p-1 text-danger font-weight-bold font-12">23
+  </span></figure>
+            <h3>Bruno Fernandez</h3>
+            <p>Midfielder</p>
+          </div>
+      </li>
+     <li class="col">
+          <div class="player-card equal-height equal-width" style="height: 200px; width:;">
+            <figure><img src="images/cr7.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle mr-4 p-1 text-danger font-weight-bold font-12">17
+  </span></figure>
+            <h3>Paul Pogba</h3>
+            <p>midfielder</p>
+          </div>
+      </li>
+         <li class="col">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/cr7.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle p-2 text-danger font-weight-bold font-12">11
+  </span></figure>
+            <h3>Dea Gea</h3>
+            <p>goalkeeper</p>
+          </div>
+      </li>
+      <li class="col">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/cr7.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle p-2 text-danger font-weight-bold font-12">6
+  </span></figure>
+            <h3>Eric Baily</h3>
+            <p>defender</p>
+          </div>
+      </li>
+     <li class="col">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/cr7.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle p-2 text-danger font-weight-bold font-12">5
+  </span></figure>
+            <h3>Dean Henderson</h3>
+            <p>goalkeeper</p>
+          </div>
+      </li>
+          <li class="col">
+          <div class="player-card equal-height equal-width" style="height: 200px;">
+            <figure><img src="images/cr7.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle p-1 text-danger font-weight-bold font-12">23
+  </span></figure>
+            <h3>Bruno Fernandez</h3>
+            <p>Midfielder</p>
+          </div>
+      </li>
+     <li class="col">
+          <div class="player-card equal-height equal-width" style="height: 200px; width:;">
+            <figure><img src="images/cr7.jpeg" alt=""class="img-responsive" alt=""><span class="position-absolute top-0 start-100 translate-middle mr-4 p-1 text-danger font-weight-bold font-12">17
+  </span></figure>
+            <h3>Paul Pogba</h3>
+            <p>midfielder</p>
+          </div>
+      </li>
+    </ul> 
+  
+  </div>
+    <br/>
+    <h2 class="font-15 text-center">SPONSORS</h2>
+    <div class="row">
+        <div class="col"><img src="sponsors/adidas.png" style="width: 100px; height: 70px;" alt=""class="img-responsive" alt=""></div>
+         <div class="col"><img src="sponsors/bel.png" style="width: 100px; height: 70px;" alt=""class="img-responsive" alt=""></div>
+         <div class="col"><img src="sponsors/betwaylogo.png"style="width: 100px; height: 70px;" alt=""class="img-responsive" alt=""></div>
+         <div class="col"><img src="sponsors/cheezy.jpeg"style="width: 100px; height: 70px;" alt=""class="img-responsive" alt=""></div>
+    </div>
+</section>
+        </div>
+        
+        
+        <script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("player-card");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+
+/* Optional: Add active class to the current button (highlight it) */
+var container = document.getElementById("btnswitcher");
+var btns = container.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+    </body>
+</html>

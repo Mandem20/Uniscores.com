@@ -1,0 +1,2667 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Uniscores</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <style>
+.btn-rounded {
+            border-radius: 20px;
+        }
+
+.text-white{
+            color: #fff;
+        }
+        
+.font-10{
+             font-size: 10px;
+             line-height: 1px;
+        }
+        
+.font-time{
+            font-size: 10px;
+            text-align:center;
+            margin:20px 0px;
+        }
+
+.font-10 a{     
+            color: #aaa;
+            font-size: 10px;
+            text-decoration: underline;
+            font-family: serif;
+            font-weight: bold;
+        }
+
+.font-12{
+            font-size: 10px;
+            padding: 1px 1px;
+            color: #fff;
+            font-weight: bold;        
+        }
+        
+.font-15{
+         font-size: 15px;
+         color: goldenrod;
+         
+        }
+
+.font-15 a{
+          font-size: 13px;
+          color: #fff;
+          text-decoration: none;
+          font-family: sans-serif;
+        }
+        
+.favourite_team{
+          padding-top: 12px;
+          font-size: 18px;
+        }
+ .home_scores {
+          margin: 5px 10px;
+          text-align-last: right;
+          font-size: 1rem;
+          color: floralwhite;
+        }
+.bg-1{
+            background-color: #0b0b0b;
+            color: #aaa;
+        }
+        
+.body-container{
+            padding-top: 20px;
+        }
+
+.bg-2{
+            background-color: #181818;
+            color: #aaa;
+            border-radius: 10px;
+            padding: 2px 0;
+            margin-bottom: 5px;
+            height: 60px;
+        }
+
+.mg-0{
+            margin: -10px;
+            padding: 0px;
+            line-height: 0;
+        }
+
+.border-1{
+            border: 1px solid #222;
+            border-radius: 10px;
+            
+        }
+
+.border-2{
+            border: 1px solid #222;
+            border-radius: 10px 10px 0 0px;
+            padding: 15px 10px;
+        }
+
+.border-3{
+            border:  1px solid #222;
+            border-radius: 0px 0px 0 0px;
+        
+        }
+
+.border-0{
+            border: 0;
+        }
+        
+.all-teams a{
+            font-size: 10px;
+            color: #fff;
+            font-weight: 400;
+        }
+        
+      
+.teams-partake, .competitions{
+          color:green;
+          text-align: center;  
+          font-weight: 500;
+          font-size: 15px;
+        }
+
+.table-head{
+         color:#999;
+         text-align: center;
+         margin-left: 80px;
+         font-size: 12px;
+        }
+ 
+@media only screen and  (max-width: 768px) {
+            {
+                display: initial!important;
+            }
+
+            {
+                display: none!important;
+            }            
+     }
+        
+        
+.logo-container {     
+          position: relative;
+          height: 50px;
+          width:50%;
+}
+
+
+.text {
+          
+          color: green;
+          font-size: 2vw; 
+          font-weight: bold;
+          margin: 0;
+          padding: 5px;
+          width: 100%;
+          text-align: left;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          mix-blend-mode: screen;
+          letter-spacing:1px;
+}
+
+
+@media (max-width: 576px) { 
+    .logo-container{
+          
+          position: relative;
+          height: 50px;
+          width:70%;
+          text-align: center;        
+    } 
+}
+
+
+@media (max-width: 576px) { 
+    .text{
+          
+          color: green;
+          font-size: 5vw; 
+          font-weight: bold;
+          margin: 0;
+          padding: 5px;
+          width: 100%;
+          text-align: left;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          mix-blend-mode: screen;
+          letter-spacing:3px;
+          text-align: center;
+    } 
+}
+
+        
+
+
+.carousel-control-prev,
+.carousel-control-next{
+        align-items: flex-start; /* Aligns it at the top */
+        width:50px;
+        margin-top:32px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+        height: 20px;
+        width: 20px;
+        outline: black;
+        background-size: 50%, 50%;
+        border-radius: 50%;
+        border: 1px solid white;
+}
+.groupings{
+        text-align: center;
+        color:gold;
+        font-weight:normal;
+        font-size:12px;    
+}
+.next-stage{
+        background-color:green;
+}
+.Nxt{
+        margin:0 5px;
+        display:inline-block;
+}
+
+.Nxt button{
+        background-color:green;
+        border-radius:10%;
+        border: 1px solid green;
+        width: 10px;
+        height: 10px;
+}
+.bounce {
+  animation: bounce 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-12px);
+  }
+}
+    </style>
+</head>
+<body class='bg-1'>
+	
+	<nav class="navbar  navbar-dark navbar-expand-lg sticky-top" style="background-color: #000;" role="navigation">
+	  <div class="container col-md-12 col-sm-12">
+	  	<div class="logo-container"  style="background-color: #000;">
+  <div class="text" href="index.php">UNISC<svg  class="bounce" height="20" width="20" viewBox="0 0 32 32" name="FootballGoal"><path fill="#fff" d="M32 16a16 16 0 11-32 0 16 16 0 0132 0z"></path><path fill="#f2f2f2" d="M5.28 12.52l-.27-6.2 5.18-3.77L16 4.73v5.09l-5.81 4.22z"></path><path fill="#fafafa" d="M28.6 23.46l-5.98 1.66-3.03-4.25 2.22-6.83 4.9-1.52 3.87 4.85z"></path><path fill="#fafafa" d="M21.81 14.04L16 9.82V4.73l5.81-2.18L27 6.32l-.27 6.2zM9.38 25.12l-5.99-1.66-1.97-6.09 3.86-4.85 4.9 1.52 2.23 6.83z"></path><path fill="#f2f2f2" d="M22.62 25.12l-3.42 5.17h-6.4l-3.42-5.17 3.03-4.25h7.18l3.03 4.25z"></path><path fill="#414042" d="M5 6.32l-2.28.75a15.92 15.92 0 00-2.7 8.36l1.4 1.94 3.86-4.85-.27-6.2zm16.81-3.77L20.4.61a16.01 16.01 0 00-8.78 0L10.2 2.55 16 4.73l5.81-2.18zM19.6 20.87l2.22-6.83L16 9.82l-5.81 4.22 2.22 6.83h7.18zm9.69-13.8L27 6.32l-.27 6.2 3.87 4.85 1.4-1.95c-.1-3.09-1.1-5.95-2.71-8.35zM19.2 30.3l2.3.73a16.03 16.03 0 007.1-5.16v-2.4l-5.98 1.65-3.42 5.17zM3.4 23.46v2.4a16.03 16.03 0 007.1 5.17l2.3-.74-3.42-5.17-5.99-1.66z"></path></svg>RES</div>
+</div>
+		  <button class="navbar-toggler" data-toggle="collapse" data-target="#myNav" type="button">
+		  	<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse justify-content-center" id="myNav">
+		    <ul class="nav navbar-nav">
+		    
+<li class="nav-item">
+<a class=" text-light nav-link" href="favourite.php">Favourite <i class="far fa-star" style="color:gold;"></i></a>
+</li>
+    
+<li class="nav-item">
+<a class="text-light nav-link" href="livestream.php">Livestream <i class="far fa-eye"></i></a>
+</li>
+<li class="nav-item">
+<a class="text-light nav-link" href="livestream.php">Highlights <i class="fas fa-video"></i></a>
+</li>
+<li class="nav-item">
+<a class=" text-light nav-link" href="news.php">News <i class="far fa-newspaper"></i></a>
+</li>
+<li class="nav-item">
+<a class="text-light nav-link" href="#"><span class="login">Login <i class="fas fa-sign-in-alt"></i></span></a>
+</li>
+<li class="nav-item">
+<a class="text-light nav-link" href="#"> <span class="register">Register <i class="far fa-address-card"></i> </span></a>
+</li>
+              <li class="nav-item">
+		        <a class="nav-link" href="#">Get the app</a>
+		      </li> 
+                
+                              <div class="all-teams d-xl-none d-lg-none d-sm-block d-md-none">
+                                 <p class="competitions font-weight-bold">Leagues
+                                </p>
+                                  <li class="nav-item">
+                                 <a class="text-light nav-link text-truncate font-weight-bold"  href="Champions_League.html"><img src="images/flagofgh.png" alt="" style="width: 20px;"> TERTIARY CHAMPIONS LEAGUE </a>
+                                  </li>
+                                    <li class="nav-item">
+                                 <a class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="images/flagofgh.png" alt="" style="width: 20px;"> CONGRESS LEAGUE </a>
+                                  </li>
+                                    <li class="nav-item">
+                                 <a class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="images/gusa.png" alt="" style="width: 20px;  height :20px"> GUSA GAMES </a>
+                                  </li>
+                                    <li class="nav-item">
+                                 <a class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/AIT_CREST.png" alt="" style="width: 20px;"> GHATUSA GAMES </a>
+                                  </li>
+                                    <li class="nav-item">
+                                 <a class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/AIT_CREST.png" alt="" style="width: 20px;"> PUSAG GAMES </a>
+                                  </li>
+                             </div>
+                                            <div class="all-teams d-xl-none d-lg-none d-sm-block d-md-none">
+                                <p class="teams-partake">TEAMS / INSTITUTIONS (a-z)
+                                </p>
+                                    <li class="nav-item">
+                                                    <a class="text-light nav-link text-truncate font-weight-bold" href="#" class="text-decoration-none"><img src="teams_flag/AIT_CREST.png" alt="" style="width: 20px;"> Accra Institute of Technology </a></li>
+                                    <li class="nav-item">             
+                                       <a  class="text-light nav-link text-truncate font-weight-bold" href="#"><img src="teams_flag/accratechnical.png" alt="" style="width: 20px;"> Accra Technical University </a></li>
+                                    <li class="nav-item">             
+                                       <a  class="text-light nav-link text-truncate font-weight-bold" href="#"><img src="teams_flag/academiccity.png" alt="" style="width: 20px;"> Academic City University College</a></li>
+                                    <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/advancedbusinesscollege.png" alt="" style="width: 20px;"> Advanced Business College </a></li>
+                                    <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/aucc.png" alt="" style="width: 15px;"> African University College of communication</a></li>
+                                     <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/anu.png" alt="" style="width: 20px;"> All Nations University</a></li>
+                                     <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/almondinst.png" alt="" style="width: 20px;"> Almond Institute</a></li>
+                                     <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/anglican.png" alt="" style="width: 15px;"> Anglican University College of Technology</a></li>
+                                     <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/ashesi.png" alt="" style="width: 20px;"> Ashesi University college </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/akimstate.png" alt="" style="width: 20px;"> Akim State College </a></li>
+                                       <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/bluecrest.png" alt="" style="width: 20px;"> BlueCrest College </a></li>
+                                       <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/bmfi.png" alt="" style="width: 20px;"> Bmfi University College</a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/bolgatechnical.png" alt="" style="width: 20px;"> Bolgatanga Technical  </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/capecoasttechnical.png" alt="" style="width: 20px;"> Cape Coast Technical </a></li>
+                                       <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/catholicinstitute.png" alt="" style="width: 15px;"> Catholic Institute of Business & Technology </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/catholicuni.png" alt="" style="width: 20px;"> Catholic University College</a></li>
+                                     <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/central.png" alt="" style="width: 20px;"> Central University</a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/christapostolic.png" alt="" style="width: 20px;"> Christ Apostolic University College</a></li>
+                                     <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/christianservice.png" alt="" style="width: 20px;"> Christian Service University </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/datalink.png" alt="" style="width: 20px;"> Data Link Institute</a></li>
+                                     <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/dominion.png" alt="" style="width: 20px;"> Dominion University College </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/entrepreneurship.png" alt="" style="width: 20px;"> Entrepreneurship Training  </a></li>
+                                     <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/evangelical.png" alt="" style="width: 20px;"> Evangelical Presby University College</a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/fountainhead.png" alt="" style="width: 20px;"> Fountainhead Christain College </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/gardencity.png" alt="" style="width: 20px;"> Garden City University </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/ghanabaptist.png" alt="" style="width: 20px;"> Ghana Baptist University</a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/ghanachristian.png" alt="" style="width: 20px;"> Ghana Christian University </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/gimpa.png" alt="" style="width: 20px;"> GIMPA </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/ghanatech.png" alt="" style="width: 20px;"> Ghana Technology University </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/heritagechristian.png" alt="" style="width: 20px;"> Heritage Christian University </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/hotechnical.png" alt="" style="width: 20px;"> Ho Technical University </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/instituteofBM.png" alt="" style="width: 15px;"> Institute of Business Management & Journalism  </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/instituteofdev.png" alt="" style="width: 20px;"> Institute of Development & Technology Management</a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/islamicuni.png" alt="" style="width: 20px;"> Islamic University College </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/jayee.png" alt="" style="width: 20px;"> Jayee University College </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/kaaf.png" alt="" style="width: 20px;"> KAAF University College  </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/kessben.png" alt="" style="width: 20px;"> Kessben University College  </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/kingsuni.png" alt="" style="width: 20px;"> Kings University College </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/knust.png" alt="" style="width: 20px;"> KNUST</a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/knustford.png" alt="" style="width: 20px;"> Knustford  University College </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/koforiduatechnical.png" alt="" style="width: 20px;">Koforidua Technical  University</a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/kumasitechnical.png" alt="" style="width: 20px;">Kumasi Technical University </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/lancaster.png" alt="" style="width: 20px;"> Lancaster University</a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/marshals.png" alt="" style="width: 20px;"> Marshalls College  </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="methodist_university.html"><img src="teams_flag/mucg.png" alt="" style="width: 20px;"> Methodist University Ghana </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/mountcrest.png" alt="" style="width: 20px;"> Mountcrest University College </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/pentecost.png" alt="" style="width: 20px;"> Pentecost University  </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/presbytarianuni.png" alt="" style="width: 20px;"> Presbyterian University College</a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/regent.png" alt="" style="width: 20px;"> Regent University of Science & Technology</a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/regionalmaritime.png" alt="" style="width: 20px;"> Regional Maritime </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/spiritan.png" alt="" style="width: 20px;"> Spiritan University College </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/sunyanitechnical.png" alt="" style="width: 20px;"> Sunyani Technical University</a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/tamaletechnical.png" alt="" style="width: 20px;"> Tamale Technical University </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/tarditechnical.png" alt="" style="width: 20px;"> Tarkoradi Technical University </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/universityofagric.png" alt="" style="width: 20px;"> University College of Agric & Environmental studies </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/ug.png" alt="" style="width: 20px;"> University of Ghana  </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/ucc.png" alt="" style="width: 20px;"> University of Cape Coast  </a></li>
+                                                
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag//uew.png" alt="" style="width: 20px;"> University of Education,Winneba</a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/uds.png" alt="" style="width: 20px;"> University of Development Studies </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/UNER.png" alt="" style="width: 20px;"> University of Energy & Natural Resources</a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/UHAS.png" alt="" style="width: 20px;"> University of Health & Allied Sciences</a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/UMAT.png" alt="" style="width: 20px;"> University of Mines & Technology  </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/UPSA.png" alt="" style="width: 20px;"> University of Professional Studies </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/UCOMS.png" alt="" style="width: 20px;"> University College of Management Studies</a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/VVU.png" alt="" style="width: 20px;"> Valley View University </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/watechnical.png" alt="" style="width: 20px;">Wa Technical University</a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/webster.png" alt="" style="width: 20px;"> Webster University </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/westend.png" alt="" style="width: 20px;"> West End University College  </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/wisconsin.png" alt="" style="width: 20px;"> Wisconsin International University College  </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/zenith.png" alt="" style="width: 20px;"> Zenith University College </a></li>
+                                      <li class="nav-item"> 
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/ashesi.png" alt="" style="width: 20px;"> Ashesi University college </a></li>
+                            </div>
+                <br>
+		    </ul>
+		  </div>  
+	  </div>
+	</nav>              
+
+
+<br>
+    
+<div class="container body-container">
+	<div class="row">
+        <div class="col ">
+                <div class="row" style="margin-top: 2px;">
+                    <div class="col-sm-3 col-md-3 w-100 d-none d-sm-block d-md-block d-xl-block ">
+                        <div class="border-1">
+                            <input type="text" class="form-control border-0 bg-transparent" placeholder="Search...">
+                        </div>
+                        <div class="border-3">
+                              <div class="all-teams">
+                                 <p class="competitions">Leagues
+                                </p>
+                                 <p class="text-truncate"><a href="Champions_League.html"><img src="images/flagofgh.png" alt="" style="width: 20px;"> CHAMPIONS LEAGUE </a></p>
+                                 <p class="text-truncate"><a href="#"><img src="images/flagofgh.png" alt="" style="width: 20px;"> CONGRESS LEAGUE </a></p>
+                                 <p class="text-truncate"><a href="#"><img src="images/gusa.png" alt="" style="width: 20px; height :20px"> GUSA Games</a></p>
+                                 <p class="text-truncate"><a href="#"><img src="teams_flag/AIT_CREST.png" alt="" style="width: 20px;"> GHATUSA Games </a></p>
+                                 <p class="text-truncate"><a href="#"><img src="teams_flag/AIT_CREST.png" alt="" style="width: 20px;">  PUSAG Games</a></p>
+                            </div>
+                            <div class="all-teams">
+                                <p class="teams-partake">Teams (a-z)
+                                </p>
+                                <p class="text-truncate"><a href="#" class="text-decoration-none"><img src="teams_flag/AIT_CREST.png" alt="" style="width: 20px;"> Accra Institute of Technology </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/accratechnical.png" alt="" style="width: 20px;"> Accra Technical University </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/academiccity.png" alt="" style="width: 20px;"> Academic City University College</a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/advancedbusinesscollege.png" alt="" style="width: 20px;"> Advanced Business College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/aucc.png" alt="" style="width: 15px;"> African University College of communication </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/anu.png" alt="" style="width: 20px;"> All Nations University </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/almondinst.png" alt="" style="width: 20px;"> Almond Institute </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/anglican.png" alt="" style="width: 15px;"> Anglican University College of Technology </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/ashesi.png" alt="" style="width: 20px;"> Ashesi University college </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/akimstate.png" alt="" style="width: 20px;"> Akim State College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/bluecrest.png" alt="" style="width: 20px;"> BlueCrest College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/bmfi.png" alt="" style="width: 20px;"> Bmfi University College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/bolgatechnical.png" alt="" style="width: 20px;"> Bolgatanga Technical </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/capecoasttechnical.png" alt="" style="width: 20px;"> Cape Coast Technical </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/catholicinstitute.png" alt="" style="width: 15px;"> Catholic Institute of Business & Technology </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/catholicuni.png" alt="" style="width: 20px;"> Catholic University College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/central.png" alt="" style="width: 20px;"> Central University </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/christapostolic.png" alt="" style="width: 20px;"> Christ Apostolic University College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/christianservice.png" alt="" style="width: 20px;"> Christian Service University</a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/datalink.png" alt="" style="width: 20px;"> Data Link Institute </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/dominion.png" alt="" style="width: 20px;"> Dominion University College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/entrepreneurship.png" alt="" style="width: 20px;"> Entrepreneurship Training  </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/evangelical.png" alt="" style="width: 20px;"> Evangelical Presby University College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/fountainhead.png" alt="" style="width: 20px;"> Fountainhead Christain College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/gardencity.png" alt="" style="width: 20px;"> Garden City University </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/ghanabaptist.png" alt="" style="width: 20px;"> Ghana Baptist University</a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/ghanachristian.png" alt="" style="width: 20px;"> Ghana Christian University </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/gimpa.png" alt="" style="width: 20px;"> GIMPA </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/ghanatech.png" alt="" style="width: 20px;"> Ghana Technology University </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/heritagechristian.png" alt="" style="width: 20px;"> Heritage Christian University </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/hotechnical.png" alt="" style="width: 20px;"> Ho Technical University </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/instituteofBM.png" alt="" style="width: 15px;"> Institute of Business Management & Journalism </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/instituteofdev.png" alt="" style="width: 20px;"> Institute of Development & Technology Management  </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/islamicuni.png" alt="" style="width: 20px;"> Islamic University College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/jayee.png" alt="" style="width: 20px;"> Jayee University College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/kaaf.png" alt="" style="width: 20px;"> KAAF University College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/kessben.png" alt="" style="width: 20px;"> Kessben University College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/kingsuni.png" alt="" style="width: 20px;"> Kings University College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/knust.png" alt="" style="width: 20px;"> KNUST </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/knustford.png" alt="" style="width: 20px;"> Knustford  University College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/koforiduatechnical.png" alt="" style="width: 20px;">Koforidua Technical  University</a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/kumasitechnical.png" alt="" style="width: 20px;">Kumasi Technical University </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/lancaster.png" alt="" style="width: 20px;"> Lancaster University Ghana </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/marshals.png" alt="" style="width: 20px;"> Marshalls College </a></p>
+                                <p class="text-truncate"><a href="methodist_university.html"><img src="teams_flag/mucg.png" alt="" style="width: 20px;"> Methodist University Ghana</a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/mountcrest.png" alt="" style="width: 20px;"> Mountcrest University College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/pentecost.png" alt="" style="width: 20px;"> Pentecost University </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/presbytarianuni.png" alt="" style="width: 20px;"> Presbyterian University College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/regent.png" alt="" style="width: 20px;"> Regent University of Science & Technology </a></p>
+                                 <p class="text-truncate"><a href="#"><img src="teams_flag/regionalmaritime.png" alt="" style="width: 20px;"> Regional Maritime  </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/spiritan.png" alt="" style="width: 20px;"> Spiritan University College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/sunyanitechnical.png" alt="" style="width: 20px;"> Sunyani Technical University</a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/tamaletechnical.png" alt="" style="width: 20px;"> Tamale Technical University</a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/tarditechnical.png" alt="" style="width: 20px;"> Tarkoradi Technical University</a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/universityofagric.png" alt="" style="width: 20px;"> University College of Agric & Environmental studies </a></p>
+                                 <p class="text-truncate"><a href="#"><img src="teams_flag/ug.png" alt="" style="width: 20px;"> University of Ghana </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/ucc.png" alt="" style="width: 20px;"> University of Cape Coast </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/uew.png" alt="" style="width: 20px;"> University of Education,Winneba </a></p>
+                                 <p class="text-truncate"><a href="#"><img src="teams_flag/uds.png" alt="" style="width: 20px;"> University of Development Studies </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/UNER.png" alt="" style="width: 20px;"> University of Energy & Natural Resources </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/UHAS.png" alt="" style="width: 20px;"> University of Health & Allied Sciences </a></p>
+                                 <p class="text-truncate"><a href="#"><img src="teams_flag/UMAT.png" alt="" style="width: 20px;"> University of Mines & Technology </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/UPSA.png" alt="" style="width: 20px;"> University of Professional Studies </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/UCOMS.png" alt="" style="width: 20px;"> University College of Management Studies </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/VVU.png" alt="" style="width: 20px;"> Valley View University </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/watechnical.png" alt="" style="width: 20px;">Wa Technical University </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/webster.png" alt="" style="width: 20px;"> Webster University </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/westend.png" alt="" style="width: 20px;"> West End University College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/wisconsin.png" alt="" style="width: 20px;"> Wisconsin International University College </a></p>
+                                <p class="text-truncate"><a href="#"><img src="teams_flag/zenith.png" alt="" style="width: 20px;"> Zenith University College </a></p>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-9 col-xs-12 col-md-9 col-lg-9">
+                        <div class="row">
+                            <div class="row border-2 " style="margin: 0px; width: 100%;">
+                                <div class="col-2 text-center">
+                                    <a href="#" class="text-white font-12">TODAY <br><span class="font-10">28 NOV </span></a>
+                                </div>
+    
+                                <div class="col-2 text-center">
+                                    <a href="#" class="text-white font-12">Sun <br><span class="font-10">28 NOV </span></a>
+                                </div>
+    
+                                <div class="col-2 text-center">
+                                    <a href="#" class="text-white font-12">Sun <br><span class="font-10">28 NOV </span></a>
+                                </div>
+    
+                                <div class="col-2 text-center">
+                                    <a href="#" class="text-white font-12">Sun <br><span class="font-10">28 NOV </span></a>
+                                </div>
+    
+                                <div class="col-2 text-center">
+                                    <a href="#" class="text-white font-12">Sun <br><span class="font-10">28 NOV </span></a>
+                                </div>
+    
+                                <div class="col-2 text-center">
+                                    <a href="#" class="text-white font-12">Sun <br><span class="font-10">28 NOV </span></a>
+                                </div>
+    
+                                <div class="col-1">
+    
+                                 </div>
+                            </div>
+                           
+                        </div>
+
+                        <div class="row border-3">
+                            <div class="col-sm-12 col-md-12">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img src="teams_flag/Coat_of_arms_of_Ghana.svg.png" alt="" style="width: 20px;">
+                                    </div> 
+                                    
+                                    <div class="col-10">
+                                        <h5 class="font-15"><a class="disabled text-decoration-none" href="#">Champions League</a></h5>
+                                        <p class="font-10"><a href="Champions_League_Group_A.html">Group A</a></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        FT
+                                    </p>
+                                    </div> 
+                                     <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                           <div class="col-9"> 
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/mucg.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Methodist University</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/knust.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">KNUST</span>
+                                        </a>
+                                        </div>
+                                        <div class="col-1 fw-bold col-sm home_scores">
+                                        3
+                                            <p class="away_scores">1</p>
+                                        
+                                            </div>
+                                         
+                                      </div>
+                                    </div>  
+                                </div> 
+                                <div class="row bg-2">
+                                  <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                 
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                 <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html" class="link-opacity-50-hover">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/ucc.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">UCC</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/accratechnical.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Accra Technical</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                               </div>
+                            </div>
+                             <div class="col-sm-12 col-md-12">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img src="teams_flag/Coat_of_arms_of_Ghana.svg.png" alt="" style="width: 20px;">
+                                    </div> 
+                                    
+                                    <div class="col-10">
+                                        <h5 class="font-15"><a class="disabled text-decoration-none" href="#">Champions League</a></h5>
+                                        <p class="font-10"><a href="CL-GA.html">Group B</a></p>
+                                    </div>
+                                </div>
+                            <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/ug.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">University of Ghana</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/koforiduatechnical.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Koforidua Technical</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/gimpa.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">GIMPA</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/uew.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">University of Education</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                             </div>
+                             <div class="col-sm-12 col-md-12">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img src="teams_flag/Coat_of_arms_of_Ghana.svg.png" alt="" style="width: 20px;">
+                                    </div> 
+                                    
+                                    <div class="col-10">
+                                        <h5 class="font-15"><a class="disabled text-decoration-none" href="#">Champions League</a></h5>
+                                        <p class="font-10"><a href="CL-GA.html">Group C</a></p>
+                                    </div>
+                                </div>
+                            <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/UPSA.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">UPS</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/hotechnical.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Ho Technical</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/UMAT.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">UMAT</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/uew.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Cape Coast Technical</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                             </div>
+                             <div class="col-sm-12 col-md-12">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img src="teams_flag/Coat_of_arms_of_Ghana.svg.png" alt="" style="width: 20px;">
+                                    </div> 
+                                    
+                                    <div class="col-10">
+                                        <h5 class="font-15"><a class="disabled text-decoration-none" href="#">Champions League</a></h5>
+                                        <p class="font-10"><a href="CL-GA.html">Group D</a></p>
+                                    </div>
+                                </div>
+                            <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/uds.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">UDS</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/kumasitechnical.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Kumasi Technical</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/anu.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">All Nation</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/UHAS.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">UHAS</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                             </div>
+                         <div class="col-sm-12 col-md-12">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img src="images/flagofgh.png" alt="" style="width: 20px;">
+                                    </div> 
+                                    
+                                    <div class="col-10">
+                                        <h5 class="font-15"><a class="disabled text-decoration-none" href="#">Congress League</a></h5>
+                                        <p class="font-10"><a href="CL-GA.html">Group A</a></p>
+                                    </div>
+                                </div>
+                            <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/central.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Central University</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/pentecost.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Pentecost University</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/kaaf.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">KAAF</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/VVU.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Valley View</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                             </div>
+                         <div class="col-sm-12 col-md-12">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img src="images/flagofgh.png" alt="" style="width: 20px;">
+                                    </div> 
+                                    
+                                    <div class="col-10">
+                                        <h5 class="font-15"><a class="disabled text-decoration-none" href="#">Congress League</a></h5>
+                                        <p class="font-10"><a href="CL-GA.html">Group B</a></p>
+                                    </div>
+                                </div>
+                            <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/kingsuni.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Kings College</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/zenith.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Zenith College</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/islamicuni.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Islamic College</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/gardencity.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Garden City College</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                             </div>
+                         <div class="col-sm-12 col-md-12">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img src="images/flagofgh.png" alt="" style="width: 20px;">
+                                    </div> 
+                                    
+                                    <div class="col-10">
+                                        <h5 class="font-15"><a class="disabled text-decoration-none" href="#">Congress League</a></h5>
+                                        <p class="font-10"><a href="CL-GA.html">Group C</a></p>
+                                    </div>
+                                </div>
+                            <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/regent.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Regent University</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/catholicuni.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Catholic University college</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/bluecrest.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Bluecrest College</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/advancedbusinesscollege.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Advanced Business College</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                             </div>
+                             <div class="col-sm-12 col-md-12">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img src="images/flagofgh.png" alt="" style="width: 20px;">
+                                    </div> 
+                                    
+                                    <div class="col-10">
+                                        <h5 class="font-15"><a class="disabled text-decoration-none" href="#">Congress League</a></h5>
+                                        <p class="font-10"><a href="CL-GA.html">Group D</a></p>
+                                    </div>
+                                </div>
+                            <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/anglican.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Anglican College</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/akimstate.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Akim State College</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/kaaf.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Christ Apostolic College</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/VVU.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Wisconsin College</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                             </div>
+                         <div class="col-sm-12 col-md-12">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img src="images/flagofgh.png" alt="" style="width: 20px;">
+                                    </div> 
+                                    
+                                    <div class="col-10">
+                                        <h5 class="font-15 mt-1"><a class="disabled text-decoration-none" href="#">Qualifications</a></h5>
+                                    </div>
+                                </div>
+                            <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/AIT_CREST.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Accra Institue of Tech</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/aucc.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">AUCC</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/almondinst.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Almond Institute</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/ashesi.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Ashesi University College</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/bmfi.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">BMFI University College</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/christianservice.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Christian Service University</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/datalink.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Data Link Institute</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/heritagechristian.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Heritage Christian College</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/jayee.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Jayee University College</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/pentecost.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Kessben University College</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/presbytarianuni.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Presbyterian University</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/sunyanitechnical.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Sunyani Technical</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/central.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Central University</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/pentecost.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Pentecost University</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/westend.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">WestEnd College</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/webster.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Webster University College</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                             </div>
+                            <!---FRIENDLY GAMES-->
+                            <div class="col-sm-12 col-md-12">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img src="images/flagofgh.png" alt="" style="width: 20px;">
+                                    </div> 
+                                    
+                                    <div class="col-10">
+                                        <h5 class="font-15"><a class="disabled text-decoration-none" href="#">Friendlies</a></h5>
+                                        <p class="font-10">All Institutions</p>
+                                    </div>
+                                </div>
+                            <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/knustford.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Knustford College</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/kumasitechnical.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Kumasi Technical</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/marshals.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Marshalls College</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/regionalmaritime.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Regional Maritime</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/UMAT.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">UMAT</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/watechnical.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Wa Technical</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/ghanatech.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Ghana Technology University</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/spiritan.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Spiritan College</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/jayee.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Jayee University College</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/pentecost.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Kessben University College</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/uds.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;"> UDS</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/bolgatechnical.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Bolgatanga Technical</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/capecoasttechnical.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Cape Coast Technical</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/dominion.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">Dominion College</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                                <div class="row bg-2">
+                                    <div class="col-1 col-sm-auto  favourite_team">
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-auto">
+                                    <p class="font-time">
+                                        19:30'
+                                    </p>
+                                    </div> 
+                                    
+                                    <div class="col-9 col-lg-9 col-sm">
+                                        <div class="row">
+                                            <div class="col-9">
+                                        <a href="MUCG_vrs_KNUST.html">
+                                        <span class="font-12 text-truncate"> <img src="teams_flag/UHAS.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">UHAS</span><br>
+                                        <span class="font-12 text-truncate"><img src="teams_flag/UCOMS.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">UCOMS</span>
+                                        </a>
+                                        
+                                        </div>
+                                              <div class="col-1 fw-bold col-sm home_scores">
+                                        -
+                                        <p class="away_scores">-</p>
+                                          </div>  
+                                       </div>
+                                    </div>
+                                </div> 
+                             </div>
+                        </div>
+                    </div>            
+            </div>
+        </div>
+
+<div class=" col-xl-3 col-lg-3 d-none d-md-none d-lg-block " style="padding: 0px 2px;">
+<div class="row">
+<h6 class="table-head text-center">League Standings </h6>
+<div class="container-fluid my-3 text-white" style="font-size:10px" >
+<div id="demo" class="carousel slide w-100" data-interval="false">
+
+<!-- The slideshow -->
+<div class="carousel-inner">
+<div class="carousel-item active">
+<table class="table table-dark  table-sm table-striped" style="background-color:black;">
+    <h6 class="text-success mb-3 text-center">Champions League</h6>
+<p class="groupings">Group A</p>
+<thead>
+       <tr>
+            <th class="text-center">#</th>
+            <th class="text-center">Team</th>
+            <th class="text-center">P</th>
+            <th class="text-center">GD</th>
+            <th class="text-center">PTS</th>
+   </tr>
+</thead>
+<tbody>
+      <tr>
+            <td class="next-stage">1</td>
+            <td>KNUST</td>
+            <td class="text-center">2</td>
+            <td class="text-center">3</td>
+            <td class="text-center">6</td>
+     </tr>
+     <tr>
+            <td class="next-stage">2</td>
+            <td>UDS</td>
+            <td class="text-center">2</td>
+            <td class="text-center">2</td>
+            <td class="text-center">4</td>
+    </tr>
+    <tr>
+            <td>3</td>
+            <td>KTU</td>
+            <td class="text-center">2</td>
+            <td class="text-center">1</td>
+            <td class="text-center">3</td>
+    </tr>
+    <tr>
+            <td>4</td>
+            <td>UG</td>
+            <td class="text-center">2</td>
+            <td class="text-center">-2</td>
+            <td class="text-center">1</td>
+   </tr>
+</tbody>
+     </table>
+    
+<div class="Nxt"><button> </button> Next stage</div>
+    
+ <table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
+    <p class="groupings">Top goal scorers</p>
+    <thead>
+        <tr>
+            <th class="text-center">#</th>
+            <th class="text-center">Player</th>
+            <th class="text-center">Team</th>
+            <th class="text-center">Goal(s)</th>
+       </tr>
+    </thead>
+<tbody>
+        <tr>
+            <td>1</td>
+            <td>Belinda Lamiley</td>
+            <td>UDS</td>
+            <td class="text-center">5</td>
+
+       </tr>
+        <tr>
+            <td>2</td>
+            <a href="https://www.livescore.com/en/football/champions-league/"><td>George A. Agyemang</td></a>
+            <td>KNUST</td>
+            <td class="text-center">4</td>
+
+      </tr>
+      <tr>
+            <td>3</td>
+            <td>Joseph k. Asiedu</td>
+            <td>KTU</td>
+            <td class="text-center">2</td>
+     </tr>
+     <tr>
+            <td>3</td>
+            <td>Francis Nortey</td>
+            <td>UG</td>
+            <td class="text-center">2</td>
+    </tr>
+
+    <tr>
+            <td>5</td>
+            <td>Kofi Lomortey</td>
+            <td>KNUST</td>
+            <td class="text-center">1</td>
+    </tr>
+</tbody>
+    </table>
+ 
+<table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
+      <p class="groupings">Top assist</p>
+    <thead>
+      <tr>
+            <th class="text-center">#</th>
+            <th class="text-center">Player</th>
+            <th class="text-center">Team</th>
+            <th class="text-center">Assist</th>
+      </tr>
+   </thead>
+<tbody>
+     <tr>
+            <td>1</td>
+            <td>Belinda Lamiley</td>
+            <td>UDS</td>
+            <td class="text-center">3</td>
+     </tr>
+     <tr>
+            <td>2</td>
+            <td>George A. Agyemang</td>
+            <td>KNUST</td>
+            <td class="text-center">2</td>
+    </tr>
+    <tr>
+            <td>3</td>
+            <td>Joseph k. Asiedu</td>
+            <td>KTU</td>
+            <td class="text-center">2</td>
+   </tr>
+   <tr>
+            <td>3</td>
+            <td>Francis Nortey</td>
+            <td>UG</td>
+            <td class="text-center">2</td>
+   </tr>
+   <tr>
+            <td>5</td>
+            <td>Kofi Lomortey</td>
+            <td>KNUST</td>
+            <td class="text-center">1</td>
+  </tr>
+</tbody>
+   </table>
+       </div>
+    
+<div class="carousel-item">
+   <table class="table table-dark table-bordered table-sm table-striped"style="background-color:black;">
+         <h6 class="text-success mb-3 text-center">Champions League</h6>
+   <p class="groupings">Group B</p>
+ <thead>
+      <tr>
+            <th class="text-center">#</th>
+            <th class="text-center">Team</th>
+            <th class="text-center">P</th>
+            <th class="text-center">GD</th>
+            <th class="text-center">PTS</th>
+     </tr>
+</thead>
+ <tbody>
+     <tr>
+            <td class="next-stage" title="Next stage">1</td>
+            <td>KNUST</td>
+            <td class="text-center">2</td>
+            <td class="text-center">3</td>
+            <td class="text-center">6</td>
+     </tr>
+     <tr>
+            <td class="next-stage">2</td>
+            <td>UDS</td>
+            <td class="text-center">2</td>
+            <td class="text-center">2</td>
+            <td class="text-center">4</td>
+    </tr>
+    <tr>
+            <td>3</td>
+            <td>KTU</td>
+            <td class="text-center">2</td>
+            <td class="text-center">1</td>
+            <td class="text-center">3</td>
+    </tr>
+    <tr>
+            <td>4</td>
+            <td>UG</td>
+            <td class="text-center">2</td>
+            <td class="text-center">-2</td>
+            <td class="text-center">1</td>
+    </tr>
+
+</tbody>
+    </table>
+    
+<div class="Nxt"><button> </button> Next stage</div>
+   <table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
+<p class="groupings">Top goal scorers</p>
+   <thead>
+
+      <tr>
+            <th class="text-center">#</th>
+            <th class="text-center">Player</th>
+            <th class="text-center">Team</th>
+            <th class="text-center">Goal(s)</th>
+     </tr>
+  </thead>
+<tbody>
+     <tr>
+            <td>1</td>
+            <td>Belinda Lamiley</td>
+            <td>UDS</td>
+            <td class="text-center">5</td>
+    </tr>
+    <tr>
+            <td>2</td>
+            <td>George A. Agyemang</td>
+            <td>KNUST</td>
+            <td class="text-center">4</td>
+    </tr>
+    <tr>
+            <td>3</td>
+            <td>Joseph k. Asiedu</td>
+            <td>KTU</td>
+            <td class="text-center">2</td>
+   </tr>
+   <tr>
+            <td>3</td>
+            <td>Francis Nortey</td>
+            <td>UG</td>
+            <td class="text-center">2</td>
+   </tr>
+
+   <tr>
+            <td>5</td>
+            <td>Kofi Lomortey</td>
+            <td>KNUST</td>
+            <td class="text-center">1</td>
+
+   </tr>
+</tbody>
+    </table>
+ 
+<table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;" >
+    <p class="groupings">Top assist</p>
+<thead>
+     <tr>
+            <th class="text-center">#</th>
+            <th class="text-center">Player</th>
+            <th class="text-center">Team</th>
+            <th class="text-center">Assist</th>
+     </tr>
+</thead>
+     <tbody>
+      <tr>
+            <td>1</td>
+            <td>Belinda Lamiley</td>
+            <td>UDS</td>
+            <td class="text-center">3</td>
+
+     </tr>
+      <tr>
+            <td>2</td>
+            <td>George A. Agyemang</td>
+            <td>KNUST</td>
+            <td class="text-center">2</td>
+
+      </tr>
+      <tr>
+            <td>3</td>
+            <td>Joseph k. Asiedu</td>
+            <td>KTU</td>
+            <td class="text-center">2</td>
+      </tr>
+       <tr>
+            <td>3</td>
+            <td>Francis Nortey</td>
+            <td>UG</td>
+            <td class="text-center">2</td>
+      </tr>
+
+      <tr>
+            <td>5</td>
+            <td>Kofi Lomortey</td>
+            <td>KNUST</td>
+            <td class="text-center">1</td>
+
+      </tr>
+</tbody>
+     </table>
+</div>
+    
+<div class="carousel-item">
+<table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
+   <h6 class="text-success mb-3 text-center">Champions League</h6>
+<p class="groupings">Group C</p>
+<thead>
+
+<tr>
+<th class="text-center">#</th>
+<th class="text-center">Team</th>
+<th class="text-center">P</th>
+<th class="text-center">GD</th>
+<th class="text-center">PTS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="next-stage">1</td>
+<td>KNUST</td>
+<td class="text-center">2</td>
+<td class="text-center">3</td>
+<td class="text-center">6</td>
+</tr>
+<tr>
+<td class="next-stage">2</td>
+<td>UDS</td>
+<td class="text-center">2</td>
+<td class="text-center">2</td>
+<td class="text-center">4</td>
+</tr>
+<tr>
+<td>3</td>
+<td>KTU</td>
+<td class="text-center">2</td>
+<td class="text-center">1</td>
+<td class="text-center">3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>UG</td>
+<td class="text-center">2</td>
+<td class="text-center">-2</td>
+<td class="text-center">1</td>
+</tr>
+
+</tbody>
+
+</table>
+    
+<div class="Nxt"><button> </button> Next stage</div>
+<table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
+<p class="groupings">Top goal scorers</p>
+<thead>
+
+<tr>
+<th class="text-center">#</th>
+<th class="text-center">Player</th>
+<th class="text-center">Team</th>
+<th class="text-center">Goal(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Belinda Lamiley</td>
+<td>UDS</td>
+<td class="text-center">5</td>
+
+</tr>
+<tr>
+<td>2</td>
+<td>George A. Agyemang</td>
+<td>KNUST</td>
+<td class="text-center">4</td>
+
+</tr>
+<tr>
+<td>3</td>
+<td>Joseph k. Asiedu</td>
+<td>KTU</td>
+<td class="text-center">2</td>
+
+
+</tr>
+<tr>
+<td>3</td>
+<td>Francis Nortey</td>
+<td>UG</td>
+<td class="text-center">2</td>
+
+</tr>
+
+<tr>
+<td>5</td>
+<td>Kofi Lomortey</td>
+<td>KNUST</td>
+<td class="text-center">1</td>
+
+</tr>
+    </tbody>
+    </table>
+<table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
+<p class="groupings">Top assist</p>
+<thead>
+
+<tr>
+<th class="text-center">#</th>
+<th class="text-center">Player</th>
+<th class="text-center">Team</th>
+<th class="text-center">Assist</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Belinda Lamiley</td>
+<td>UDS</td>
+<td class="text-center">3</td>
+
+</tr>
+<tr>
+<td>2</td>
+<td>George A. Agyemang</td>
+<td>KNUST</td>
+<td class="text-center">2</td>
+
+</tr>
+<tr>
+<td>3</td>
+<td>Joseph k. Asiedu</td>
+<td>KTU</td>
+<td class="text-center">2</td>
+
+
+</tr>
+<tr>
+<td>3</td>
+<td>Francis Nortey</td>
+<td>UG</td>
+<td class="text-center">2</td>
+
+</tr>
+
+<tr>
+<td>5</td>
+<td>Kofi Lomortey</td>
+<td>KNUST</td>
+<td class="text-center">1</td>
+
+</tr>
+</tbody>
+
+</table>
+    </div>
+  
+    
+<div class="carousel-item">
+   <table class="table table-dark table-bordered table-sm table-striped"style="background-color:black;">
+         <h6 class="text-white mb-3 text-center">Conference League</h6>
+   <p class="groupings">Group A</p>
+ <thead>
+      <tr>
+            <th class="text-center">#</th>
+            <th class="text-center">Team</th>
+            <th class="text-center">P</th>
+            <th class="text-center">GD</th>
+            <th class="text-center">PTS</th>
+     </tr>
+</thead>
+ <tbody>
+     <tr>
+            <td class="next-stage" title="Next stage">1</td>
+            <td>KNUST</td>
+            <td class="text-center">2</td>
+            <td class="text-center">3</td>
+            <td class="text-center">6</td>
+     </tr>
+     <tr>
+            <td class="next-stage">2</td>
+            <td>UDS</td>
+            <td class="text-center">2</td>
+            <td class="text-center">2</td>
+            <td class="text-center">4</td>
+    </tr>
+    <tr>
+            <td>3</td>
+            <td>KTU</td>
+            <td class="text-center">2</td>
+            <td class="text-center">1</td>
+            <td class="text-center">3</td>
+    </tr>
+    <tr>
+            <td>4</td>
+            <td>UG</td>
+            <td class="text-center">2</td>
+            <td class="text-center">-2</td>
+            <td class="text-center">1</td>
+    </tr>
+
+</tbody>
+    </table>
+    
+<div class="Nxt"><button> </button> Next stage</div>
+   <table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
+<p class="groupings">Top goal scorers</p>
+   <thead>
+
+      <tr>
+            <th class="text-center">#</th>
+            <th class="text-center">Player</th>
+            <th class="text-center">Team</th>
+            <th class="text-center">Goal(s)</th>
+     </tr>
+  </thead>
+<tbody>
+     <tr>
+            <td>1</td>
+            <td>Belinda Lamiley</td>
+            <td>UDS</td>
+            <td class="text-center">5</td>
+    </tr>
+    <tr>
+            <td>2</td>
+            <td>George A. Agyemang</td>
+            <td>KNUST</td>
+            <td class="text-center">4</td>
+    </tr>
+    <tr>
+            <td>3</td>
+            <td>Joseph k. Asiedu</td>
+            <td>KTU</td>
+            <td class="text-center">2</td>
+   </tr>
+   <tr>
+            <td>3</td>
+            <td>Francis Nortey</td>
+            <td>UG</td>
+            <td class="text-center">2</td>
+   </tr>
+
+   <tr>
+            <td>5</td>
+            <td>Kofi Lomortey</td>
+            <td>KNUST</td>
+            <td class="text-center">1</td>
+
+   </tr>
+</tbody>
+    </table>
+ 
+<table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;" >
+    <p class="groupings">Top assist</p>
+<thead>
+     <tr>
+            <th class="text-center">#</th>
+            <th class="text-center">Player</th>
+            <th class="text-center">Team</th>
+            <th class="text-center">Assist</th>
+     </tr>
+</thead>
+     <tbody>
+      <tr>
+            <td>1</td>
+            <td>Belinda Lamiley</td>
+            <td>UDS</td>
+            <td class="text-center">3</td>
+
+     </tr>
+      <tr>
+            <td>2</td>
+            <td>George A. Agyemang</td>
+            <td>KNUST</td>
+            <td class="text-center">2</td>
+
+      </tr>
+      <tr>
+            <td>3</td>
+            <td>Joseph k. Asiedu</td>
+            <td>KTU</td>
+            <td class="text-center">2</td>
+      </tr>
+       <tr>
+            <td>3</td>
+            <td>Francis Nortey</td>
+            <td>UG</td>
+            <td class="text-center">2</td>
+      </tr>
+
+      <tr>
+            <td>5</td>
+            <td>Kofi Lomortey</td>
+            <td>KNUST</td>
+            <td class="text-center">1</td>
+
+      </tr>
+</tbody>
+     </table>
+</div>
+    
+<div class="carousel-item">
+<table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
+   <h6 class="text-white mb-3 text-center">Conference League</h6>
+<p class="groupings">Group B</p>
+<thead>
+
+<tr>
+<th class="text-center">#</th>
+<th class="text-center">Team</th>
+<th class="text-center">P</th>
+<th class="text-center">GD</th>
+<th class="text-center">PTS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="next-stage">1</td>
+<td>KNUST</td>
+<td class="text-center">2</td>
+<td class="text-center">3</td>
+<td class="text-center">6</td>
+</tr>
+<tr>
+<td class="next-stage">2</td>
+<td>UDS</td>
+<td class="text-center">2</td>
+<td class="text-center">2</td>
+<td class="text-center">4</td>
+</tr>
+<tr>
+<td>3</td>
+<td>KTU</td>
+<td class="text-center">2</td>
+<td class="text-center">1</td>
+<td class="text-center">3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>UG</td>
+<td class="text-center">2</td>
+<td class="text-center">-2</td>
+<td class="text-center">1</td>
+</tr>
+
+</tbody>
+
+</table>
+    
+<div class="Nxt"><button> </button> Next stage</div>
+<table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
+<p class="groupings">Top goal scorers</p>
+<thead>
+
+<tr>
+<th class="text-center">#</th>
+<th class="text-center">Player</th>
+<th class="text-center">Team</th>
+<th class="text-center">Goal(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Belinda Lamiley</td>
+<td>UDS</td>
+<td class="text-center">5</td>
+
+</tr>
+<tr>
+<td>2</td>
+<td>George A. Agyemang</td>
+<td>KNUST</td>
+<td class="text-center">4</td>
+
+</tr>
+<tr>
+<td>3</td>
+<td>Joseph k. Asiedu</td>
+<td>KTU</td>
+<td class="text-center">2</td>
+
+
+</tr>
+<tr>
+<td>3</td>
+<td>Francis Nortey</td>
+<td>UG</td>
+<td class="text-center">2</td>
+
+</tr>
+
+<tr>
+<td>5</td>
+<td>Kofi Lomortey</td>
+<td>KNUST</td>
+<td class="text-center">1</td>
+
+</tr>
+    </tbody>
+    </table>
+<table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
+<p class="groupings">Top assist</p>
+<thead>
+
+<tr>
+<th class="text-center">#</th>
+<th class="text-center">Player</th>
+<th class="text-center">Team</th>
+<th class="text-center">Assist</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Belinda Lamiley</td>
+<td>UDS</td>
+<td class="text-center">3</td>
+
+</tr>
+<tr>
+<td>2</td>
+<td>George A. Agyemang</td>
+<td>KNUST</td>
+<td class="text-center">2</td>
+
+</tr>
+<tr>
+<td>3</td>
+<td>Joseph k. Asiedu</td>
+<td>KTU</td>
+<td class="text-center">2</td>
+
+
+</tr>
+<tr>
+<td>3</td>
+<td>Francis Nortey</td>
+<td>UG</td>
+<td class="text-center">2</td>
+
+</tr>
+
+<tr>
+<td>5</td>
+<td>Kofi Lomortey</td>
+<td>KNUST</td>
+<td class="text-center">1</td>
+
+</tr>
+</tbody>
+
+</table>
+    </div>
+    
+    
+<div class="carousel-item">
+   <table class="table table-dark table-bordered table-sm table-striped"style="background-color:black;">
+         <h6 class="text-white mb-3 text-center">Conference League</h6>
+   <p class="groupings">Group C</p>
+ <thead>
+      <tr>
+            <th class="text-center">#</th>
+            <th class="text-center">Team</th>
+            <th class="text-center">P</th>
+            <th class="text-center">GD</th>
+            <th class="text-center">PTS</th>
+     </tr>
+</thead>
+ <tbody>
+     <tr>
+            <td class="next-stage" title="Next stage">1</td>
+            <td>KNUST</td>
+            <td class="text-center">2</td>
+            <td class="text-center">3</td>
+            <td class="text-center">6</td>
+     </tr>
+     <tr>
+            <td class="next-stage">2</td>
+            <td>UDS</td>
+            <td class="text-center">2</td>
+            <td class="text-center">2</td>
+            <td class="text-center">4</td>
+    </tr>
+    <tr>
+            <td>3</td>
+            <td>KTU</td>
+            <td class="text-center">2</td>
+            <td class="text-center">1</td>
+            <td class="text-center">3</td>
+    </tr>
+    <tr>
+            <td>4</td>
+            <td>UG</td>
+            <td class="text-center">2</td>
+            <td class="text-center">-2</td>
+            <td class="text-center">1</td>
+    </tr>
+
+</tbody>
+    </table>
+    
+<div class="Nxt"><button> </button> Next stage</div>
+   <table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
+<p class="groupings">Top goal scorers</p>
+   <thead>
+
+      <tr>
+            <th class="text-center">#</th>
+            <th class="text-center">Player</th>
+            <th class="text-center">Team</th>
+            <th class="text-center">Goal(s)</th>
+     </tr>
+  </thead>
+<tbody>
+     <tr>
+            <td>1</td>
+            <td>Belinda Lamiley</td>
+            <td>UDS</td>
+            <td class="text-center">5</td>
+    </tr>
+    <tr>
+            <td>2</td>
+            <td>George A. Agyemang</td>
+            <td>KNUST</td>
+            <td class="text-center">4</td>
+    </tr>
+    <tr>
+            <td>3</td>
+            <td>Joseph k. Asiedu</td>
+            <td>KTU</td>
+            <td class="text-center">2</td>
+   </tr>
+   <tr>
+            <td>3</td>
+            <td>Francis Nortey</td>
+            <td>UG</td>
+            <td class="text-center">2</td>
+   </tr>
+
+   <tr>
+            <td>5</td>
+            <td>Kofi Lomortey</td>
+            <td>KNUST</td>
+            <td class="text-center">1</td>
+
+   </tr>
+</tbody>
+    </table>
+ 
+<table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;" >
+    <p class="groupings">Top assist</p>
+<thead>
+     <tr>
+            <th class="text-center">#</th>
+            <th class="text-center">Player</th>
+            <th class="text-center">Team</th>
+            <th class="text-center">Assist</th>
+     </tr>
+</thead>
+     <tbody>
+      <tr>
+            <td>1</td>
+            <td>Belinda Lamiley</td>
+            <td>UDS</td>
+            <td class="text-center">3</td>
+
+     </tr>
+      <tr>
+            <td>2</td>
+            <td>George A. Agyemang</td>
+            <td>KNUST</td>
+            <td class="text-center">2</td>
+
+      </tr>
+      <tr>
+            <td>3</td>
+            <td>Joseph k. Asiedu</td>
+            <td>KTU</td>
+            <td class="text-center">2</td>
+      </tr>
+       <tr>
+            <td>3</td>
+            <td>Francis Nortey</td>
+            <td>UG</td>
+            <td class="text-center">2</td>
+      </tr>
+
+      <tr>
+            <td>5</td>
+            <td>Kofi Lomortey</td>
+            <td>KNUST</td>
+            <td class="text-center">1</td>
+
+      </tr>
+</tbody>
+     </table>
+</div>
+    
+<div class="carousel-item">
+<table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
+   <h6 class="text-white mb-3 text-center">Conference League</h6>
+<p class="groupings">Group D</p>
+<thead>
+
+<tr>
+            <th class="text-center">#</th>
+            <th class="text-center">Team</th>
+            <th class="text-center">P</th>
+            <th class="text-center">GD</th>
+            <th class="text-center">PTS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+            <td class="next-stage">1</td>
+            <td>KNUST</td>
+            <td class="text-center">2</td>
+            <td class="text-center">3</td>
+            <td class="text-center">6</td>
+</tr>
+<tr>
+            <td class="next-stage">2</td>
+            <td>UDS</td>
+            <td class="text-center">2</td>
+            <td class="text-center">2</td>
+            <td class="text-center">4</td>
+</tr>
+<tr>
+            <td>3</td>
+            <td>KTU</td>
+            <td class="text-center">2</td>
+            <td class="text-center">1</td>
+            <td class="text-center">3</td>
+</tr>
+<tr>
+            <td>4</td>
+            <td>UG</td>
+            <td class="text-center">2</td>
+            <td class="text-center">-2</td>
+            <td class="text-center">1</td>
+</tr>
+
+</tbody>
+
+</table>
+    
+<div class="Nxt"><button> </button> Next stage</div>
+<table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
+<p class="groupings">Top goal scorers</p>
+<thead>
+
+<tr>
+            <th class="text-center">#</th>
+            <th class="text-center">Player</th>
+            <th class="text-center">Team</th>
+            <th class="text-center">Goal(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+            <td>1</td>
+            <td>Belinda Lamiley</td>
+            <td>UDS</td>
+            <td class="text-center">5</td>
+</tr>
+<tr>
+            <td>2</td>
+            <td>George A. Agyemang</td>
+            <td>KNUST</td>
+            <td class="text-center">4</td>
+</tr>
+<tr>
+            <td>3</td>
+            <td>Joseph k. Asiedu</td>
+            <td>KTU</td>
+            <td class="text-center">2</td>
+</tr>
+<tr>
+            <td>3</td>
+            <td>Francis Nortey</td>
+            <td>UG</td>
+            <td class="text-center">2</td>
+</tr>
+
+<tr>
+            <td>5</td>
+            <td>Kofi Lomortey</td>
+            <td>KNUST</td>
+            <td class="text-center">1</td>
+</tr>
+    </tbody>
+    </table>
+<table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
+<p class="groupings">Top assist</p>
+<thead>
+
+<tr>
+            <th class="text-center">#</th>
+            <th class="text-center">Player</th>
+            <th class="text-center">Team</th>
+            <th class="text-center">Assist</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+            <td>1</td>
+            <td>Belinda Lamiley</td>
+            <td>UDS</td>
+            <td class="text-center">3</td>
+</tr>
+<tr>
+            <td>2</td>
+            <td>George A. Agyemang</td>
+            <td>KNUST</td>
+            <td class="text-center">2</td>
+</tr>
+<tr>
+            <td>3</td>
+            <td>Joseph k. Asiedu</td>
+            <td>KTU</td>
+            <td class="text-center">2</td>
+</tr>
+<tr>
+            <td>3</td>
+            <td>Francis Nortey</td>
+            <td>UG</td>
+            <td class="text-center">2</td>
+</tr>
+
+<tr>
+            <td>5</td>
+            <td>Kofi Lomortey</td>
+            <td>KNUST</td>
+            <td class="text-center">1</td>
+</tr>
+</tbody>
+
+</table>
+    </div>
+</div>
+    
+<!-- Left and right controls -->
+<a class="carousel-control-prev" href="#demo" data-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#demo" data-slide="next">
+<span class="carousel-control-next-icon"></span>
+</a>
+     </div>
+   </div>
+</div>
+    
+                <div class="row">
+                    <img src="images/ad.jpg" alt="" width="100%">
+                </div>
+                <br>
+                <div class="row">
+                    <img src="images/ad.jpg" alt="" width="100%">
+                </div>
+        </div> 
+    </div>
+</div>
+
+<div class="container-fluid mb-show text-white" style="display: none;">
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm fixed-bottom">
+        <div class="container">
+            <div class="navbar-collapse justify-content-center" id="">
+                <div class="row">
+                   <div class="col-4">Matches <i class="fas fa-futbol"></i></div>
+                   <div class="col-4">Favourite <i class="far fa-star" style="color:gold;"></i></div>
+                   <div class="col-4">News <i class="fas fa-newspaper"></i></div>
+                </div>
+            </div>  
+        </div>
+      </nav>
+</div>
+
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
