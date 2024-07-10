@@ -44,11 +44,15 @@
             color: #fff;
             font-weight: bold;        
         }
-        
-.font-15{
+ .font-15{
          font-size: 15px;
-         color: goldenrod;
-         
+         color: #fff;
+        
+        }       
+.font-13{
+         font-size: 13px;
+         color: #fff;
+         font-family: sans-serif;
         }
 
 .font-15 a{
@@ -75,11 +79,9 @@
         
 .body-container{
             padding-top: 20px;
+           
         }
-.calendar a, .active a,
-    {
-		color:   green;
-	}
+
 .bg-2{
             background-color: #181818;
             color: #aaa;
@@ -88,7 +90,13 @@
             margin-bottom: 5px;
             height: 60px;
         }
-
+.bg-2 a{
+            text-decoration: none
+        }
+.hovering :hover{
+            background-color: #000;
+            height: 60px;
+        }      
 .mg-0{
             margin: -10px;
             padding: 0px;
@@ -138,6 +146,7 @@
          font-size: 12px;
         }
  
+      
 @media only screen and  (max-width: 768px) {
            .bottom-navbar-show{
                 display: initial!important;
@@ -269,16 +278,68 @@
     transform: translateY(-12px);
   }
 }
+ .navbar-toggler-icon {
+  background-image: none!important;
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  margin: 10px 0;
+  position: relative;
+  transition: all 0.35s ease-out;
+  transform-origin: center;
+
+}
+
+.navbar-toggler-icon::before {
+  display: block !important;
+  background-color: #fff;
+  height: 3px;
+  content: "";
+  position: relative;
+  top: -7px;
+  transition: all 0.15s ease-out;/*taken down to hide quicker*/
+  transform-origin: center;
+}
+
+.navbar-toggler-icon::after {
+  display: block;
+  background-color: #fff;
+  height: 3px;
+  content: "";
+  position: relative;
+  top: 4px;
+  transition: all 0.35s ease-out;
+  transform-origin: center;
+}
+
+.navbar-dark .navbar-toggler-icon,
+.navbar-dark .navbar-toggler-icon::before,
+.navbar-dark .navbar-toggler-icon::after {
+  background-color: #fff;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+  transform: rotate(-90deg) translateX(7px);
+}
+   
     </style>
 </head>
 <body class='bg-1'>
 	
-	<nav class="navbar  navbar-dark navbar-expand-lg sticky-top" style="background-color: #000;" role="navigation">
+	<nav id="" class="navbar  navbar-dark navbar-expand-lg  sticky-top" style="background-color: #000;" role="navigation">
 	  <div class="container col-md-12 col-sm-12 col-lg-12">
 	  	<div class="logo-container"  style="background-color: #000;">
   <div class="text" href="index.php">UNISC<svg  class="bounce" height="20" width="20" viewBox="0 0 32 32" name="FootballGoal"><path fill="#fff" d="M32 16a16 16 0 11-32 0 16 16 0 0132 0z"></path><path fill="#f2f2f2" d="M5.28 12.52l-.27-6.2 5.18-3.77L16 4.73v5.09l-5.81 4.22z"></path><path fill="#fafafa" d="M28.6 23.46l-5.98 1.66-3.03-4.25 2.22-6.83 4.9-1.52 3.87 4.85z"></path><path fill="#fafafa" d="M21.81 14.04L16 9.82V4.73l5.81-2.18L27 6.32l-.27 6.2zM9.38 25.12l-5.99-1.66-1.97-6.09 3.86-4.85 4.9 1.52 2.23 6.83z"></path><path fill="#f2f2f2" d="M22.62 25.12l-3.42 5.17h-6.4l-3.42-5.17 3.03-4.25h7.18l3.03 4.25z"></path><path fill="#414042" d="M5 6.32l-2.28.75a15.92 15.92 0 00-2.7 8.36l1.4 1.94 3.86-4.85-.27-6.2zm16.81-3.77L20.4.61a16.01 16.01 0 00-8.78 0L10.2 2.55 16 4.73l5.81-2.18zM19.6 20.87l2.22-6.83L16 9.82l-5.81 4.22 2.22 6.83h7.18zm9.69-13.8L27 6.32l-.27 6.2 3.87 4.85 1.4-1.95c-.1-3.09-1.1-5.95-2.71-8.35zM19.2 30.3l2.3.73a16.03 16.03 0 007.1-5.16v-2.4l-5.98 1.65-3.42 5.17zM3.4 23.46v2.4a16.03 16.03 0 007.1 5.17l2.3-.74-3.42-5.17-5.99-1.66z"></path></svg>RES</div>
 </div>
-		  <button class="navbar-toggler" data-toggle="collapse" data-target="#myNav" type="button">
+		  <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#myNav" type="button" aria-expanded="false" aria-label="Toggle navigation">
 		  	<span class="navbar-toggler-icon"></span>
 		  </button>
 
@@ -486,7 +547,7 @@
 	<div class="row">
         <div class="col">
                 <div class="row" style="margin-top: 2px;">
-                    <div class="col-md-3  col-lg-3 sidebar-teams-show  ">
+                    <div class="col-md-3  col-lg-3 sidebar-teams-show">
                         <div class="border-1">
                             <input type="text" class="form-control border-0 bg-transparent" placeholder="Search...">
                         </div>
@@ -580,7 +641,7 @@
 
                     <div class="col-sm-12 col-xs-12 col-md-9 col-lg-9">
                         <div class="row">
-                            <div class="row border-2 calendar" style="margin: 0px; width: 100%;">
+                            <div class="row border-2" style="margin: 0px; width: 100%;">
                                 <div class="col-2 text-center">
                                     <a href="#" class="font-12 text-white">TODAY <br><span class="font-10">28 NOV </span></a>
                                 </div>
@@ -620,12 +681,12 @@
                                     </div> 
                                     
                                     <div class="col-10">
-                                        <h5 class="font-15"><a class="disabled text-decoration-none" href="#">Champions League</a></h5>
+                                        <h5 class="font-13">Champions League</h5>
                                         <p class="font-10"><a href="Champions_League_Group_A.html">Group A</a></p>
                                     </div>
                                 </div>
                                 
-                                <div class="row bg-2">
+                                <div class="row bg-2 hovering">
                                     <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
                                       <i class="far fa-star"></i>
                                     </div>
@@ -636,8 +697,8 @@
                                     </p>
                                     </div> 
                                      <div class="col-9 col-lg-9 col-sm">
-                                        <div class="row">
-                                           <div class="col-9"> 
+                                        <div class="row ">
+                                           <div class="col-9 "> 
                                         <a href="MUCG_vrs_KNUST.html">
                                         <span class="font-12 text-truncate"> <img src="teams_flag/mucg.png" alt="" style="width: 20px; height: 20px; margin: 5px 8px;">Methodist University</span><br>
                                         <span class="font-12 text-truncate"><img src="teams_flag/knust.png" alt="" style="width: 20px; margin: 2px 8px; height: 20px; ">KNUST</span>
@@ -659,7 +720,7 @@
                                  
                                     <div class="col-1 col-md-1 col-lg-1 col-sm-1">
                                     <p class="font-time">
-                                        19:30'
+                                        After Penalty'
                                     </p>
                                     </div> 
                                  <div class="col-9 col-lg-9 col-sm">
@@ -686,7 +747,7 @@
                                     </div> 
                                     
                                     <div class="col-10">
-                                        <h5 class="font-15"><a class="disabled text-decoration-none" href="#">Champions League</a></h5>
+                                         <h5 class="font-13">Champions League</h5>
                                         <p class="font-10"><a href="CL-GA.html">Group B</a></p>
                                     </div>
                                 </div>
@@ -752,7 +813,7 @@
                                     </div> 
                                     
                                     <div class="col-10">
-                                        <h5 class="font-15"><a class="disabled text-decoration-none" href="#">Champions League</a></h5>
+                                        <h5 class="font-13">Champions League</h5>
                                         <p class="font-10"><a href="CL-GA.html">Group C</a></p>
                                     </div>
                                 </div>
@@ -818,7 +879,7 @@
                                     </div> 
                                     
                                     <div class="col-10">
-                                        <h5 class="font-15"><a class="disabled text-decoration-none" href="#">Champions League</a></h5>
+                                         <h5 class="font-13">Champions League</h5>
                                         <p class="font-10"><a href="CL-GA.html">Group D</a></p>
                                     </div>
                                 </div>
@@ -884,7 +945,7 @@
                                     </div> 
                                     
                                     <div class="col-10">
-                                        <h5 class="font-15"><a class="disabled text-decoration-none" href="#">Congress League</a></h5>
+                                         <h5 class="font-13">Congress League</h5>
                                         <p class="font-10"><a href="CL-GA.html">Group A</a></p>
                                     </div>
                                 </div>
@@ -950,7 +1011,7 @@
                                     </div> 
                                     
                                     <div class="col-10">
-                                        <h5 class="font-15"><a class="disabled text-decoration-none" href="#">Congress League</a></h5>
+                                       <h5 class="font-13">Congress League</h5>
                                         <p class="font-10"><a href="CL-GA.html">Group B</a></p>
                                     </div>
                                 </div>
@@ -1016,7 +1077,7 @@
                                     </div> 
                                     
                                     <div class="col-10">
-                                        <h5 class="font-15"><a class="disabled text-decoration-none" href="#">Congress League</a></h5>
+                                        <h5 class="font-13">Congress League</h5>
                                         <p class="font-10"><a href="CL-GA.html">Group C</a></p>
                                     </div>
                                 </div>
@@ -1082,7 +1143,7 @@
                                     </div> 
                                     
                                     <div class="col-10">
-                                        <h5 class="font-15"><a class="disabled text-decoration-none" href="#">Congress League</a></h5>
+                                       <h5 class="font-13">Congress League</h5>
                                         <p class="font-10"><a href="CL-GA.html">Group D</a></p>
                                     </div>
                                 </div>
@@ -1148,7 +1209,7 @@
                                     </div> 
                                     
                                     <div class="col-10">
-                                        <h5 class="font-15 mt-1"><a class="disabled text-decoration-none" href="#">Qualifications</a></h5>
+                                        <h5 class="font-15 mt-1">Qualifications</h5>
                                     </div>
                                 </div>
                             <div class="row bg-2">
@@ -2652,7 +2713,7 @@
         </div> 
     </div>
 </div>
-
+<br>
 <div class="container-fluid bottom-navbar-show text-white" style="display: none;">
     <nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-bottom">
         <div class="container-fluid">
@@ -2666,7 +2727,6 @@
         </div>
       </nav>
 </div>
-
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
