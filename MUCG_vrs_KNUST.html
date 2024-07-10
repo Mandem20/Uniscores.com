@@ -100,13 +100,13 @@
 .tab-nav li{
 		position:relative;
 		display:inline-block;
-        font-size: 13px;
-        font-weight:400;
+        font-size: 12px;
+        font-weight:300;
         letter-spacing: 1px;
         margin: 3px;
         background-color:rgba(255, 255, 255, 0.1) ;
         font-weight: 500;
-        width: 30.33%;
+        width: 31%;
 	}
 	
 .tab-nav li a{
@@ -466,7 +466,9 @@ body{
  .home-team, away-team{
                 text-align: center;
             }
-
+.half-full-time{
+    background-color: darkgray;
+            }
 @media (min-width: 476px) { 
 .font-12{
       color: #fff;
@@ -779,7 +781,7 @@ body{
           </div>
         </div>
     </div>
-    <div class="col-sm-12 container summarycontainer">
+    <div class="col-sm-12 container summarycontainer bg-dark">
       <div class="row no-gutters pt-2">
         <div class="col-1 match-time">HT'</div>
           <div class="col-4 font-13 home-team-player-name"><a href=""></a>
@@ -920,7 +922,7 @@ body{
           </div>
         </div>
     </div>   
-    <div class="col-sm-12 container summarycontainer">
+    <div class="col-sm-12 container summarycontainer bg-dark">
       <div class="row no-gutters pt-2">
         <div class="col-1 match-time">FT'</div>
           <div class="col-4 font-13 home-team-player-name"><a href=""></a>
@@ -942,7 +944,29 @@ body{
           </div>
         </div>
     </div> 
-    
+    <div class="col-sm-12 container summarycontainer bg-dark">
+      <div class="row no-gutters pt-2">
+        <div class="col-1 match-time">AET'</div>
+          <div class="col-4 font-13 home-team-player-name"><a href=""></a>
+              <p class="assist font-10"><a href=""></a></p>
+              <p class="sub-in"><a href="#"></a></p>
+          </div>
+          <div class="col-1" name="home-icon placeholder">
+          </div>
+          <div class="col-1 text-center scoreboard">
+            <div class="row">
+                <div class="homegoal font-13 fw-bolder">5</div><span class="font-12 fw-bolder">-</span>
+                <div class="awaygoal font-13 fw-bolder">4</div>
+              </div>
+          </div>
+          <div class="col-1" name="away-icon placeholder"></div>
+          <div class="col-4 font-13 away-team-player-name"><a href=""></a>
+           <p class="assist font-10"><a href=""></a></p>
+           <p class="sub-in mt-2"><a href="#"></a></p>
+          </div>
+        </div>
+    </div> 
+    <br>
     <h1 class="penalty-shootout text-center">Penalty Shootout </h1>
     <div class="col-sm-12 container summarycontainer">
       <div class="row no-gutters pt-2">
@@ -1159,9 +1183,19 @@ body{
             <div class="col-2">
                 <span class="text-left font-12">2</span> </div>
                 <div class="col-8">
-                    <div class="text-center font-12">Yellow cards </div>
+                    <div class="text-center font-12">Yellow card(s) </div>
             </div>
                 <div class="col-2 font-12"> <span class="pull-right">4</span></div> 
+            </div>
+      </div>
+    <div class="col-sm-12 stat">
+            <div class="row">
+            <div class="col-2">
+                <span class="text-left font-12">0</span> </div>
+                <div class="col-8">
+                    <div class="text-center font-12">Red card(s) </div>
+            </div>
+                <div class="col-2 font-12"> <span class="pull-right">0</span></div> 
             </div>
       </div>
         <div class="col-sm-12 stat">
@@ -1535,11 +1569,11 @@ body{
                         <div class="col-sm-12 h2h-container">
                          <a href="MUCG_vrs_KNUST.html">
                               <div class="row bg-2">
-                                    <div class="col-2 col-sm-auto font-date">
+                                    <div class="col-2  col-md-2 col-lg-1 font-date">
                                       03.08.22 
                                     </div>
                                 
-                                    <div class="col-2  col-md-2 col-lg-1 h2h-competition col-sm-auto">
+                                    <div class="col-2  col-md-2 col-lg-1 h2h-competition">
                                         <p>GHATUSA</p>
                                     </div> 
                                     
@@ -1569,11 +1603,11 @@ body{
                           <div class="col-sm-12 h2h-container">
                          <a href="">
                               <div class="row bg-2">
-                                    <div class="col-2 col-sm-auto font-date">
+                                    <div class="col-2 col-md-2 col-lg-1 font-date">
                                       05.07.22 
                                     </div>
                                 
-                                    <div class="col-2  col-md-2 col-lg-1 h2h-competition col-sm-auto">
+                                    <div class="col-2 col-md-2 col-lg-1 h2h-competition">
                                         <p>Congress</p>
                                     </div> 
                                     
@@ -1603,11 +1637,11 @@ body{
                           <div class="col-sm-12 h2h-container">
                          <a href="">
                               <div class="row bg-2">
-                                    <div class="col-2 col-sm-auto font-date">
+                                    <div class="col-2 col-md-2 col-lg-1 font-date">
                                       10.06.22 
                                     </div>
                                 
-                                    <div class="col-2  col-md-2 col-lg-1 h2h-competition col-sm-auto">
+                                    <div class="col-2 col-md-2 col-lg-1  h2h-competition">
                                         <p>Friendly</p>
                                     </div> 
                                     
@@ -1637,11 +1671,11 @@ body{
                           <div class="col-sm-12 h2h-container">
                          <a href="">
                               <div class="row bg-2">
-                                    <div class="col-2 col-sm-auto font-date">
+                                    <div class="col-2 col-md-2 col-lg-1  font-date">
                                       05.05.22 
                                     </div>
                                 
-                                    <div class="col-2  col-md-2 col-lg-1 h2h-competition col-sm-auto">
+                                    <div class="col-2 col-md-2 col-lg-1  h2h-competition">
                                         <p>PUSAG</p>
                                     </div> 
                                     
@@ -1671,11 +1705,11 @@ body{
                           <div class="col-sm-12 h2h-container">
                          <a href="">
                               <div class="row bg-2">
-                                    <div class="col-2 col-sm-auto font-date">
+                                    <div class="col-2 col-md-2 col-lg-1  font-date">
                                       22.05.21 
                                     </div>
                                 
-                                    <div class="col-2  col-md-2 col-lg-1 h2h-competition col-sm-auto">
+                                    <div class="col-2 col-md-2 col-lg-1  h2h-competition">
                                         <p>Qualifier</p>
                                     </div> 
                                     
@@ -1708,11 +1742,11 @@ body{
                         <div class="col-sm-12 h2h-container">
                          <a href="MUCG_vrs_KNUST.html">
                               <div class="row bg-2">
-                                    <div class="col-2 col-sm-auto font-date">
+                                    <div class="col-2 col-md-2 col-lg-1  font-date">
                                       13.08.23 
                                     </div>
                                 
-                                    <div class="col-2  col-md-2 col-lg-1 h2h-competition col-sm-auto">
+                                    <div class="col-2 col-md-2 col-lg-1  h2h-competition">
                                         <p>CL</p>
                                     </div> 
                                     
@@ -1739,11 +1773,11 @@ body{
                           <div class="col-sm-12 h2h-container">
                          <a href="">
                               <div class="row bg-2">
-                                    <div class="col-2 col-sm-auto font-date">
+                                    <div class="col-2 col-md-2 col-lg-1  font-date">
                                       15.07.23 
                                     </div>
                                 
-                                    <div class="col-2  col-md-2 col-lg-1 h2h-competition col-sm-auto">
+                                    <div class="col-2 col-md-2 col-lg-1  h2h-competition">
                                         <p>Congress</p>
                                     </div> 
                                     
@@ -1770,11 +1804,11 @@ body{
                           <div class="col-sm-12 h2h-container">
                          <a href="">
                               <div class="row bg-2">
-                                    <div class="col-2 col-sm-auto font-date">
+                                    <div class="col-2 col-md-2 col-lg-1 font-date">
                                       20.06.23 
                                     </div>
                                 
-                                    <div class="col-2  col-md-2 col-lg-1 h2h-competition col-sm-auto">
+                                    <div class="col-2 col-md-2 col-lg-1  h2h-competition">
                                         <p>Friendly</p>
                                     </div> 
                                     
@@ -1801,11 +1835,11 @@ body{
                           <div class="col-sm-12 h2h-container">
                          <a href="">
                               <div class="row bg-2">
-                                    <div class="col-2 col-sm-auto font-date">
+                                    <div class="col-2 col-md-2 col-lg-1  font-date">
                                       05.05.23 
                                     </div>
                                 
-                                    <div class="col-2  col-md-2 col-lg-1 h2h-competition col-sm-auto">
+                                    <div class="col-2 col-md-2 col-lg-1  h2h-competition">
                                         <p>Friendly</p>
                                     </div> 
                                     
@@ -1832,11 +1866,11 @@ body{
                           <div class="col-sm-12 h2h-container">
                          <a href="">
                               <div class="row bg-2">
-                                    <div class="col-2 col-sm-auto font-date">
+                                    <div class="col-2 col-md-2 col-lg-1  font-date">
                                       22.03.23 
                                     </div>
                                 
-                                    <div class="col-2  col-md-2 col-lg-1 h2h-competition col-sm-auto">
+                                    <div class="col-2 col-md-2 col-lg-1  h2h-competition">
                                         <p>Qualifier</p>
                                     </div> 
                                     
@@ -1866,11 +1900,11 @@ body{
                         <div class="col-sm-12 h2h-container">
                          <a href="MUCG_vrs_KNUST.html">
                               <div class="row bg-2">
-                                    <div class="col-2 col-sm-auto font-date">
+                                    <div class="col-2 col-md-2 col-lg-1  font-date">
                                       03.07.22 
                                     </div>
                                 
-                                    <div class="col-2  col-md-2 col-lg-1 h2h-competition col-sm-auto">
+                                    <div class="col-2 col-md-2 col-lg-1  h2h-competition">
                                         <p>GUSA Games</p>
                                     </div> 
                                     
@@ -1899,11 +1933,11 @@ body{
                           <div class="col-sm-12 h2h-container">
                          <a href="">
                               <div class="row bg-2">
-                                    <div class="col-2 col-sm-auto font-date">
+                                    <div class="col-2 col-md-2 col-lg-1 font-date">
                                       05.06.22 
                                     </div>
                                 
-                                    <div class="col-2  col-md-2 col-lg-1 h2h-competition col-sm-auto">
+                                    <div class="col-2 col-md-2 col-lg-1  h2h-competition">
                                         <p>Friendly</p>
                                     </div> 
                                     
@@ -1933,11 +1967,11 @@ body{
                           <div class="col-sm-12 h2h-container">
                          <a href="">
                               <div class="row bg-2">
-                                    <div class="col-2 col-sm-auto font-date">
+                                    <div class="col-2 col-md-2 col-lg-1 font-date">
                                       20.05.22 
                                     </div>
                                 
-                                    <div class="col-2  col-md-2 col-lg-1 h2h-competition col-sm-auto">
+                                    <div class="col-2 col-md-2 col-lg-1  h2h-competition">
                                         <p>Super Cup</p>
                                     </div> 
                                     
@@ -1967,11 +2001,11 @@ body{
                           <div class="col-sm-12 h2h-container">
                          <a href="">
                               <div class="row bg-2">
-                                    <div class="col-2 col-sm-auto font-date">
+                                    <div class="col-2 col-md-2 col-lg-1 font-date">
                                       15.03.22 
                                     </div>
                                 
-                                    <div class="col-2 col-md-2 col-lg-1 h2h-competition col-sm-auto">
+                                    <div class="col-2 col-md-2 col-lg-1  h2h-competition">
                                         <p>CL</p>
                                     </div> 
                                     
@@ -2001,11 +2035,11 @@ body{
                           <div class="col-sm-12 h2h-container">
                          <a href="">
                               <div class="row bg-2">
-                                    <div class="col-2  col-sm-auto font-date">
+                                    <div class="col-2 col-md-2 col-lg-1 font-date">
                                       22.05.21 
                                     </div>
                                 
-                                    <div class="col-2  col-md-2 col-lg-1 h2h-competition col-sm-auto">
+                                    <div class="col-2 col-md-2 col-lg-1  h2h-competition">
                                         <p>Qualifier</p>
                                     </div> 
                                     
