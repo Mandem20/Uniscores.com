@@ -155,14 +155,31 @@
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
   transform: rotate(-90deg) translateX(7px);
 }       
-        
-        
-        
+
+.favourite-counts {
+   color: #fff;
+   font-weight: normal;
+   text-align: center;
+   justify-items: center;
+   font-size: 11px;
+            }  
+
+.favourite-counts button {
+  height: 20px;
+  width: 30px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  margin:0 3px;
+  border-radius:3px;
+}
+                     
 /*UNISCORE LOGO CSS */        
 .logo-container {     
           position: relative;
           height: 50px;
-          width:25%;
+          width:20%;
 }
 
 
@@ -362,7 +379,7 @@
     margin: 0 8px; 
    
         } 
-.favourite_team ,.favourite_team a{
+.favourite_match ,.favourite_match a{
           padding-top: 12px;
           font-size: 18px;
           color: #aaa;
@@ -417,23 +434,23 @@
 		    <ul class="nav navbar-nav">
 		    
 <li class="nav-item">
-<a class=" text-light nav-link" href="favourite.php">Favourite <i class="far fa-star" style="color:gold;"></i></a>
+    <a class=" text-light nav-link" href="favourite.html"><i class="far fa-star" style="font-size:20px; color: #aaa"></i>Favourite<span class="favourite-counts"><button>0</button></span></a>
 </li>
     
 <li class="nav-item">
-<a class="text-light nav-link" href="livestream.php">Livestream <i class="far fa-eye"></i></a>
+<a class="text-light nav-link" href="livestream.php">Livestream <i class="far fa-eye" style="color: #aaa"></i></a>
 </li>
 <li class="nav-item">
-<a class="text-light nav-link" href="livestream.php">Highlights <i class="fas fa-video"></i></a>
+<a class="text-light nav-link" href="livestream.php">Highlights <i class="fas fa-video" style="color: #aaa"></i></a>
 </li>
 <li class="nav-item">
-<a class=" text-light nav-link" href="news.php">News <i class="far fa-newspaper"></i></a>
+<a class=" text-light nav-link" href="news.php">News <i class="far fa-newspaper" style="color: #aaa"></i></a>
 </li>
 <li class="nav-item">
-<a class="text-light nav-link" href="#"><span class="login">Login <i class="fas fa-sign-in-alt"></i></span></a>
+<a class="text-light nav-link" href="#"><span class="login">Login <i class="fas fa-sign-in-alt" style="color: #aaa"></i></span></a>
 </li>
 <li class="nav-item">
-<a class="text-light nav-link" href="#"> <span class="register">Register <i class="far fa-address-card"></i> </span></a>
+<a class="text-light nav-link" href="#"> <span class="register">Register <i class="far fa-address-card" style="color: #aaa"></i> </span></a>
 </li>
               <li class="nav-item">
 		        <a class="nav-link" href="#">Get the app</a>
@@ -490,7 +507,7 @@
                                       <li class="nav-item"> 
                                                    <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/capecoasttechnical.png" alt="" style="width: 20px;"> Cape Coast Technical University </a></li>
                                        <li class="nav-item"> 
-                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/catholicinstitute.png" alt="" style="width: 15px;"> Catholic Institute of Business & Technology </a></li>
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/catholicinstitute.png" alt="" style="width: 15px;"> Catholic Institute of Business And Technology </a></li>
                                       <li class="nav-item"> 
                                                    <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/catholicuni.png" alt="" style="width: 20px;"> Catholic University College</a></li>
                                      <li class="nav-item"> 
@@ -516,7 +533,7 @@
                                       <li class="nav-item"> 
                                                    <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/ghanachristian.png" alt="" style="width: 20px;"> Ghana Christian University College</a></li>
                                       <li class="nav-item"> 
-                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/gimpa.png" alt="" style="width: 20px;">  Ghana Institute of Management & Public Administration </a></li>
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/gimpa.png" alt="" style="width: 20px;">  Ghana Institute of Management And Public Administration </a></li>
                                       <li class="nav-item"> 
                                                    <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/ghanatech.png" alt="" style="width: 20px;"> Ghana Technology University </a></li>
                                       <li class="nav-item"> 
@@ -524,9 +541,9 @@
                                       <li class="nav-item"> 
                                                    <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/hotechnical.png" alt="" style="width: 20px;"> Ho Technical University </a></li>
                                       <li class="nav-item"> 
-                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/instituteofBM.png" alt="" style="width: 15px;"> Institute of Business Management & Journalism  </a></li>
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/instituteofBM.png" alt="" style="width: 15px;"> Institute of Business Management And Journalism  </a></li>
                                       <li class="nav-item"> 
-                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/instituteofdev.png" alt="" style="width: 20px;"> Institute of Development & Technology Management</a></li>
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/instituteofdev.png" alt="" style="width: 20px;"> Institute of Development And Technology Management</a></li>
                                       <li class="nav-item"> 
                                                    <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/islamicuni.png" alt="" style="width: 20px;"> Islamic University College </a></li>
                                       <li class="nav-item"> 
@@ -538,7 +555,7 @@
                                       <li class="nav-item"> 
                                                    <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/kingsuni.png" alt="" style="width: 20px;"> Kings University College </a></li>
                                       <li class="nav-item"> 
-                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/knust.png" alt="" style="width: 20px;"> Kwame Nkrumah University of  Science & Technology</a></li>
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/knust.png" alt="" style="width: 20px;"> Kwame Nkrumah University of  Science And Technology</a></li>
                                       <li class="nav-item"> 
                                                    <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/knustford.png" alt="" style="width: 20px;"> Knustford  University College </a></li>
                                       <li class="nav-item"> 
@@ -558,7 +575,7 @@
                                       <li class="nav-item"> 
                                                    <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/presbytarianuni.png" alt="" style="width: 20px;"> Presbyterian University College</a></li>
                                       <li class="nav-item"> 
-                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/regent.png" alt="" style="width: 20px;"> Regent University of Science & Technology</a></li>
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/regent.png" alt="" style="width: 20px;"> Regent University of Science And Technology</a></li>
                                       <li class="nav-item"> 
                                                    <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/regionalmaritime.png" alt="" style="width: 20px;"> Regional Maritime </a></li>
                                       <li class="nav-item"> 
@@ -570,7 +587,7 @@
                                       <li class="nav-item"> 
                                                    <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/tarditechnical.png" alt="" style="width: 20px;"> Tarkoradi Technical University </a></li>
                                       <li class="nav-item"> 
-                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/universityofagric.png" alt="" style="width: 20px;"> University College of Agric & Environmental studies </a></li>
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/universityofagric.png" alt="" style="width: 20px;"> University College of Agric And Environmental studies </a></li>
                                       <li class="nav-item"> 
                                                    <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/ug.png" alt="" style="width: 20px;"> University of Ghana  </a></li>
                                       <li class="nav-item"> 
@@ -581,11 +598,11 @@
                                       <li class="nav-item"> 
                                                    <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/uds.png" alt="" style="width: 20px;"> University of Development Studies </a></li>
                                       <li class="nav-item"> 
-                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/UNER.png" alt="" style="width: 20px;"> University of Energy & Natural Resources</a></li>
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/UNER.png" alt="" style="width: 20px;"> University of Energy And Natural Resources</a></li>
                                       <li class="nav-item"> 
-                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/UHAS.png" alt="" style="width: 20px;"> University of Health & Allied Sciences</a></li>
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/UHAS.png" alt="" style="width: 20px;"> University of Health And Allied Sciences</a></li>
                                       <li class="nav-item"> 
-                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/UMAT.png" alt="" style="width: 20px;"> University of Mines & Technology  </a></li>
+                                                   <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/UMAT.png" alt="" style="width: 20px;"> University of Mines And Technology  </a></li>
                                       <li class="nav-item"> 
                                                    <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/UPSA.png" alt="" style="width: 20px;"> University of Professional Studies </a></li>
                                       <li class="nav-item"> 
@@ -609,7 +626,7 @@
 		  </div>  
 	  </div>
 	</nav> <!--END OF NAV-->             
-
+<br>
 
     
 <div class="container body-container"><!--START OF BODY-CONTAINER-->
@@ -647,7 +664,7 @@
                                 <p class="text-truncate" data-toggle="tooltip" title="BMFI University College"><a href="#"><img src="teams_flag/bmfi.png" alt="" style="width: 20px;"> BMFI University College </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Bolgatanga Technical University"><a href="#"><img src="teams_flag/bolgatechnical.png" alt="" style="width: 20px;"> Bolgatanga Technical University </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Cape Coast Technical University"><a href="#"><img src="teams_flag/capecoasttechnical.png" alt="" style="width: 20px;"> Cape Coast Technical University</a></p>
-                                <p class="text-truncate" data-toggle="tooltip" title="Catholic Institute of Business & Technology"><a href="#"><img src="teams_flag/catholicinstitute.png" alt="" style="width: 15px;"> Catholic Institute of Business & Technology </a></p>
+                                <p class="text-truncate" data-toggle="tooltip" title="Catholic Institute of Business And Technology"><a href="#"><img src="teams_flag/catholicinstitute.png" alt="" style="width: 15px;"> Catholic Institute of Business And Technology </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Catholic University College "><a href="#"><img src="teams_flag/catholicuni.png" alt="" style="width: 20px;"> Catholic University College </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Central University"><a href="#"><img src="teams_flag/central.png" alt="" style="width: 20px;"> Central University </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Christ Apostolic University College"><a href="#"><img src="teams_flag/christapostolic.png" alt="" style="width: 20px;"> Christ Apostolic University College </a></p>
@@ -660,18 +677,18 @@
                                 <p class="text-truncate" data-toggle="tooltip" title="Garden City University College"><a href="#"><img src="teams_flag/gardencity.png" alt="" style="width: 20px;"> Garden City University College </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Ghana Baptist University College"><a href="#"><img src="teams_flag/ghanabaptist.png" alt="" style="width: 20px;"> Ghana Baptist University College</a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Ghana Christian University College"><a href="#"><img src="teams_flag/ghanachristian.png" alt="" style="width: 20px;"> Ghana Christian University College </a></p>
-                                <p class="text-truncate" data-toggle="tooltip" title="Ghana Institute of Management & Public Administration"><a href="#"><img src="teams_flag/gimpa.png" alt="" style="width: 20px;"> Ghana Institute of Management & Public Administration </a></p>
+                                <p class="text-truncate" data-toggle="tooltip" title="Ghana Institute of Management And Public Administration"><a href="#"><img src="teams_flag/gimpa.png" alt="" style="width: 20px;"> Ghana Institute of Management And Public Administration </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Ghana Technology University"><a href="#"><img src="teams_flag/ghanatech.png" alt="" style="width: 20px;"> Ghana Technology University </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Heritage Christian University College"><a href="#"><img src="teams_flag/heritagechristian.png" alt="" style="width: 20px;"> Heritage Christian University College</a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Ho Technical University"><a href="#"><img src="teams_flag/hotechnical.png" alt="" style="width: 20px;"> Ho Technical University </a></p>
-                                <p class="text-truncate" data-toggle="tooltip" title="Institute of Business Management & Journalism"><a href="#"><img src="teams_flag/instituteofBM.png" alt="" style="width: 15px;"> Institute of Business Management & Journalism </a></p>
-                                <p class="text-truncate" data-toggle="tooltip" title="Institute of Development & Technology Management"><a href="#"><img src="teams_flag/instituteofdev.png" alt="" style="width: 20px;"> Institute of Development & Technology Management  </a></p>
+                                <p class="text-truncate" data-toggle="tooltip" title="Institute of Business Management And Journalism"><a href="#"><img src="teams_flag/instituteofBM.png" alt="" style="width: 15px;"> Institute of Business Management And Journalism </a></p>
+                                <p class="text-truncate" data-toggle="tooltip" title="Institute of Development And Technology Management"><a href="#"><img src="teams_flag/instituteofdev.png" alt="" style="width: 20px;"> Institute of Development And Technology Management  </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Islamic University College"><a href="#"><img src="teams_flag/islamicuni.png" alt="" style="width: 20px;"> Islamic University College </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Jayee University College "><a href="#"><img src="teams_flag/jayee.png" alt="" style="width: 20px;"> Jayee University College </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="KAAF University College"><a href="#"><img src="teams_flag/kaaf.png" alt="" style="width: 20px;"> KAAF University College </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Kessben University College"><a href="#"><img src="teams_flag/kessben.png" alt="" style="width: 20px;"> Kessben University College </a></p>
-                                <p class="text-truncate" data-toggle="tooltip" title=""><a href="#"><img src="teams_flag/kingsuni.png" alt="" style="width: 20px;"> Kings University College </a></p>
-                                <p class="text-truncate" data-toggle="tooltip" title="Kings University College"><a href="#"><img src="teams_flag/knust.png" alt="" style="width: 20px;"> KNUST </a></p>
+                                <p class="text-truncate" data-toggle="tooltip" title="Kings University College"><a href="#"><img src="teams_flag/kingsuni.png" alt="" style="width: 20px;"> Kings University College </a></p>
+                                <p class="text-truncate" data-toggle="tooltip" title="Kwame Nkrumah University of Science And Technology"><a href="#"><img src="teams_flag/knust.png" alt="" style="width: 20px;"> Kwame Nkrumah University of Science And Technology </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Knustford  University College"><a href="#"><img src="teams_flag/knustford.png" alt="" style="width: 20px;"> Knustford  University College </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Koforidua Technical  University"><a href="#"><img src="teams_flag/koforiduatechnical.png" alt="" style="width: 20px;">Koforidua Technical  University</a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Kumasi Technical University"><a href="#"><img src="teams_flag/kumasitechnical.png" alt="" style="width: 20px;">Kumasi Technical University </a></p>
@@ -681,20 +698,20 @@
                                 <p class="text-truncate" data-toggle="tooltip" title="Mountcrest University College "><a href="#"><img src="teams_flag/mountcrest.png" alt="" style="width: 20px;"> Mountcrest University College </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Pentecost University"><a href="#"><img src="teams_flag/pentecost.png" alt="" style="width: 20px;"> Pentecost University </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Presbyterian University College"><a href="#"><img src="teams_flag/presbytarianuni.png" alt="" style="width: 20px;"> Presbyterian University College </a></p>
-                                <p class="text-truncate" data-toggle="tooltip" title="Regent University of Science & Technology"><a href="#"><img src="teams_flag/regent.png" alt="" style="width: 20px;"> Regent University of Science & Technology </a></p>
+                                <p class="text-truncate" data-toggle="tooltip" title="Regent University of Science And Technology"><a href="#"><img src="teams_flag/regent.png" alt="" style="width: 20px;"> Regent University of Science And Technology </a></p>
                                  <p class="text-truncate" data-toggle="tooltip" title="Regional Maritime"><a href="#"><img src="teams_flag/regionalmaritime.png" alt="" style="width: 20px;"> Regional Maritime  </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Spiritan University College "><a href="#"><img src="teams_flag/spiritan.png" alt="" style="width: 20px;"> Spiritan University College </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Sunyani Technical University"><a href="#"><img src="teams_flag/sunyanitechnical.png" alt="" style="width: 20px;"> Sunyani Technical University</a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Tamale Technical University"><a href="#"><img src="teams_flag/tamaletechnical.png" alt="" style="width: 20px;"> Tamale Technical University</a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Tarkoradi Technical University"><a href="#"><img src="teams_flag/tarditechnical.png" alt="" style="width: 20px;"> Tarkoradi Technical University</a></p>
-                                <p class="text-truncate" data-toggle="tooltip" title="University College of Agric & Environmental studies"><a href="#"><img src="teams_flag/universityofagric.png" alt="" style="width: 20px;"> University College of Agric & Environmental studies </a></p>
+                                <p class="text-truncate" data-toggle="tooltip" title="University College of Agric And Environmental studies"><a href="#"><img src="teams_flag/universityofagric.png" alt="" style="width: 20px;"> University College of Agric And Environmental studies </a></p>
                                  <p class="text-truncate" data-toggle="tooltip" title=" University of Ghana"><a href="#"><img src="teams_flag/ug.png" alt="" style="width: 20px;"> University of Ghana </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="University of Cape Coast"><a href="#"><img src="teams_flag/ucc.png" alt="" style="width: 20px;"> University of Cape Coast </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="University of Education,Winneba "><a href="#"><img src="teams_flag/uew.png" alt="" style="width: 20px;"> University of Education,Winneba </a></p>
                                  <p class="text-truncate" data-toggle="tooltip" title="University of Development Studies "><a href="#"><img src="teams_flag/uds.png" alt="" style="width: 20px;"> University of Development Studies </a></p>
-                                <p class="text-truncate" data-toggle="tooltip" title="University of Energy & Natural Resources"><a href="#"><img src="teams_flag/UNER.png" alt="" style="width: 20px;"> University of Energy & Natural Resources </a></p>
-                                <p class="text-truncate" data-toggle="tooltip" title="University of Health & Allied Sciences"><a href="#"><img src="teams_flag/UHAS.png" alt="" style="width: 20px;"> University of Health & Allied Sciences </a></p>
-                                 <p class="text-truncate" data-toggle="tooltip" title="University of Mines & Technology "><a href="#"><img src="teams_flag/UMAT.png" alt="" style="width: 20px;"> University of Mines & Technology </a></p>
+                                <p class="text-truncate" data-toggle="tooltip" title="University of Energy And Natural Resources"><a href="#"><img src="teams_flag/UNER.png" alt="" style="width: 20px;"> University of Energy And Natural Resources </a></p>
+                                <p class="text-truncate" data-toggle="tooltip" title="University of Health And Allied Sciences"><a href="#"><img src="teams_flag/UHAS.png" alt="" style="width: 20px;"> University of Health And Allied Sciences </a></p>
+                                 <p class="text-truncate" data-toggle="tooltip" title="University of Mines And Technology "><a href="#"><img src="teams_flag/UMAT.png" alt="" style="width: 20px;"> University of Mines And Technology </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="University of Professional Studies"><a href="#"><img src="teams_flag/UPSA.png" alt="" style="width: 20px;"> University of Professional Studies </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="University College of Management Studies"><a href="#"><img src="teams_flag/UCOMS.png" alt="" style="width: 20px;"> University College of Management Studies </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Valley View University"><a href="#"><img src="teams_flag/VVU.png" alt="" style="width: 20px;"> Valley View University</a></p>
@@ -759,7 +776,7 @@
                                 </div>
                                
                                 <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="MUCG_vrs_KNUST.html" data-toggle="tooltip" title="Click for match detail!" class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -774,7 +791,7 @@
                                         <span class="away-team text-truncate"><img src="teams_flag/knust.png" alt="" >KNUST</span>
                                         
                                     </div>
-                                        <div class="col-1 col-md-1 col-lg-1 col-sm fw-bold home_scores">
+                                        <div class="col-1 col-md-1 col-lg-1 col-sm-1 fw-bold home_scores">
                                         3
                                             <p class="away_scores">1</p>
                                         
@@ -783,7 +800,7 @@
                                     </div> 
                                  <!--match 2 of group A-->
                                   <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -798,7 +815,7 @@
                                         <span class="away-team text-truncate"><img src="teams_flag/accratechnical.png" alt="" >Accra Technical University</span>
                                         
                                     </div>
-                                        <div class="col-1 col-md-1 col-lg-1 col-sm fw-bold home_scores">
+                                        <div class="col-1 col-md-1 col-lg-1 col-sm-1 fw-bold home_scores">
                                         -
                                             <p class="away_scores">-</p>
                                         
@@ -821,7 +838,7 @@
                                 </div>
                                
                                 <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -845,7 +862,7 @@
                                     </div> 
                                  <!--match 2 of group B-->
                                   <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -883,7 +900,7 @@
                                 </div>
                                
                                 <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -895,7 +912,7 @@
                                      <div class="col-9 col-lg-10 col-md-10 col-sm">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/UPSA.png" alt="" > UPS</span><br>
-                                        <span class="away-team text-truncate"><img src="teams_flag/hotechnical.png" alt="" >HO Technical Uni.</span>
+                                        <span class="away-team text-truncate"><img src="teams_flag/hotechnical.png" alt="" >HO Technical University</span>
                                         
                                     </div>
                                         <div class="col-1 col-md-1 col-lg-1 col-sm fw-bold home_scores">
@@ -907,7 +924,7 @@
                                     </div> 
                                  <!--match 2 of group C-->
                                   <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -945,7 +962,7 @@
                                 </div>
                                
                                 <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -956,7 +973,7 @@
                                     </div> 
                                      <div class="col-9 col-lg-10 col-md-10 col-sm">
             
-                                        <span class="home-team text-truncate"> <img src="teams_flag/anu.png" alt="" > All Nation Uni.</span><br>
+                                        <span class="home-team text-truncate"> <img src="teams_flag/anu.png" alt="" > All Nations University</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/UHAS.png" alt="" >UHAS</span>
                                         
                                     </div>
@@ -969,7 +986,7 @@
                                     </div> 
                                  <!--match 2 of group D-->
                                   <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1007,7 +1024,7 @@
                                 </div>
                                
                                 <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1031,7 +1048,7 @@
                                     </div> 
                                  <!--match 2 of group D-->
                                   <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1069,7 +1086,7 @@
                                 </div>
                                
                                 <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1093,7 +1110,7 @@
                                     </div> 
                                  <!--match 2 of group A-->
                                   <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1131,7 +1148,7 @@
                                 </div>
                                
                                 <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1155,7 +1172,7 @@
                                     </div> 
                                  <!--match 2 of group B-->
                                   <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1193,7 +1210,7 @@
                                 </div>
                                
                                 <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1217,7 +1234,7 @@
                                     </div> 
                                  <!--match 2 of group C-->
                                   <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1255,7 +1272,7 @@
                                 </div>
                                
                                 <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1279,7 +1296,7 @@
                                     </div> 
                                  <!--match 2 of group D-->
                                   <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1317,7 +1334,7 @@
                                 </div>
                                
                                 <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1341,7 +1358,7 @@
                                     </div> 
                                  <!--match 2 of group E-->
                                   <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1378,7 +1395,7 @@
                                 </div>
                                
                                 <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1402,7 +1419,7 @@
                                     </div> 
                                  <!--match 2 -->
                                   <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1426,7 +1443,7 @@
                                     </div> 
                                     <!--match 3 -->
                                   <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1450,7 +1467,7 @@
                                     </div> <!--END OF MATCH 3--> 
                                      <!--match 4 -->
                                   <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1474,7 +1491,7 @@
                                     </div> <!--END OF MATCH 4--> 
                                      <!--match 5 -->
                                   <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1512,7 +1529,7 @@
                                 </div>
                                
                                 <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1536,7 +1553,7 @@
                                     </div> 
                                  <!--match 2 -->
                                   <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1560,7 +1577,7 @@
                                     </div> 
                                     <!--match 3 -->
                                   <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1584,7 +1601,7 @@
                                     </div> <!--END OF MATCH 3--> 
                                      <!--match 4 -->
                                   <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -1608,7 +1625,7 @@
                                     </div> <!--END OF MATCH 4--> 
                                      <!--match 5 -->
                                   <div class="row bg-2">
-                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_team">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
@@ -2694,13 +2711,14 @@
 <br>
     <!--START OF BOTTOM NAV-->
 <div class="container-fluid bottom-navbar-show text-white" style="display: none;">
-    <nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-bottom">
+    <nav class="navbar bg-dark navbar-dark navbar-expand-lg  fixed-bottom">
         <div class="container-fluid">
-            <div class="navbar-collapse justify-content-center" id="">
+            <div class="navbar-collapse justify-content-center" id="" style="height: 30px">
                 <div class="row">
-                    <div class="col-4"><a href="" class="text-white">Matches</a> <i class="fas fa-futbol" style="width: 5px"></i></div>
-                    <div class="col-4"><a href="" class="text-white">Favourite</a> <i class="far fa-star" style="color:gold; width: 5px"></i></div>
-                       <div class="col-4"><a href="" class="text-white">News </a><i class="fas fa-newspaper" style="width: 10px"></i></div>
+                    <div class="col-3 text-center"><a href="" class="text-white"><i class="fas fa-futbol" style="font-size: 15px; text-align:center"></i><p class="font-12">Matches </p></a></div>
+                    <div class="col-3 text-center"><a href="" class="text-white"><i class="far fa-star" style=" font-size: 15px; text-align:center"></i><p class="font-12">Favourite</p></a></div>
+                    <div class="col-3 text-center"><a href="" class="text-white"><i class="fas fa-newspaper" style="font-size: 15px;"></i><p class="font-12">News</p></a></div>
+                    <div class="col-3 text-center"><a href="" class="text-white"><i class="fas fa-user-alt" style="font-size: 15px;"></i><p class="font-12">Me</p></a></div>
                 </div>
             </div>  
         </div>
