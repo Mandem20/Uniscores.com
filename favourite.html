@@ -1,0 +1,134 @@
+<html>
+    <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet"type="text/css"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+        
+.tabs-animated {
+  		background-color: black;
+         
+}
+.tab-content{
+              height: auto;
+              width: 100%;
+              margin: 0;
+              
+              
+            }
+            
+.nav-tabs{
+                height: 40px;
+                width: 100%;
+                background-color: black;
+            }            
+
+	
+.nav-tabs li{
+		position:relative;
+		display:inline-block;
+        
+	}
+	
+.nav-tabs li a{
+		display:block;
+		color:#999999;
+		padding:7px 24px;
+		font-weight:600;
+		text-decoration: none ;
+        font-size: 14px;
+        
+	}
+	
+	.nav-tabs li.active a,
+	.nav-tabs li:hover a{
+		color : #fff;
+	}
+	
+	.nav-tabs li.active:before,
+	.nav-tabs li:hover:before,
+	.nav-tabs li.active:after,
+	.nav-tabs li:hover:after{
+		background-color: green;
+		position: absolute;
+		width:35px;	
+		height:4px;
+	}
+	
+.nav-tabs li:before{
+		content: "";
+		transition: all 0.5s ease-in-out;
+		top: 0px;
+		right: 0px;
+		width: 0px;
+		
+	}
+	
+.nav-tabs li:after {
+		content: "";
+		transition: all 0.5s ease-in-out;
+		left: 0px;
+		bottom: 0px;
+		width: 0px;
+		
+	}            
+       
+
+#matches, #Leagues, #Teams {
+  background: black;
+  width: 100%;
+}
+
+.bg-1{
+            background-color: #0b0b0b;
+            color: #aaa;
+        } 
+</style>
+        
+        
+        
+        
+<body class="bg-1">
+ <div class="container">   
+    <div class="tabs-animated">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#matches" aria-controls="matches" role="matches-tab" data-toggle="tab" aria-selected="true">Matches</a></li>
+    <li role="presentation"><a href="#Leagues" aria-controls="tab" role="tab" data-toggle="tab">Leagues</a></li>
+    <li role="presentation"><a href="#Teams" aria-controls="Teams" role="tab" data-toggle="tab">Teams</a></li>
+  </ul>
+
+<!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade show active selected " id="matches">
+    
+    </div>  
+        <div role="tabpanel" class="tab-pane fade" id="Leagues">
+    
+    </div>  
+        <div role="tabpanel" class="tab-pane fade show " id="Teams">
+    
+    </div>  
+      
+      
+      
+      
+        </div>
+     </div>
+    </div>
+</body>
+        
+        
+        
+        
+        
+</head>
+</html>
