@@ -10,8 +10,13 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
         <style>
-        
+body{
+            background-color: black;
+ }
+            
+     /* PARENT NAV TABS CSS*/   
 .tabs-animated {
   		background-color: black;
          
@@ -90,7 +95,68 @@
   background: black;
   width: 100%;
 }
+      
+ /* FONTS, BORDERS, BACKGROUND, COLOURS... CSS*/            
+       .font-15 a{
+          font-size: 15px;
+          color: #fff;
+          text-decoration: underline;
+          font-family: monospace;
+        }
+
+.font-10 a{     
+            color: darkgoldenrod;
+            font-size: 12px;
+            text-decoration: underline;
+            font-family: monospace;
+        }
+ .font-10{
+             font-size: 10px;
+             line-height: 1px;
+             color: white;
+        }
+
+.font-12{
+            font-size: 12px;
+            color: #fff;
+            font-weight: bold;  
+        }  
+.font-13{
+            font-size: 13px;
+            color: #fff;
+            font-weight: normal;
+            font-family:sans-serif;
+            text-align: center;
+            margin: ;
+        } 
+ .font-link a{
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+.bg-2{
+            background-color: #181818;
+            color: #aaa;
+            border-radius: 10px;
+            padding: 2px 0;
+            margin-bottom: 5px;
+            height: 60px;
+        }
+
+.border-3{
+            border:  1px solid #222;
+            border-radius: 0px 0px 0 0px;
+        
+        }  
+ .text-white{
+            color: #fff;
+        }           
             
+            
+/*TABLE TAB-NAV CSS*/          
 .tab-nav{
     height: 40px;
     width: 100%;
@@ -133,71 +199,25 @@
 .tab-nav li:hover a{
 		color : green;
 	}
-            
-.next-stage{
-background-color:green;
-}
-            
-.font-15 a{
-          font-size: 15px;
-          color: #fff;
-          text-decoration: underline;
-          font-family: monospace;
-        }
-
-.font-10 a{     
-            color: darkgoldenrod;
-            font-size: 12px;
-            text-decoration: underline;
-            font-family: monospace;
-        }
- .font-10{
-             font-size: 10px;
-             line-height: 1px;
-             color: white;
-        }
-
+@media (min-width: 476px) { 
 .font-12{
-            font-size: 12px;
-            color: #fff;
-            font-weight: bold;  
-        }  
-.font-13{
-            font-size: 13px;
-            color: #fff;
-            font-weight: normal;
-            font-family:sans-serif;
-            text-align: center;
-            margin: ;
-        } 
- .font-link a{
-            font-size: 12px;
-            line-height: 15px;
-            text-align: center;
-            color: #ffffff;
-            font-weight: bold;
-        }
-body{
-            background-color: black;
- }
-.bg-2{
-            background-color: #181818;
-            color: #aaa;
-            border-radius: 10px;
-            padding: 2px 0;
-            margin-bottom: 5px;
-            height: 60px;
-        }
+      color: #fff;
+      font-size: 10px;
+      font-weight: bolder;
+      
+    } 
+} 
 
-.border-3{
-            border:  1px solid #222;
-            border-radius: 0px 0px 0 0px;
-        
-        }
+            /*TABLE/STANDINGS CSS*/                  
 .table{
         font-size: 12px;
         background-color: black;
             }
+            
+.next-stage{
+background-color:green;
+}
+    
 @media (max-width: 476px) { 
  .table-hide{
        font-weight: normal;
@@ -222,6 +242,8 @@ body{
       display: none;
     } 
 }
+
+/*MATCH INFO TAB NAV CSS*/
 .head-info h5{
     color: #ffffff;
     font-size: 16px;
@@ -237,11 +259,15 @@ body{
     font-weight: bold;
     letter-spacing: 2px;
 }
+            
+/*STATISTICS TAB NAV CSS*/    
 .stat{  
     margin-bottom: 15px;
     border-bottom-color:#fff;
     border-top-color: #fff;          
             }
+            
+/*HEAD2HEAD TAB NAV CSS*/
 .h2h-container{  
     background-color:  #181818 ;
     border: 2px;
@@ -254,7 +280,52 @@ body{
 .h2h-container a{  
     text-decoration: none;
             } 
+.h2h-competition{
+            font-size: 10px;
+            text-align:center;
+            margin:20px 0px;
+            color: #fff; 
+            }
+
+.matchresultform{
+   text-align: center;
+            }
             
+.matchresultform_draw{
+   color: #fff;
+   font-weight: 700;
+   text-align: center;
+   justify-items: center;
+   background-color: gray;
+   text-transform: uppercase;
+    font-size: 11px;
+            }  
+            
+.matchresultform_win{
+   color: #fff;
+   font-weight: 700;
+   text-align: center;
+   justify-items: center;
+   background-color: green;
+   text-transform: uppercase;
+   font-size: 11px;
+            }  
+             
+.matchresultform_lose{
+   color: #fff;
+   font-weight: 700;
+   text-align: center;
+   justify-items: center;
+   background-color: red;
+   text-transform: uppercase;
+   font-size: 11px;
+            }  
+                                 
+.unselected-team{
+  color: #999999;              
+            }
+            
+/*LINE-UPS TAB NAV CSS*/        
 .squad li{
 		display:block;
         margin-bottom: 5px;
@@ -290,9 +361,12 @@ body{
     text-align: center;
     color: aliceblue;
     background-color: #999999;
-    font-size: 11px;  
+    font-size: 12px; 
+    font-weight: bolder;
     margin-bottom: 7px      
 }
+
+/*TWO AND THREE GOALS SCORED CSS*/
 .brace-goal{
   color: #fff;
   position: relative;
@@ -306,58 +380,25 @@ body{
   right: 10px;
             }
 
+
+
+/*SUMMARY TAB NAV CONTENT CSS*/
+.summarycontainer{
+    background-color: #181818;
+    border: 2px;
+    margin-bottom: 2px;
+    border-bottom-color: #999999;
+    border-top-color: #999999;
+    height: auto;
+    width: 100%;
+            }
  .font-date{
             font-size: 10px;
             text-align:center;
             margin:20px 0px;
             color: #fff;
-        } 
-.h2h-competition{
-            font-size: 10px;
-            text-align:center;
-            margin:20px 0px;
-            color: #fff; 
-            }
- .text-white{
-            color: #fff;
-        }
-.matchresultform{
-   text-align: center;
-            }
+        }           
             
-.matchresultform_draw{
-   color: #fff;
-   font-weight: 700;
-   text-align: center;
-   justify-items: center;
-   background-color: gray;
-   text-transform: uppercase;
-    font-size: 11px;
-            }  
-            
-.matchresultform_win{
-   color: #fff;
-   font-weight: 700;
-   text-align: center;
-   justify-items: center;
-   background-color: green;
-   text-transform: uppercase;
-    font-size: 11px;
-            }  
-             
-.matchresultform_lose{
-   color: #fff;
-   font-weight: 700;
-   text-align: center;
-   justify-items: center;
-   background-color: red;
-   text-transform: uppercase;
-    font-size: 11px;
-            }  
-                                 
-.unselected-team{
-  color: #999999;              
-            }
 .score-card {
    font-size: 10px; 
             }
@@ -379,11 +420,9 @@ body{
   display: inline-block;
             }
  .footballyellowicon, .footballredcardicon, .redcross img  {
-  width: 20px;  
-  height: 20px;
-  padding: 5px ;
+  width: 10px;  
+  height: 10px;
   display: inline-block;
-  
             }
 .scoreboard{
     font-weight: bold;
@@ -391,7 +430,6 @@ body{
     font-size: 10px;
     color: #fff;
     font-family:serif;
-    padding: ; 
     display: inline-block;
      }
 .homegoal{
@@ -402,15 +440,7 @@ body{
      margin:0 1px ;
      font-weight: bold;
             }
-.summarycontainer{
-    background-color: #181818;
-    border: 2px;
-    margin-bottom: 2px;
-    border-bottom-color: #999999;
-    border-top-color: #999999;
-    height: auto;
-    width: 100%;
-            }
+
 .match-time, .penaltykick-round{
     font-size: 10px;
     text-align: left;
@@ -469,14 +499,7 @@ body{
 .half-full-time{
     background-color: darkgray;
             }
-@media (min-width: 476px) { 
-.font-12{
-      color: #fff;
-      font-size: 10px;
-      font-weight: bolder;
-      
-    } 
-}
+
 </style>
     </head>
 <body>
@@ -519,18 +542,18 @@ body{
 
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#info" aria-controls="info" role="info-tab" data-toggle="tab" aria-selected="true">Info</a></li>
-    <li role="presentation"><a href="#Summary" aria-controls="tab" role="tab" data-toggle="tab">Summary</a></li>
-    <li role="presentation"><a href="#Statistics" aria-controls="Statistics" role="tab" data-toggle="tab">Statistics</a></li>
-    <li role="presentation"><a href="#Lineups" aria-controls="Lineups" role="tab" data-toggle="tab">Line-Ups</a></li>
-    <li role="presentation"><a href="#Table" aria-controls="Table" role="tab" data-toggle="tab">Table</a></li>
-    <li role="presentation"><a href="#H2H" aria-controls="H2H" role="tab" data-toggle="tab">H2H</a></li>
+    <li role="presentation" class="active selected" id="myTab"><a href="#info" aria-controls="info" role="tab" data-toggle="tab" aria-selected="false">Info</a></li>
+    <li role="presentation"><a href="#Summary" aria-controls="tab" role="tab" data-toggle="tab" aria-selected="false">Summary</a></li>
+    <li role="presentation"><a href="#Statistics" aria-controls="Statistics" role="tab" data-toggle="tab" aria-selected="false">Statistics</a></li>
+    <li role="presentation"><a href="#Lineups" aria-controls="Lineups" role="tab" data-toggle="tab" aria-selected="false">Line-Ups</a></li>
+    <li role="presentation"><a href="#Table" aria-controls="Table" role="tab" data-toggle="tab" aria-selected="false">Table</a></li>
+    <li role="presentation"><a href="#H2H" aria-controls="H2H" role="tab" data-toggle="tab" aria-selected="false">H2H</a></li>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade show active selected" id="info">
-        <div class="col-sm-12 active"  style="margin:15px 15px;">
+    <div role="tabpanel" class="tab-pane fade show active" id="info">
+        <div class="col-sm-12"  style="margin:15px 15px;">
          <div class="row head-info">
               <h5 class="bg-dark ">Match Information</h5>
              <div class="col-2">
@@ -581,7 +604,7 @@ body{
                 <p>Assistant Ref. 2</p>
             </div>
             </div> 
-       </div>
+       </div> 
       </div>
 <div role="tabpanel" class="tab-pane fade" id="Summary">
     
@@ -596,7 +619,7 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder">1</div><span class="font-12 fw-bolder">-</span>
+                <div class="homegoal font-13 fw-bolder">1</div><span class="font-13">-</span>
                 <div class="awaygoal font-13 fw-bolder">0</div>
               </div>
           </div>
@@ -618,7 +641,7 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder">1</div><span class="font-12 fw-bolder">-</span>
+                <div class="homegoal font-13 fw-bolder">1</div><span class="font-13">-</span>
                 <div class="awaygoal font-13 fw-bolder">1</div>
               </div>
           </div>
@@ -640,13 +663,35 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder"></div><span class="font-12 fw-bolder"></span>
+                <div class="homegoal font-13 fw-bolder"></div><span class="font-13"></span>
                 <div class="awaygoal font-13 fw-bolder"></div>
               </div>
           </div>
           <div class="col-1" name="away-icon placeholder"></div>
           <div class="col-4 font-13 away-team-player-name"><a href=""></a>
            <p class="assist font-10"><a href=""></a></p>
+           <p class="sub-in mt-2"><a href="#"></a></p>
+          </div>
+        </div>
+      </div>
+    <div class="col-sm-12 container summarycontainer">
+      <div class="row no-gutters pt-2">
+        <div class="col-1 match-time">9'</div>
+          <div class="col-4 font-13 home-team-player-name"><a href=""></a>
+              <p class="assist font-10"><a href=""></a></p>
+              <p class="sub-in mt-2"><a href="#"></a></p>
+          </div>
+          <div class="col-1" name="home-icon placeholder">
+          </div>
+          <div class="col-1 text-center scoreboard">
+            <div class="row">
+                <div class="homegoal font-13 fw-bolder"></div><span class="font-13"></span>
+                <div class="awaygoal font-13 fw-bolder"></div>
+              </div>
+          </div>
+          <div class="col-1" name="away-icon placeholder"><span class="footballyellowicon d-block"><svg viewBox="0 0 22 32" name="FootballYellowCard"><path fill="#fee900" d="M24.46.5H7.54c-1.08 0-1.97.89-1.97 1.96v27.08c0 1.07.89 1.96 1.97 1.96h16.92c1.08 0 1.97-.89 1.97-1.96V2.46c0-1.08-.89-1.96-1.97-1.96z"></path></svg></span></div>
+          <div class="col-4 font-13 away-team-player-name"><a href="">M. Arteta</a>
+           <p class="assist font-10"><a href="">(coach)</a></p>
            <p class="sub-in mt-2"><a href="#"></a></p>
           </div>
         </div>
@@ -662,7 +707,7 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder">1</div><span class="font-12 fw-bolder">-</span>
+                <div class="homegoal font-13 fw-bolder">1 </div><span class="font-13"> -</span>
                 <div class="awaygoal font-13 fw-bolder">1</div>
               </div>
           </div>
@@ -684,7 +729,7 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder"></div><span class="font-12 fw-bolder"></span>
+                <div class="homegoal font-13 fw-bolder"></div><span class="font-13"></span>
                 <div class="awaygoal font-13 fw-bolder"></div>
               </div>
           </div>
@@ -706,7 +751,7 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder"></div><span class="font-12 fw-bolder"></span>
+                <div class="homegoal font-13 fw-bolder"></div><span class="font-13"></span>
                 <div class="awaygoal font-13 fw-bolder"></div>
               </div>
           </div>
@@ -724,8 +769,8 @@ body{
               <p class="sub-in"><a href="#">E. Danso</a></p>
               <p class="assist font-10"><a href=""></a></p>
           </div>
-          <div class="col-1" name="home-icon placeholder"><span class="sub-out"><i class="fas fa-long-arrow-alt-down" style="color: red; font-size: 13px;"></i></span>
-          <p class="sub-in mt-2"><span class="sub-in"><i class="fas fa-long-arrow-alt-up" style="color: green;"></i></span></p>
+          <div class="col-1" name="home-icon placeholder"><span class="sub-out"><i class="fas fa-arrow-down" style="color: red; "></i></span>
+          <p class="sub-in mt-2"><span class="sub-in"><i class="fas fa-arrow-up" style="color: green;"></i></span></p>
           </div>
           <div class="col-1 text-center scoreboard">
 
@@ -748,7 +793,7 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder">2</div><span class="font-12 fw-bolder">-</span>
+                <div class="homegoal font-13 fw-bolder">2</div><span class="font-13">-</span>
                 <div class="awaygoal font-13 fw-bolder">1</div>
               </div>
           </div>
@@ -770,7 +815,7 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder"></div><span class="font-12 fw-bolder"></span>
+                <div class="homegoal font-13 fw-bolder"></div><span class="font-13"></span>
                 <div class="awaygoal font-13 fw-bolder"></div>
               </div>
           </div>
@@ -792,7 +837,7 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder">2</div><span class="font-12 fw-bolder">-</span>
+                <div class="homegoal font-13 fw-bolder">2</div><span class="font-13">-</span>
                 <div class="awaygoal font-13 fw-bolder">1</div>
               </div>
           </div>
@@ -814,7 +859,7 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder"></div><span class="font-12 fw-bolder"></span>
+                <div class="homegoal font-13 fw-bolder"></div><span class="font-13"></span>
                 <div class="awaygoal font-13 fw-bolder"></div>
               </div>
           </div>
@@ -839,7 +884,7 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder">3</div><span class="font-12 fw-bolder">-</span>
+                <div class="homegoal font-13 fw-bolder">3</div><span class="font-13">-</span>
                 <div class="awaygoal font-13 fw-bolder">1</div>
               </div>
           </div>
@@ -861,12 +906,12 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder"></div><span class="font-12 fw-bolder"></span>
+                <div class="homegoal font-13 fw-bolder"></div><span class="font-13"></span>
                 <div class="awaygoal font-13 fw-bolder"></div>
               </div>
           </div>
-          <div class="col-1" name="away-icon placeholder"><span class="sub-out"><i class="fas fa-long-arrow-alt-down" style="color: red; font-size: 13px;"></i></span>
-              <p class="sub-in mt-2"><span class="sub-in"><i class="fas fa-long-arrow-alt-up" style="color: green;"></i></span></p>
+          <div class="col-1" name="away-icon placeholder"><span class="sub-out"><i class="fas fa-arrow-down" style="color: red;"></i></span>
+              <p class="sub-in mt-2"><span class="sub-in"><i class="fas fa-arrow-up" style="color: green;"></i></span></p>
           </div>
           <div class="col-4 font-13 away-team-player-name"><a href="">Caulley D.</a>
            <p class="sub-in "><a href="#">Partey T.</a></p>
@@ -885,12 +930,12 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder"></div><span class="font-12 fw-bolder"></span>
+                <div class="homegoal font-13 fw-bolder"></div><span class="font-13"></span>
                 <div class="awaygoal font-13 fw-bolder"></div>
               </div>
           </div>
-          <div class="col-1" name="away-icon placeholder"><span class="sub-out"><i class="fas fa-long-arrow-alt-down" style="color: red; font-size: 13px;"></i></span>
-              <p class="sub-in mt-2"><span class="sub-in"><i class="fas fa-long-arrow-alt-up" style="color: green;"></i></span></p>
+          <div class="col-1" name="away-icon placeholder"><span class="sub-out"><i class="fas fa-arrow-down" style="color: red;"></i></span>
+              <p class="sub-in mt-2"><span class="sub-in"><i class="fas fa-arrow-up" style="color: green;"></i></span></p>
           </div>
           <div class="col-4 font-13 away-team-player-name"><a href="">Quaye E.</a>
            <p class="sub-in "><a href="#">Mandem A.</a></p>
@@ -905,12 +950,12 @@ body{
               <p class="sub-in"><a href="#">Avutsu I.</a></p>
               <p class="assist font-10"><a href=""></a></p>
           </div>
-          <div class="col-1" name="home-icon placeholder"><span class="sub-out"><i class="fas fa-long-arrow-alt-down" style="color: red; font-size: 13px;"></i></span>
-          <p class="sub-in mt-2"><span class="sub-in"><i class="fas fa-long-arrow-alt-up" style="color: green;"></i></span></p>
+          <div class="col-1" name="home-icon placeholder"><span class="sub-out"><i class="fas fa-arrow-down" style="color: red"></i></span>
+          <p class="sub-in mt-2"><span class="sub-in"><i class="fas fa-arrow-up" style="color: green;"></i></span></p>
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder"></div><span class="font-12 fw-bolder"></span>
+                <div class="homegoal font-13 fw-bolder"></div><span class="font-13"></span>
                 <div class="awaygoal font-13 fw-bolder"></div>
               </div>
           </div>
@@ -933,7 +978,7 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder">3</div><span class="font-12 fw-bolder">-</span>
+                <div class="homegoal font-13 fw-bolder">3</div><span class="font-13">-</span>
                 <div class="awaygoal font-13 fw-bolder">1</div>
               </div>
           </div>
@@ -955,7 +1000,7 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder">5</div><span class="font-12 fw-bolder">-</span>
+                <div class="homegoal font-13 fw-bolder">5</div><span class="font-13">-</span>
                 <div class="awaygoal font-13 fw-bolder">4</div>
               </div>
           </div>
@@ -982,7 +1027,7 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder">1</div><span class="font-12 fw-bolder">-</span>
+                <div class="homegoal font-13 fw-bolder">1</div><span class="font-13">-</span>
                 <div class="awaygoal font-13 fw-bolder">1</div>
               </div>
           </div>
@@ -1010,7 +1055,7 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder">2</div><span class="font-12 fw-bolder">-</span>
+                <div class="homegoal font-13 fw-bolder">2</div><span class="font-13">-</span>
                 <div class="awaygoal font-13 fw-bolder">2</div>
               </div>
           </div>
@@ -1038,7 +1083,7 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder">3</div><span class="font-12 fw-bolder">-</span>
+                <div class="homegoal font-13 fw-bolder">3</div><span class="font-13">-</span>
                 <div class="awaygoal font-13 fw-bolder">3</div>
               </div>
           </div>
@@ -1066,7 +1111,7 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder">4</div><span class="font-12 fw-bolder">-</span>
+                <div class="homegoal font-13 fw-bolder">4</div><span class="font-13">-</span>
                 <div class="awaygoal font-13 fw-bolder">4</div>
               </div>
           </div>
@@ -1094,7 +1139,7 @@ body{
           </div>
           <div class="col-1 text-center scoreboard">
             <div class="row">
-                <div class="homegoal font-13 fw-bolder">5</div><span class="font-12 fw-bolder">-</span>
+                <div class="homegoal font-13 fw-bolder">5</div><span class="font-13">-</span>
                 <div class="awaygoal font-13 fw-bolder">4</div>
               </div>
           </div>
@@ -1244,11 +1289,11 @@ body{
                             <li><a href=""><img src="images/cr7.jpeg" alt=""><span class="shirt-number">4</span> Addison J.</a></li>
                             <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="shirt-number">23</span> Junior A.</a></li>
                             <li><a href=""><img src="images/cr7.jpeg" alt=""><span class="shirt-number">8</span> E. Offei</a></li>
-                            <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="shirt-number">18</span>Terkpetey S. <i class="fas fa-long-arrow-alt-down" style="color: red; font-size: 13px;"></i></a></li>
+                            <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="shirt-number">18</span>Terkpetey S. <i class="fas fa-arrow-down" style="color: red"></i></a></li>
                             <li><a href=""><img src="images/cr7.jpeg" alt=""><span class="shirt-number">1</span>Dosty A.</a></li>
                             <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="shirt-number">7</span>Avutsu I.<i class="fa fa-futbol-o"  style=" color:#fff"><span class="brace-goal">2</span></i></a></li>
                             <li><a href=""><img src="images/cr7.jpeg" alt=""><span class="shirt-number">9</span>Adams J.<i class="fa fa-futbol-o"  style=" color:#fff"></i></a></li>
-                            <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="shirt-number"> 10 </span> Alfred P.<i class="fas fa-long-arrow-alt-down" style="color: red; font-size: 13px;"></i></a></li>
+                            <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="shirt-number"> 10 </span> Alfred P.<i class="fas fa-arrow-down" style="color: red"></i></a></li>
                       </div>
           </div>
           <div class="col-6">
@@ -1259,7 +1304,7 @@ body{
                             <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="shirt-number">4</span>White B.</a></li>
                             <li><a href=""><img src="images/messi.png" alt=""><span class="shirt-number">18</span> Tomiyasu T.</a></li>
                             <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="shirt-number">35</span>Martinelli G.</a></li>
-                            <li><a href=""><img src="images/messi.png" alt=""><span class="shirt-number">34</span>Xhaka G.<i class="fas fa-long-arrow-alt-down" style="color: red; font-size: 13px;"></i></a></li>
+                            <li><a href=""><img src="images/messi.png" alt=""><span class="shirt-number">34</span>Xhaka G.<i class="fas fa-arrow-down" style="color: red;"></i></a></li>
                             <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="shirt-number">5</span>Partey T.<i class="fa fa-futbol-o"  style=" color:#fff"><span class="hattrick-goal">3</span></i></a></li>
                             <li><a href=""><img src="images/messi.png" alt=""><span class="shirt-number">7</span>Saka B.</a></li>
                             <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="shirt-number">8</span>Oedegaard M.</a></li>
@@ -1271,21 +1316,21 @@ body{
         <div class="row">
             <div class="col">
                 <div class="squad disabled">
-                        <li><a class="disabled" href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span>18</span> Isco <i class="fas fa-long-arrow-alt-down" style="color: red; font-size: 13px;"></i></a>
+                        <li><a class="disabled" href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span>18</span> Isco <i class="fas fa-arrow-down" style="color: red"></i></a>
                         
-                         <a href=""><img src="images/cr7.jpeg" alt=""><span>12</span> E. Danso <i class="fas fa-long-arrow-alt-up" style="color: green;"></i></a></li>
+                         <a href=""><img src="images/cr7.jpeg" alt=""><span>12</span> E. Danso <i class="fas fa-arrow-up" style="color: green;"></i></a></li>
                         
                         <li>
-                        <a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span> 10 </span> Alfred <i class="fas fa-long-arrow-alt-down" style="color: red; font-size: 13px;"></i></a>
-                        <a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span>15</span> O. Dembele <i class="fas fa-long-arrow-alt-up" style="color: green; font-size: 13px;"></i> <i class="fa fa-futbol-o"  style=" color:#fff"></i></a>
+                        <a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span> 10 </span> Alfred <i class="fas fa-arrow-down" style="color: red;"></i></a>
+                        <a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span>15</span> O. Dembele <i class="fas fa-arrow-up" style="color: green;"></i> <i class="fa fa-futbol-o"  style=" color:#fff"></i></a>
                         </li>
                 </div>
                 </div>
                 <div class="col">
                     <div class="squad">
                             <li>
-                                <a href=""><img src="images/messi.png" alt=""><span>34</span> Granit Xhaka <i class="fas fa-long-arrow-alt-down" style="color: red; font-size: 13px;"></i></a>
-                                <a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span>15</span> Smith Emile <i class="fas fa-long-arrow-alt-up" style="color: green; font-size: 13px;"></i></a>
+                                <a href=""><img src="images/messi.png" alt=""><span>34</span> Granit Xhaka <i class="fas fa-arrow-down" style="color: red;"></i></a>
+                                <a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span>15</span> Smith Emile <i class="fas fa-arrow-up" style="color: green;"></i></a>
                             </li>
                     </div>
                 </div>
@@ -1297,8 +1342,8 @@ body{
                <div class="squad">
                             <li><a href=""><img src="images/cr7.jpeg" alt=""><span class="shirt-number">17</span> King Davies</a></li>
                             <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="shirt-number">31</span> Salty</a></li>
-                            <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="shirt-number">15</span>Dembele O.<i class="fas fa-long-arrow-alt-up" style="color: green; font-size: 13px;"></i></a></li>
-                            <li><a href=""><img src="images/cr7.jpeg" alt=""><span class="shirt-number">12</span>Danso E.<i class="fas fa-long-arrow-alt-up" style="color: green; font-size: 13px;"></i></a></li>
+                            <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="shirt-number">15</span>Dembele O.<i class="fas fa-arrow-up" style="color: green;"></i></a></li>
+                            <li><a href=""><img src="images/cr7.jpeg" alt=""><span class="shirt-number">12</span>Danso E.<i class="fas fa-arrow-up" style="color: green"></i></a></li>
                             <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt="" ><span class="shirt-number">13</span>Chukweze K.</a></li>
                             <li><a href=""><img src="images/cr7.jpeg" alt=""><span class="shirt-number">11</span> Lawal A.</a></li>
                             <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="shirt-number">12</span>Ronaldo C.</a></li>
@@ -1311,7 +1356,7 @@ body{
                             <li><a href=""><img src="images/messi.png" alt=""><span class="shirt-number">19</span> Pepe N.</a></li>
                             <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt="" ><span class="shirt-number">16</span>Holdings R.</a></li>
                             <li><a href=""><img src="images/messi.png" alt=""><span class="shirt-number">1</span>Leno R.</a></li>
-                            <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="shirt-number">15</span>Emile S.<i class="fas fa-long-arrow-alt-up" style="color: green; font-size: 13px;"></i></a></li>
+                            <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="shirt-number">15</span>Emile S.<i class="fas fa-arrow-up" style="color: green"></i></a></li>
                 </div>
             </div>
         </div>
@@ -1325,7 +1370,7 @@ body{
                 </div>
             </div>
             <div class="col">
-                            <div class="squad">
+                <div class="squad">
                 <li><a href=""><img src="images/messi.png" alt=""><span>21</span>Aubameyang P.</a><p>coach's decision</p></li>
                 <li><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt="" ><span>31</span> S. Kolasinac</a><p>Yellow cards</p></li>
                 <li><a href=""><img src="images/messi.png" alt=""><span>2</span>Stonebwoy M</a><p>Shoulder Injury</p></li>
@@ -1336,12 +1381,12 @@ body{
         <div class="row">
             <div class="col">
                 <div class="squad">
-             <li><a href=""><img src="images/cr7.jpeg" alt=""> B. Mensah</a></li>
+             <li><a href=""><img src="images/cr7.jpeg" alt="">Mensah B.</a></li>
                 </div>
             </div>
             <div class="col">
                 <div class="squad">
-             <li><a href=""><img src="images/messi.png" alt=""> M. Arteta</a></li>
+             <li><a href=""><img src="images/messi.png" alt="">Arteta M.</a></li>
             </div>
             </div>
         </div>
