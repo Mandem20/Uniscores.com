@@ -16,6 +16,11 @@
                  color: #fff;
                  font-weight: bold;
          }
+        .font-13{
+                 font-size: 13px;
+                 color: #fff;
+                 font-weight: bold;
+         }
         .font-15 a{
                   font-size: 15px;
                   color: goldenrod;
@@ -31,6 +36,7 @@
         .font-10{
                     font-size: 10px;
                      line-height: 1px;
+                   color: #fff;
          }
         .font-10 a{     
                     color: #aaa;
@@ -60,7 +66,7 @@
         .favourite_date{
                   color: #fff;
                   text-align: right;
-                  font-size: 13px;
+                  font-size: 10px;
                   border-bottom-color: aliceblue;
                 }
         .font-time{
@@ -68,6 +74,14 @@
             text-align:center;
             margin:20px 1px;
         }
+.hovering a{
+    text-decoration: none;
+                  }
+.hovering a :hover{
+            background-color: red;
+            height: px;
+        }        
+ 
          .tabs-animated {
   		background-color: black;
          
@@ -135,7 +149,6 @@
           }
 .home_scores{
               color: #fff;
-              font-family:monospace;
               margin: 5px 8px;
               font-weight: bold;
           }          
@@ -152,11 +165,11 @@
                                             
                                             <div class="col-10">
                                                 <h5 class="font-18w">Tertiary Champions League</h5>
-                                                <p class="font-15">GHANA <select class="form-select form-select-sm  text-center" aria-label=".form-select-sm example" style="background-color: #aaa">
-  <option >Select season</option>
-  <option selected value="1">23/24</option>
-  <option value="2">22/23</option>
-  <option value="3">21/22</option>
+                                                <p class="font-12">GHANA <select class="form-select form-select-sm  text-center" aria-label=".form-select-sm example" style="background-color: #aaa">
+  <option selected >Select season</option>
+ <option value="1"><a href="">23/24</a></option>
+ <option value="2"><a href="">22/23</a></option>
+ <option value="3"><a href="">21/22</a></option>
 </select></p>  <h2 class="font-12 text-center"> 
             </h2>
                                             </div>
@@ -184,13 +197,13 @@
     <div role="tabpanel" class="tab-pane fade show active selected" id="result">
         <div class="row">
             <div class="col mt-1">
-               <h5 class="font-15">Champions League <span class="font-10"><a href="">Finals</a></span></h5> 
+               <h5 class="font-13">Champions League <span class="font-10"><a href="">Finals</a></span></h5> 
              </div>
         </div>
         <div class="row">
             <div class="col favourite_date">DECEMBER 25</div>
-                        <div class="col-sm-12">
-        <a href="MUCG_vrs_KNUST.html">
+                        <div class="col-sm-12 hovering">
+        <a href="MUCG_vrs_KNUST.html" class="hovering">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -198,8 +211,8 @@
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
+                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
+                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -212,13 +225,13 @@
 </div>
         <div class="row">
             <div class="col mt-1">
-               <h5 class="font-15">Champions League <span class="font-10"><a href="">Semi-Finals</a></span></h5> 
+               <h5 class="font-13">Champions League <span class="font-10"><a href="">Semi-Finals</a></span></h5> 
              </div>
         </div>
         <div class="row">
             <div class="col favourite_date">NOVEMBBER 29</div>
                         <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -226,8 +239,8 @@
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
+                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -241,7 +254,7 @@
             
             <div class="col favourite_date">NOVEMBER 28</div>
         <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -249,8 +262,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -263,13 +276,13 @@
          </div>
         <div class="row">
             <div class="col mt-1">
-               <h5 class="font-15">Champions League <span class="font-10"><a href="">Quarter-Finals</a></span></h5> 
+               <h5 class="font-13">Champions League <span class="font-10"><a href="">Quarter-Finals</a></span></h5> 
              </div>
         </div>
         <div class="row">
             <div class="col favourite_date">NOVEMBBER 25</div>
             <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -277,8 +290,8 @@
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
+                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -297,8 +310,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
+                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -311,7 +324,7 @@
 
             <div class="col favourite_date">NOVEMBER 24</div>
             <div class="col-sm-12">
-        <a href="matchpage.html" class="link-opacity-50-hover">
+        <a href="" class="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -319,8 +332,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -331,7 +344,7 @@
                      </a>
             </div>
         <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -339,8 +352,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -354,14 +367,14 @@
         
         <div class="row">
             <div class="col mt-1">
-               <h5 class="font-15">Champions League <span class="font-10"><a href="">Round 16</a></span></h5> 
+               <h5 class="font-13">Champions League <span class="font-10"><a href="">Round 16</a></span></h5> 
              </div>
         </div>
         <div class="row">
             <div class="col favourite_date">NOVEMBBER 20</div>
             
                         <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -369,8 +382,8 @@
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
+                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -381,7 +394,7 @@
                      </a>
         </div>
             <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -389,8 +402,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -409,8 +422,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
+                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -421,7 +434,7 @@
                     </a>
                </div>
             <div class="col-sm-12">
-        <a href="matchpage.html" class="link-opacity-50-hover">
+        <a href="" class="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -429,8 +442,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -441,7 +454,7 @@
                      </a>
             </div>
             
-            <div class="row">
+            
             <div class="col favourite_date">NOVEMBER 21</div>
             <div class="col-sm-12">
                <a href="">
@@ -452,8 +465,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
+                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -464,7 +477,7 @@
                     </a>
                </div>
             <div class="col-sm-12">
-        <a href="matchpage.html" class="link-opacity-50-hover">
+        <a href="" class="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -472,8 +485,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -484,7 +497,7 @@
                      </a>
             </div>
                         <div class="col-sm-12">
-        <a href="matchpage.html">
+                <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -492,8 +505,8 @@
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
+                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -504,7 +517,7 @@
                      </a>
         </div>
         <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -512,8 +525,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -523,11 +536,11 @@
                                 </div>
                      </a>
             </div>
-   </div>
+   
    </div>
         <div class="row">
             <div class="col mt-1">
-               <h5 class="font-15">Champions League <span class="font-10"><a href="">Group A</a></span></h5> 
+               <h5 class="font-13">Champions League <span class="font-10"><a href="">Group A</a></span></h5> 
              </div>
         </div>
         <div class="row">
@@ -541,8 +554,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
+                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -553,7 +566,7 @@
                     </a>
                </div>
             <div class="col-sm-12">
-        <a href="matchpage.html" class="link-opacity-50-hover">
+        <a href="" class="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -561,8 +574,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -575,13 +588,13 @@
    </div>
          <div class="row">
               <div class="col mt-1">
-                <h5 class="font-15">Champions League <span class="font-10"><a href="">Group B</a></span></h5>  
+                <h5 class="font-13">Champions League <span class="font-10"><a href="">Group B</a></span></h5>  
              </div>
         </div>
         <div class="row">
             <div class="col favourite_date">SEPTEMBER 13</div>
             <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -589,8 +602,8 @@
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
+                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -601,7 +614,7 @@
                      </a>
         </div>
             <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -609,8 +622,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -623,13 +636,13 @@
    </div>
          <div class="row">
                <div class="col mt-1">
-               <h5 class="font-15">Champions League <span class="font-10"><a href="">Group C</a></span></h5> 
+               <h5 class="font-13">Champions League <span class="font-10"><a href="">Group C</a></span></h5> 
              </div> 
         </div>
         <div class="row">
             <div class="col favourite_date">SEPTEMBER 6</div>
             <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -637,8 +650,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/mucg.png" alt="">Methodist University</span>
+                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/mucg.png" alt="">Methodist University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -649,7 +662,7 @@
                      </a>
         </div>
             <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -657,8 +670,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/accratechnical.png" alt="">Accra Technical</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
+                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/accratechnical.png" alt="">Accra Technical</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -671,13 +684,13 @@
    </div>
              <div class="row">
               <div class="col mt-1">
-                <h5 class="font-15">Champions League <span class="font-10"><a href="">Group D </a></span></h5>  
+                <h5 class="font-13">Champions League <span class="font-10"><a href="">Group D </a></span></h5>  
              </div>
         </div>
         <div class="row">
             <div class="col favourite_date">SEPTEMBER 01</div>
             <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -685,8 +698,8 @@
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
+                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -697,7 +710,7 @@
                      </a>
         </div>
             <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -705,8 +718,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -719,7 +732,7 @@
    </div>
         <div class="row">
             <div class="col mt-1">
-               <h5 class="font-15">Champions League <span class="font-10"><a href="">Group E</a></span></h5> 
+               <h5 class="font-13">Champions League <span class="font-10"><a href="">Group E</a></span></h5> 
              </div>
         </div>
         <div class="row">
@@ -733,8 +746,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
+                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -745,7 +758,7 @@
                     </a>
                </div>
             <div class="col-sm-12">
-        <a href="matchpage.html" class="link-opacity-50-hover">
+        <a href="" class="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -753,8 +766,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -767,14 +780,14 @@
    </div>
          <div class="row">
             <div class="col mt-1">
-               <h5 class="font-15">Champions League <span class="font-10"><a href="">Qualifications</a></span></h5> 
+               <h5 class="font-13">Champions League <span class="font-10"><a href="">Qualifications</a></span></h5> 
              </div>
          </div>
         <div class="row">
             <div class="col favourite_date">MAY 05</div>
             
                         <div class="col-sm-12">
-             <a href="matchpage.html">
+             <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -782,8 +795,8 @@
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
+                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -794,7 +807,7 @@
                      </a>
             </div>
             <div class="col-sm-12">
-        <a href="matchpage.html">
+             <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -802,8 +815,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -822,8 +835,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
+                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -834,7 +847,7 @@
                     </a>
                </div>
             <div class="col-sm-12">
-        <a href="matchpage.html" class="link-opacity-50-hover">
+        <a href="" class="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -842,8 +855,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -854,7 +867,7 @@
                      </a>
             </div>
             
-            <div class="row">
+            
             <div class="col favourite_date">MAY 04</div>
             <div class="col-sm-12">
                <a href="">
@@ -865,8 +878,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
+                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -877,7 +890,7 @@
                     </a>
                </div>
             <div class="col-sm-12">
-        <a href="matchpage.html" class="link-opacity-50-hover">
+        <a href="" class="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -885,8 +898,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -896,8 +909,8 @@
                                 </div>
                      </a>
             </div>
-                        <div class="col-sm-12">
-           <a href="matchpage.html">
+            <div class="col-sm-12">
+                  <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -905,8 +918,8 @@
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
+                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -917,7 +930,7 @@
                      </a>
         </div>
         <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2">
                                     <p class="full-time">
@@ -925,8 +938,8 @@
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -936,10 +949,10 @@
                                 </div>
                      </a>
             </div>
+   
    </div>
-   </div>
-        <!-- END OF RESULTS  -->
-      </div>
+       
+      </div> <!-- END OF RESULTS  -->
              
              
              
