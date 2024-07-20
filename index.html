@@ -10,6 +10,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     <style>
         
 /*FONT, BUTTONS, BORDERS & OTHERS CSS*/       
@@ -252,6 +253,10 @@
   }
 }
 
+.activation,.calendar:hover{
+            background-color: darkgoldenrod;
+    color: #fff;
+        }
 
         
 /* LEFT SIDEBAR  */
@@ -479,7 +484,7 @@
                                 <p class="teams-partake">TEAMS / INSTITUTIONS (a-z)
                                 </p>
                                     <li class="nav-item">
-                                                    <a class="text-light nav-link text-truncate font-weight-bold" href="#" class="text-decoration-none"><img src="teams_flag/AIT_CREST.png" alt="" style="width: 20px;"> Accra Institute of Technology </a></li>
+                                         <a class="text-light nav-link text-truncate font-weight-bold" href="#" class="text-decoration-none"><img src="teams_flag/AIT_CREST.png" alt="" style="width: 20px;"> Accra Institute of Technology </a></li>
                                     <li class="nav-item">             
                                        <a  class="text-light nav-link text-truncate font-weight-bold" href="#"><img src="teams_flag/accratechnical.png" alt="" style="width: 20px;"> Accra Technical University </a></li>
                                     <li class="nav-item">             
@@ -619,7 +624,7 @@
                                                    <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/wisconsin.png" alt="" style="width: 20px;"> Wisconsin International University College  </a></li>
                                       <li class="nav-item"> 
                                                    <a  class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/zenith.png" alt="" style="width: 20px;"> Zenith University College </a></li>
-                                     
+                                      <br>   
                             </div>
                 <br>
 		    </ul>
@@ -729,29 +734,29 @@
                          <!--BEGINNING OF MIDDLE PAGE-->
                             <div class="col-sm-12 col-xs-12 col-md-9 col-lg-7">
                                 <!--START OF CALENDAR-->
-                            <div class="row border-2" style="margin: 0px; width: 100%;">
-                                <div class="col-2 text-center">
-                                    <a href="#" class="font-12 text-white">TODAY <br><span class="font-10">01 NOV </span></a>
+                            <div class="row border-2" style="margin: 0px; width: 100%;" id="myCalendar">
+                                <div class="col-2 text-center calendar activation">
+                                    <a href="#" class="calendar_link   font-12 text-white">LIVE <br><span class="font-10">01 NOV </span></a>
                                 </div>
     
-                                <div class="col-2 text-center">
-                                    <a href="Football/2025-11-07.html" class="text-white font-12">Sat <br><span class="font-10">07 NOV </span></a>
+                                <div class="col-2 text-center calendar">
+                                    <a href="Football/2025-11-07.html" class="calendar_link text-white font-12">Sat <br><span class="font-10">07 NOV </span></a>
                                 </div>
     
-                                <div class="col-2 text-center">
-                                    <a href="#" class="text-white font-12">Sun <br><span class="font-10">13 NOV </span></a>
+                                <div class="col-2 text-center calendar">
+                                    <a href="#" class="calendar_link text-white font-12">Sun <br><span class="font-10">13 NOV </span></a>
                                 </div>
     
-                                <div class="col-2 text-center">
-                                    <a href="#" class="text-white font-12">Sat <br><span class="font-10">20 NOV </span></a>
+                                <div class="col-2 text-center calendar">
+                                    <a href="#" class="calendar_link text-white font-12">Sat <br><span class="font-10">20 NOV </span></a>
                                 </div>
     
-                                <div class="col-2 text-center">
-                                    <a href="#" class="text-white font-12">Sat <br><span class="font-10">28 NOV </span></a>
+                                <div class="col-2 text-center calendar">
+                                    <a href="#" class="calendar_link text-white font-12">Sat <br><span class="font-10">28 NOV </span></a>
                                 </div>
     
-                                <div class="col-2 text-center">
-                                    <a href="#" class="text-white font-12">Tue <br><span class="font-10">03 DEC </span></a>
+                                <div class="col-2 text-center calendar">
+                                    <a href="#" class="calendar_link text-white font-12">Tue <br><span class="font-10">03 DEC </span></a>
                                 </div>
     
                                 <div class="col-2">
@@ -2716,7 +2721,7 @@
             <div class="navbar-collapse justify-content-center" id="" style="height: 30px">
                 <div class="row">
                     <div class="col-3 text-center"><a href="" class="text-white"><i class="fas fa-futbol" style="font-size: 15px; text-align:center"></i><p class="font-12">Matches </p></a></div>
-                    <div class="col-3 text-center"><a href="" class="text-white"><i class="far fa-star" style=" font-size: 15px; text-align:center"></i><p class="font-12">Favourite</p></a></div>
+                    <div class="col-3 text-center"><a href="favourite.html" class="text-white"><i class="far fa-star" style=" font-size: 15px; text-align:center"></i><p class="font-12">Favourite</p></a></div>
                     <div class="col-3 text-center"><a href="" class="text-white"><i class="fas fa-newspaper" style="font-size: 15px;"></i><p class="font-12">News</p></a></div>
                     <div class="col-3 text-center"><a href="" class="text-white"><i class="fas fa-user-alt" style="font-size: 15px;"></i><p class="font-12">Me</p></a></div>
                 </div>
@@ -2725,6 +2730,7 @@
       </nav>
 </div>
 <!--END OF BOTTOM NAV-->
+   
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
