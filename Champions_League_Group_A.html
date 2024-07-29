@@ -47,17 +47,14 @@
             color: #fff;
             font-weight: normal;        
         }
- .full-time{
-            font-size: 10px;
+ .full-time, .full-time a{
+          font-size: 10px;
             text-align:center;
-            margin:20px 0;
-        }  
-.favourite_date{
-          color: #fff;
-          text-align: end;
-          font-size: 13px;
-          border-bottom-color: aliceblue;
-        }
+            margin:12px 0px;
+            color: #fff;
+           font-weight: bold;
+        } 
+
  .tabs-animated {
         overflow: hidden;
   		background-color: black;
@@ -118,12 +115,30 @@
   background: black;
   width: 100%;
 }
-
+.home-team{
+           font-size: 10px;
+            padding: 1px 1px;
+            color: #fff;
+            font-weight: bold; 
+           text-transform: capitalize;
+        }   
+    
 .home-team img{
-     width: 20px;
+    width: 20px;
     height: 20px;
     margin: 5px 8px;
           }
+.home-team i{
+    margin: 0 8px; 
+   
+        }       
+.away-team{
+           font-size: 10px;
+            padding: 1px 1px;
+            color: #fff;
+            font-weight: bold; 
+            text-transform: capitalize;
+        }   
 .away-team img{
      width: 20px;
     height: 20px;
@@ -134,7 +149,22 @@
               font-family:monospace;
               margin: 5px 8px;
               font-weight: bold;
-          }  
+          } 
+.score-card {
+   font-size: 10px; 
+    text-overflow: ellipsis;
+    overflow: hidden
+            }
+.contain{
+           position: relative; 
+           display: inline-flex;
+          width: auto
+        }
+.favourite_match ,.favourite_match a{
+          padding-top: 12px;
+          font-size: 18px;
+          color: #aaa;
+        }
         .result a:hover{
               color: red;
           }
@@ -170,23 +200,22 @@
 
   <!-- Tab panes -->
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade" id="news">                                 
-      </div>
-    <div role="tabpanel" class="tab-pane fade show active selected" id="result">
-        <div class="row">
-            <div class="col-sm-12 favourite_date">SEPTEMBER 20</div>
-        </div>
+    <div role="tabpanel" class="tab-pane fade" id="news"> <!--Start of NEWS Tab Content  -->                                
+    </div>  <!-- End of NEWS Tab Content  -->
+      
+    <div role="tabpanel" class="tab-pane fade show active selected" id="result">  <!-- Start of results Tab Content  -->
         <div class="row">
             <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
-                                    <div class="col-2 col-md-2 col-sm-2 ">
-                                    <p class="full-time">
-                                        Finished
+                                    <div class="col-2 col-md-2 col-sm-2 full-time">
+                                        12.09.24
+                                    <p>
+                                        3:00
                                     </p>
                                     </div>                
-                                    <div class="col-7 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
+                                    <div class="col-7 col-lg-8 col-md-8 score-card">
+                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
                                         <span class="font-12 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
                                     </div>
 
@@ -198,16 +227,17 @@
                     </a>
                </div>
             <div class="col-sm-12">
-        <a href="matchpage.html" class="link-opacity-50-hover">
+        <a href="" class="link-opacity-50-hover">
                                 <div class="row bg-2">
-                                    <div class="col-2 col-md-2 col-sm-2">
-                                    <p class="full-time">
-                                        Finished
+                                    <div class="col-2 col-md-2 col-sm-2 full-time">
+                                        02.09.24
+                                    <p>
+                                        3:00
                                     </p>
                                     </div>                
-                                    <div class="col-7 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                    <div class="col-7 col-lg-8 col-md-8 score-card">
+                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span><br>
+                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -218,21 +248,19 @@
                      </a>
             </div>
    </div>
-         <div class="row">
-            <div class="col-sm-12 favourite_date">SEPTEMBER 13</div>
-        </div>
         <div class="row">
             <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
-                                    <div class="col-2 col-md-2 col-sm-2">
-                                    <p class="full-time">
-                                        Finished
+                                    <div class="col-2 col-md-2 col-sm-2 full-time">
+                                       25.08.24 
+                                    <p>
+                                        4:00
                                     </p>
                                     </div>               
-                                    <div class="col-7 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
+                                    <div class="col-7 col-lg-8 col-md-8 score-card">
+                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
+                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -243,16 +271,17 @@
                      </a>
         </div>
             <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
-                                    <div class="col-2 col-md-2 col-sm-2">
-                                    <p class="full-time">
-                                        Finished
+                                    <div class="col-2 col-md-2 col-sm-2 full-time">
+                                        18.08.24
+                                    <p>
+                                        4:30
                                     </p>
                                     </div>                
-                                    <div class="col-7 col-lg-8 col-md-8">
+                                    <div class="col-7 col-lg-8 col-md-8 score-card">
                                         <span class="font-12 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -263,21 +292,19 @@
                      </a>
             </div>
    </div>
-             <div class="row">
-            <div class="col-sm-12 favourite_date">SEPTEMBER 6</div>
-        </div>
         <div class="row">
             <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
-                                    <div class="col-2 col-md-2 col-sm-2">
-                                    <p class="full-time">
-                                        Finished
+                                    <div class="col-2 col-md-2 col-sm-2 full-time">
+                                        10.08.24
+                                    <p>
+                                        2:30
                                     </p>
                                     </div>                
-                                    <div class="col-7 col-lg-8 col-md-8">
+                                    <div class="col-7 col-lg-8 col-md-8 score-card">
                                         <span class="font-12 text-truncate home-team"> <img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/mucg.png" alt="">Methodist University</span>
+                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -288,16 +315,17 @@
                      </a>
         </div>
             <div class="col-sm-12">
-        <a href="matchpage.html">
+        <a href="">
                                 <div class="row bg-2">
-                                    <div class="col-2 col-md-2 col-sm-2">
-                                    <p class="full-time">
-                                        Finished
+                                    <div class="col-2 col-md-2 col-sm-2 full-time">
+                                        04.08.24
+                                    <p>
+                                        3:00
                                     </p>
                                     </div>                
-                                    <div class="col-7 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/accratechnical.png" alt="">Accra Technical</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
+                                    <div class="col-7 col-lg-8 col-md-8 score-card">
+                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span><br>
+                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -307,102 +335,108 @@
                                 </div>
                      </a>
             </div>
-   </div>
-      </div>
-      <div role="tabpanel" class="tab-pane fade" id="fixtures">
-        <div class="row">
-         <div class="col-sm-12 favourite_date">OCTOBER 4</div>
         </div>
-        <div class="row">
-            <div class="col-sm-12">
-        <a href="matchpage.html">
-                                <div class="row bg-2">
-                                    <div class="col-2 col-md-2 col-sm-2">
-                                    <p class="full-time">
-                                        13:00
+ </div>  <!-- End of results Tab Content  -->
+      <div role="tabpanel" class="tab-pane fade" id="fixtures">  <!-- Start of fixtures Tab Content  -->    
+                         <div class="row bg-2">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
+                                        <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
+                                    </div>
+                                  <a href="" data-toggle="tooltip" title="Click for match detail!" class="contain col-10 col-lg-10 col-md-10 col-sm">
+                                    <div class="col-2 col-md-2 col-lg-2 col-sm-2 full-time">
+                                        01.10.24
+                                    <p class="">
+                                        3:30
                                     </p>
-                                    </div>                
-                                    <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span><br>
-                                        <span class="font-12 text-truncate away-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span>
+                                    </div> 
+                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+            
+                                        <span class="home-team text-truncate"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span><br>
+                                        <span class="away-team text-truncate"><img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span>
+                                        
                                     </div>
-
-                                    <div class="col-1 home_scores">
+                                        <div class="col-1 col-md-1 col-lg-1 col-sm-1 fw-bold home_scores">
                                         -
-                                        <p class="away_scores">-</p>
+                                            <p class="away_scores">-</p>
+                                        
+                                            </div>
+                                     </a>
+                                    </div> 
+                                 <div class="row bg-2">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
+                                        <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
-                                </div>
-                     </a>
-        </div>
-            <div class="col-sm-12">
-        <a href="matchpage.html">
-                                <div class="row bg-2">
-                                    <div class="col-2 col-md-2 col-sm-2">
-                                    <p class="full-time">
-                                        13:00
+                                  <a href="" data-toggle="tooltip" title="Click for match detail!" class="contain col-10 col-lg-10 col-md-10 col-sm">
+                                    <div class="col-2 col-md-2 col-lg-2 col-sm-2 full-time">
+                                        10.010.24
+                                    <p class="">
+                                        4:30
                                     </p>
-                                    </div>                
-                                    <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">U.C.C</span>
+                                    </div> 
+                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+            
+                                        <span class="home-team text-truncate"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="away-team text-truncate"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
+                                        
                                     </div>
-
-                                    <div class="col-1 home_scores">
+                                        <div class="col-1 col-md-1 col-lg-1 col-sm-1 fw-bold home_scores">
                                         -
-                                        <p class="away_scores">-</p>
-                                    </div>
-                                </div>
-                     </a>
-            </div>
-       </div>
-              <div class="row">
-            <div class="col-sm-12 favourite_date">SEPTEMBER 27</div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-        <a href="matchpage.html">
+                                            <p class="away_scores">-</p>
+                                        
+                                            </div>
+                                     </a>
+                                    </div> 
                                 <div class="row bg-2">
-                                    <div class="col-2 col-md-2 col-sm-2">
-                                    <p class="full-time">
-                                       14:00
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
+                                        <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
+                                    </div>
+                                  <a href="" data-toggle="tooltip" title="Click for match detail!" class="contain col-10 col-lg-10 col-md-10 col-sm">
+                                    <div class="col-2 col-md-2 col-lg-2 col-sm-2 full-time">
+                                        17.10.24
+                                    <p class="">
+                                        3:30
                                     </p>
-                                    </div>                
-                                    <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-12 text-truncate away-team"> <img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                    </div> 
+                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+            
+                                        <span class="home-team text-truncate"><img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
+                                        <span class="away-team text-truncate"> <img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
+                                        
                                     </div>
-
-                                    <div class="col-1 home_scores">
+                                        <div class="col-1 col-md-1 col-lg-1 col-sm-1 fw-bold home_scores">
                                         -
-                                        <p class="away_scores">-</p>
+                                            <p class="away_scores">-</p>
+                                        
+                                            </div>
+                                     </a>
+                                    </div> 
+                            <div class="row bg-2">
+                                    <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
+                                        <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
                                     </div>
-                                </div>
-                     </a>
-        </div>
-            <div class="col-sm-12">
-        <a href="matchpage.html">
-                                <div class="row bg-2">
-                                    <div class="col-2 col-md-2 col-sm-2">
-                                    <p class="full-time">
-                                     14:30
+                                  <a href="" data-toggle="tooltip" title="Click for match detail!" class="contain col-10 col-lg-10 col-md-10 col-sm">
+                                    <div class="col-2 col-md-2 col-lg-2 col-sm-2 full-time">
+                                        24.10.24
+                                    <p class="">
+                                        3:30
                                     </p>
-                                    </div>                
-                                    <div class="col-8 col-lg-8 col-md-8">
-                                        <span class="font-12 text-truncate home-team"><img src="teams_flag/ucc.png" alt="" >U.C.C</span><br>
-                                        <span class="font-12 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
+                                    </div> 
+                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+            
+                                        <span class="home-team text-truncate"><img src="teams_flag/ucc.png" alt="" >University of Cape Coast</span><br>
+                                        <span class="away-team text-truncate"><img src="teams_flag/knust.png" alt="">KNUST</span>
+                                        
                                     </div>
-
-                                    <div class="col-1 home_scores">
+                                        <div class="col-1 col-md-1 col-lg-1 col-sm-1 fw-bold home_scores">
                                         -
-                                        <p class="away_scores">-</p>
-                                    </div>
-                                </div>
-                     </a>
-            </div>
-       </div>
-    </div>
-</div>
-        <!-- End Tab Content  -->
+                                            <p class="away_scores">-</p>
+                                        
+                                            </div>
+                                     </a>
+                            </div>   
+    </div>  <!-- End Tab fixtures tab  -->
+</div>  <!-- End Tab Content  -->
+        
      
       </div>
     </body>
