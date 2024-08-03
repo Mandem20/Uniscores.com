@@ -10,6 +10,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+
+</script>
 
     <style>
         
@@ -253,7 +256,7 @@
   }
 }
 
-.activation,.calendar:hover{
+.activation,.calendar a:hover{
             background-color: darkgoldenrod;
     color: #fff;
         }
@@ -434,6 +437,59 @@
 	content:"𝕏";
 	font-size:1.2em;
 }
+
+.calendar{
+    position: relative;
+    overflow-x: scroll;
+    overflow: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    margin:0;
+   
+        }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 10px;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+  position: absolute;
+  left: 0;
+  border-radius: 3px 0 10px 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+ 
+  color: white;
+}
         
     </style>
 </head>
@@ -453,8 +509,7 @@
 		    
 <li class="nav-item">
     <a class=" text-light nav-link" href="favourite.html"><i class="far fa-star" style="font-size:20px; color: #aaa"></i>Favourite<span class="favourite-counts"><button>0</button></span></a>
-</li>
-    
+</li>  
 <li class="nav-item">
 <a class="text-light nav-link" href="livestream.php">Livestream <i class="far fa-eye" style="color: #aaa"></i></a>
 </li>
@@ -468,11 +523,13 @@
 <a class="text-light nav-link" href="#"><span class="login">Login <i class="fas fa-sign-in-alt" style="color: #aaa"></i></span></a>
 </li>
 <li class="nav-item">
-<a class="text-light nav-link" href="#"> <span class="register">Register <i class="far fa-address-card" style="color: #aaa"></i> </span></a>
+<a class="text-light nav-link" href="#"><span class="register">Register <i class="far fa-address-card" style="color: #aaa"></i> </span></a>
 </li>
-              <li class="nav-item">
-		        <a class="nav-link" href="#">Get the app</a>
-		      </li> 
+<li class="nav-item">
+<a class="nav-link" href="#">Get the app</a>
+</li> 
+
+ 
                 
                               <div class="all-teams d-xl-none d-lg-none d-sm-block d-md-none">
                                  <p class="competitions font-weight-bold">Leagues
@@ -492,8 +549,9 @@
                                     <li class="nav-item">
                                  <a class="text-light nav-link text-truncate font-weight-bold"  href="#"><img src="teams_flag/AIT_CREST.png" alt="" style="width: 20px;"> PUSAG GAMES </a>
                                   </li>
+                                  <p><a href="" class="text-white text-center font-12" style="font-weight: bolder">MAGAS Team Ranking</a></p>
                              </div>
-                                            <div class="all-teams d-xl-none d-lg-none d-sm-block d-md-none">
+                             <div class="all-teams d-xl-none d-lg-none d-sm-block d-md-none">
                                 <p class="teams-partake">TEAMS / INSTITUTIONS (a-z)
                                 </p>
                                     <li class="nav-item">
@@ -665,6 +723,7 @@
                                  <p class="text-truncate" data-toggle="tooltip" title="Ghana Technical Universities Sports Association Games"><a href="#"><img src="teams_flag/AIT_CREST.png" alt="" style="width: 20px;"> GHATUSA Games </a></p>
                                  <p class="text-truncate" data-toggle="tooltip" title="Private Universities Students Association of Ghana Games"><a href="#"><img src="teams_flag/AIT_CREST.png" alt="" style="width: 20px;">  PUSAG Games</a></p>
                             </div>
+                             <p><a href="" class="text-white font-12">MAGAS Team Ranking</a></p>
                             <div class="all-teams">
                                 <span class="teams-partake" style="text-align: center">Teams (a-z)
                                 </span>
@@ -672,11 +731,11 @@
                                 <p class="text-truncate" data-toggle="tooltip" title="Accra Technical University"><a href="#"><img src="teams_flag/accratechnical.png" alt="" style="width: 20px;">Accra Technical University </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Academic City University College"><a href="#"><img src="teams_flag/academiccity.png" alt="" style="width: 20px;"> Academic City University College</a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Advanced Business College"><a href="#"><img src="teams_flag/advancedbusinesscollege.png" alt="" style="width: 20px;"> Advanced Business College </a></p>
-                                <p class="text-truncate" data-toggle="tooltip" title="African University College of communication"><a href="#"><img src="teams_flag/aucc.png" alt="" style="width: 15px;"> African University College of communication </a></p>
+                                <p class="text-truncate" data-toggle="tooltip" title="African University College of Communication"><a href="#"><img src="teams_flag/aucc.png" alt="" style="width: 15px;"> African University College of Communication </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="All Nations University"><a href="#"><img src="teams_flag/anu.png" alt="" style="width: 20px;"> All Nations University </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title=" Almond Institute"><a href="#"><img src="teams_flag/almondinst.png" alt="" style="width: 20px;"> Almond Institute </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Anglican University College of Technology"><a href="#"><img src="teams_flag/anglican.png" alt="" style="width: 15px;"> Anglican University College of Technology </a></p>
-                                <p class="text-truncate" data-toggle="tooltip" title="Ashesi University college"><a href="#"><img src="teams_flag/ashesi.png" alt="" style="width: 20px;"> Ashesi University college </a></p>
+                                <p class="text-truncate" data-toggle="tooltip" title="Ashesi University College"><a href="#"><img src="teams_flag/ashesi.png" alt="" style="width: 20px;"> Ashesi University College </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="Akim State College"><a href="#"><img src="teams_flag/akimstate.png" alt="" style="width: 20px;"> Akim State College </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="BlueCrest College"><a href="#"><img src="teams_flag/bluecrest.png" alt="" style="width: 20px;"> BlueCrest College </a></p>
                                 <p class="text-truncate" data-toggle="tooltip" title="BMFI University College"><a href="#"><img src="teams_flag/bmfi.png" alt="" style="width: 20px;"> BMFI University College </a></p>
@@ -746,37 +805,78 @@
         
                          <!--BEGINNING OF MIDDLE PAGE-->
                             <div class="col-sm-12 col-xs-12 col-md-9 col-lg-7">
+                                <div class="container calendar">
                                 <!--START OF CALENDAR-->
-                            <div class="row border-2" style="margin: 0px; width: 100%;" id="myCalendar">
-                                <div class="col-2 text-center calendar activation">
-                                    <a href="#" class="calendar_link   font-12 text-white">LIVE <br><span class="font-10">01 NOV </span></a>
+                            <div class="row border-2  w-100 overflow-auto flex-nowrap " id="myCalendar">
+                              
+                                <div class="col-auto  text-center  ">
+                                    <a href="#" class="calendar_link  font-12 text-white">Sun <br><span class="font-10">01 NOV </span></a>
                                 </div>
     
-                                <div class="col-2 text-center calendar">
-                                    <a href="Football/2025-11-07.html" class="calendar_link text-white font-12">Sat <br><span class="font-10">07 NOV </span></a>
+                                <div class="col-auto text-center">
+                                    <a href="Football/2025-11-07.html" class="calendar_link text-white font-12" >Sat <br><span class="font-10">07 NOV </span></a>
                                 </div>
     
-                                <div class="col-2 text-center calendar">
-                                    <a href="#" class="calendar_link text-white font-12">Sun <br><span class="font-10">13 NOV </span></a>
+                                <div class="col-auto  text-center">
+                                    <a href="#" class="calendar_link text-white font-12" >Sun <br><span class="font-10">13 NOV </span></a>
                                 </div>
     
-                                <div class="col-2 text-center calendar">
+                                <div class="col-auto  text-center">
                                     <a href="#" class="calendar_link text-white font-12">Sat <br><span class="font-10">20 NOV </span></a>
                                 </div>
     
-                                <div class="col-2 text-center calendar">
-                                    <a href="#" class="calendar_link text-white font-12">Sat <br><span class="font-10">28 NOV </span></a>
+                                <div class="col-auto  text-center">
+                                    <a href="#" class="calendar_link text-white font-12 dot">Sat <br><span class="font-10" >28 NOV </span></a>
                                 </div>
     
-                                <div class="col-2 text-center calendar">
-                                    <a href="#" class="calendar_link text-white font-12">Tue <br><span class="font-10">03 DEC </span></a>
+                                 <div class="col-auto  text-center">
+                                    <a href="#" class="calendar_link text-white font-12 dot">Sat <br><span class="font-10" >29 NOV </span></a>
+                                </div>
+                                  <div class="col-auto  text-center">
+                                    <a href="#" class="calendar_link text-white font-12 dot">Sat <br><span class="font-10" >30 NOV </span></a>
+                                </div>
+
+                                 <div class="col-auto  text-center activation">
+                                    <a href="#" class="calendar_link dot  font-12 text-white">LIVE <br><span class="font-10">01 DEC </span></a>
                                 </div>
     
-                                <div class="col-2">
-                                      
-                                 </div>
+                                <div class="col-auto text-center">
+                                    <a href="Football/2025-11-07.html" class="calendar_link text-white font-12" >Sat <br><span class="font-10">07 DEC </span></a>
                                 </div>
-                        
+    
+                                <div class="col-auto  text-center">
+                                    <a href="#" class="calendar_link text-white font-12">Sun <br><span class="font-10">13 DEC </span></a>
+                                </div>
+    
+                                <div class="col-auto  text-center">
+                                    <a href="#" class="calendar_link text-white font-12">Sat <br><span class="font-10">20 DEC </span></a>
+                                </div>
+    
+                                <div class="col-auto  text-center">
+                                    <a href="#" class="calendar_link text-white font-12">Sat <br><span class="font-10">28 DEC </span></a>
+                                </div>
+    
+                                 <div class="col-auto  text-center">
+                                    <a href="#" class="calendar_link text-white font-12">Sat <br><span class="font-10" >29 DEC </span></a>
+                                </div>
+                                  <div class="col-auto  text-center">
+                                    <a href="#" class="calendar_link text-white font-12">Sat <br><span class="font-10">30 DEC </span></a>
+                                </div>
+                                <div class="col-auto  text-center">
+                                    <a href="#" class="calendar_link text-white font-12">Sat <br><span class="font-10">30 DEC </span></a>
+                                </div>
+                                <div class="col-auto  text-center">
+                                    <a href="#" class="calendar_link text-white font-12">Sat <br><span class="font-10">30 DEC </span></a>
+                                </div>
+                                <div class="col-auto  text-center">
+                                    <a href="#" class="calendar_link text-white font-12">Sat <br><span class="font-10">30 DEC </span></a>
+                                </div>
+                                <div class="col-auto  text-center">
+                                    <a href="#" class="calendar_link text-white font-12">Sat <br><span class="font-10">30 DEC </span></a>
+                                </div>
+                        </div>
+
+        </div>
                         <!--END OF CALENDAR-->
                              <!--BEGINNING OF TODAY'S FIXTURES/MIDDLE PAGE-->
                         <div class="row border-3">
@@ -805,7 +905,7 @@
                                     </div> 
                                      <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
             
-                                        <span class="home-team text-truncate"> <img src="teams_flag/mucg.png" alt="" >Methodist University</span><br>
+                                        <span class="home-team text-truncate"> <img src="teams_flag/mucg.png" alt="" >Methodist University Ghana</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/knust.png" alt="" >KNUST</span>
                                         
                                     </div>
@@ -1015,8 +1115,8 @@
                                     </div> 
                                      <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
             
-                                        <span class="home-team text-truncate"> <img src="teams_flag/kumasitechnical.png" alt="" >Kumasi Technical Uni. </span><br>
-                                        <span class="away-team text-truncate"><img src="teams_flag/uds.png" alt="" >UDS</span>
+                                        <span class="home-team text-truncate"> <img src="teams_flag/kumasitechnical.png" alt="" >Kumasi Technical University </span><br>
+                                        <span class="away-team text-truncate"><img src="teams_flag/uds.png" alt="" >University Development Studies</span>
                                         
                                     </div>
                                         <div class="col-1 col-md-1 col-lg-1 col-sm fw-bold home_scores">
@@ -1139,7 +1239,7 @@
                                     </div> 
                                      <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
             
-                                        <span class="home-team text-truncate"> <img src="teams_flag/kaaf.png" alt="" >KAAF Uni. college</span><br>
+                                        <span class="home-team text-truncate"> <img src="teams_flag/kaaf.png" alt="" >KAAF University college</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/VVU.png" alt="" >Valley view university college</span>
                                         
                                     </div>
@@ -1449,7 +1549,7 @@
                                      <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/ashesi.png" alt="" >Ashesi  University college</span><br>
-                                        <span class="away-team text-truncate"><img src="teams_flag/Lancaster.png" alt="" >lancaster university college</span>
+                                        <span class="away-team text-truncate"><img src="teams_flag/Lancaster.png" alt="" >lancaster university ghana</span>
                                         
                                     </div>
                                         <div class="col-1 col-md-1 col-lg-1 col-sm fw-bold home_scores">
@@ -1473,7 +1573,7 @@
                                      <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/bmfi.png" alt="" >BMFI  University college</span><br>
-                                         <span class="away-team text-truncate"><img src="teams_flag/christianservice.png" alt="" >christian service college <i class="fas fa-arrow-alt-circle-up" style="color: greenyellow; font-size: 15px"></i></span>
+                                         <span class="away-team text-truncate"><img src="teams_flag/christianservice.png" alt="">christian service college <i class="fas fa-arrow-alt-circle-up" style="color: greenyellow; font-size: 15px"></i></span>
                                         
                                     </div>
                                         <div class="col-1 col-md-1 col-lg-1 col-sm fw-bold home_scores">
@@ -1683,7 +1783,7 @@
 <div class="carousel-item active">
 <table class="table table-dark  table-sm table-striped" style="background-color:black;">
     <h6 class="text-success mb-3 text-center">Champions League</h6>
-<p class="groupings">Group A</p>
+<p class="groupings">GROUP A</p>
 <thead>
        <tr>
             <th class="text-center">#</th>
@@ -1703,21 +1803,21 @@
      </tr>
      <tr>
             <td class="next-stage">2</td>
-            <td>UDS</td>
+            <td>Methodist University Ghana</td>
             <td class="text-center">2</td>
             <td class="text-center">2</td>
             <td class="text-center">4</td>
     </tr>
     <tr>
             <td>3</td>
-            <td>KTU</td>
+            <td>Accra Technical University</td>
             <td class="text-center">2</td>
             <td class="text-center">1</td>
             <td class="text-center">3</td>
     </tr>
     <tr>
             <td>4</td>
-            <td>UG</td>
+            <td>University of Cape Coast</td>
             <td class="text-center">2</td>
             <td class="text-center">-2</td>
             <td class="text-center">1</td>
@@ -1728,26 +1828,26 @@
 <div class="Nxt"><button> </button> Next stage</div>
     
  <table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
-    <p class="groupings">Top goal scorers</p>
+    <p class="groupings">GOAL SCORERS</p>
     <thead>
         <tr>
             <th class="text-center">#</th>
-            <th class="text-center">Player</th>
-            <th class="text-center">Team</th>
-            <th class="text-center">Goal(s)</th>
+            <th class="text-center">PLAYER</th>
+            <th class="text-center">TEAM</th>
+            <th class="text-center">GOALS</th>
        </tr>
     </thead>
 <tbody>
         <tr>
             <td>1</td>
             <td>Belinda Lamiley</td>
-            <td>UDS</td>
+            <td>Methodist University Ghana</td>
             <td class="text-center">5</td>
 
        </tr>
         <tr>
             <td>2</td>
-            <a href="https://www.livescore.com/en/football/champions-league/"><td>George A. Agyemang</td></a>
+           <td>George A. Agyemang</td>
             <td>KNUST</td>
             <td class="text-center">4</td>
 
@@ -1755,13 +1855,13 @@
       <tr>
             <td>3</td>
             <td>Joseph k. Asiedu</td>
-            <td>KTU</td>
+            <td>Accra Technical University</td>
             <td class="text-center">2</td>
      </tr>
      <tr>
             <td>3</td>
             <td>Francis Nortey</td>
-            <td>UG</td>
+            <td>University of Cape Coast</td>
             <td class="text-center">2</td>
     </tr>
 
@@ -1775,20 +1875,20 @@
     </table>
  
 <table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
-      <p class="groupings">Top assist</p>
+      <p class="groupings">ASSISTS</p>
     <thead>
       <tr>
             <th class="text-center">#</th>
-            <th class="text-center">Player</th>
-            <th class="text-center">Team</th>
-            <th class="text-center">Assist</th>
+            <th class="text-center">PLAYER</th>
+            <th class="text-center">TEAM</th>
+            <th class="text-center">ASSIST</th>
       </tr>
    </thead>
 <tbody>
      <tr>
             <td>1</td>
             <td>Belinda Lamiley</td>
-            <td>UDS</td>
+            <td>University of Cape Coast</td>
             <td class="text-center">3</td>
      </tr>
      <tr>
@@ -1798,15 +1898,15 @@
             <td class="text-center">2</td>
     </tr>
     <tr>
-            <td>3</td>
+            <td>2</td>
             <td>Joseph k. Asiedu</td>
-            <td>KTU</td>
+            <td>Methodist University Ghana</td>
             <td class="text-center">2</td>
    </tr>
    <tr>
-            <td>3</td>
+            <td>2</td>
             <td>Francis Nortey</td>
-            <td>UG</td>
+            <td>Accra Technical University</td>
             <td class="text-center">2</td>
    </tr>
    <tr>
@@ -1822,7 +1922,7 @@
 <div class="carousel-item">
    <table class="table table-dark table-bordered table-sm table-striped"style="background-color:black;">
          <h6 class="text-success mb-3 text-center">Champions League</h6>
-   <p class="groupings">Group B</p>
+   <p class="groupings">GROUP B</p>
  <thead>
       <tr>
             <th class="text-center">#</th>
@@ -1867,14 +1967,14 @@
     
 <div class="Nxt"><button> </button> Next stage</div>
    <table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
-<p class="groupings">Top goal scorers</p>
+<p class="groupings">GOAL SCORERS</p>
    <thead>
 
       <tr>
             <th class="text-center">#</th>
-            <th class="text-center">Player</th>
-            <th class="text-center">Team</th>
-            <th class="text-center">Goal(s)</th>
+            <th class="text-center">PLAYER</th>
+            <th class="text-center">TEAM</th>
+            <th class="text-center">GOALS</th>
      </tr>
   </thead>
 <tbody>
@@ -1914,13 +2014,13 @@
     </table>
  
 <table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;" >
-    <p class="groupings">Top assist</p>
+    <p class="groupings">ASSISTS</p>
 <thead>
      <tr>
             <th class="text-center">#</th>
-            <th class="text-center">Player</th>
-            <th class="text-center">Team</th>
-            <th class="text-center">Assist</th>
+            <th class="text-center">PLAYER</th>
+            <th class="text-center">TEAM</th>
+            <th class="text-center">ASSIST</th>
      </tr>
 </thead>
      <tbody>
@@ -1965,7 +2065,7 @@
 <div class="carousel-item">
 <table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
    <h6 class="text-success mb-3 text-center">Champions League</h6>
-<p class="groupings">Group C</p>
+<p class="groupings">GROUP C</p>
 <thead>
 
 <tr>
@@ -2012,7 +2112,7 @@
     
 <div class="Nxt"><button> </button> Next stage</div>
 <table class="table table-dark table-bordered table-sm table-striped" style="background-color:black;">
-<p class="groupings">Top goal scorers</p>
+<p class="groupings">GOAL SCORERS</p>
 <thead>
 
 <tr>
@@ -2755,7 +2855,7 @@
         <a href="" class="text-white me-4" data-toggle="tooltip" title="X(formerly twitter)">
           <i class="fa fa-twitter"></i>
         </a>||
-        <a href="" class="text-white me-4" data-toggle="tooltip" title="Youtube">
+        <a href="" class="text-white me-4" data-toggle="tooltip" title="YouTube">
           <i class="fab fa-youtube"></i>
         </a>||
         <a href="" class="text-white me-4" data-toggle="tooltip" title="Instagram">
@@ -2841,7 +2941,7 @@
          class="text-center p-3"
          style="background-color: rgba(0, 0, 0, 0.2)"
          >
-      © 2025 Copyright:
+      © 2024 Copyright:
       <a class="text-white" href="https://uniscores.com/"
          >Uniscores.com</a
         >
