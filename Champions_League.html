@@ -9,7 +9,17 @@
           <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>  
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>      
          <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
-        
+        <script>
+$(document).ready(function(){
+	$('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
+		localStorage.setItem('activeTab', $(e.target).attr('href'));
+	});
+	var activeTab = localStorage.getItem('activeTab');
+	if(activeTab){
+		$('#myTab a[href="' + activeTab + '"]').tab('show');
+	}
+});
+        </script>
               <style>
         .font-15{
                  font-size: 15px;
@@ -97,7 +107,7 @@
 .nav-tabs{
                 height: 40px;
                 width: 100%;
-                background-color: black;
+                background-color: #000;
             }            
 
 	
@@ -117,14 +127,14 @@
         font-size: 12px
 	}
 	
-	.nav-tabs li.active a,
-	.nav-tabs li:hover a{
+	nav-tabs li.active a,
+	nav-tabs li:hover a{
 		color : #999999;
 	}
 	
 
-	.nav-tabs li.active:after,
-	.nav-tabs li:hover:after{
+	nav-tabs li.active:after,
+	nav-tabs li:hover:after{
 		background-color: #fff;
 		position: absolute;
 		width:50px;	
@@ -192,7 +202,68 @@
     height: 20px;
     border-radius: 50%;
                   }
-              </style>
+
+ /*ARCHIVE NAV-TABS CSS*/ 
+.awardee{
+                width: 100%;
+                background-color: #000;
+                margin: 0;
+               text-align: left;
+               justify-content: flex-start
+               
+                  }
+.awardee li{
+               text-decoration: none;
+               color:#fff;
+               margin-bottom: 5px
+                  }
+.awardee li::marker{
+                      color: red;
+                  }
+.awardee li a{
+		color:#fff;
+		font-weight:bold;
+		text-decoration: none;
+        font-size: 10px
+	}
+OBP{
+    padding: 3px 9px;
+    color: #fff;
+                  }
+.OBP img, .TP img, .TA img, .BF img, .BM img, .BD img, .BGK img, .GOTT img,.BYPOTT img,.BC img,.BT img,.BS img,.FP img{
+    width: 25px; 
+    border-radius: 50%; 
+           }
+.worldbest-defender{
+justify-content: center;
+align-content: space-between;
+    
+                  }
+.worldbest-defender img, .worldbest-goalkeeper img {
+    width: 25px; 
+    border-radius: 50%;
+    margin-left: 25px;
+                  }
+@media (max-width: 576px) { 
+    .worldbest-defender img, .worldbest-goalkeeper img{
+    width: 25px; 
+    border-radius: 50%;
+    margin: 12px;
+     
+               
+    } 
+}
+@media (max-width: 576px) { 
+    .worldbest-goalkeeper img{
+    width: 25px; 
+    border-radius: 50%;
+    margin: 7px;
+     
+               
+    } 
+}
+
+      </style>
          </head>
             <body style="background-color: black">
                 <div class="container" style="margin-top: 15px">
@@ -206,11 +277,11 @@
                                             <div class="col-10">
                                                 <h5 class="font-18w">Tertiary Champions League</h5>
                                                 <p class="font-12">GHANA <select class="form-select form-select-sm  text-center" aria-label=".form-select-sm example" style="background-color: #aaa">
-  <option selected >Select season</option>
+ <option selected>Select season</option>
  <option value="1"><a href="">23/24</a></option>
  <option value="2"><a href="">22/23</a></option>
  <option value="3"><a href="">21/22</a></option>
-</select></p>  <h2 class="font-12 text-center"> 
+</select></p><h2 class="font-12 text-center"> 
             </h2>
                                             </div>
                                                    
@@ -222,20 +293,22 @@
   <div class="tabs-animated">
 
   <!-- Nav tabs -->
-  <ul class="nav nav-tabs nav-pills" role="tablist">
-    <li role="presentation"><a href="#news" aria-controls="news" role="news-tab" data-toggle="tab" >NEWS</a></li>
-    <li role="presentation" class="active" ><a href="#result"  aria-controls="result" role="tab" data-toggle="tab" aria-selected="">RESULTS</a></li>
-    <li role="presentation"><a href="#achievements" aria-controls="achievements" role="tab" data-toggle="tab">ACHIEVEMENTS</a></li>
-    <li role="presentation"><a href="#archive" aria-controls="archive" role="tab" data-toggle="tab">ARCHIVE</a></li>
+  <ul class="nav nav-tabs last_tab" id="myTab" role="tablist">
+    <li role="presentation" class="nav-item"><a href="#news" class="nav-link" aria-controls="news" role="news-tab" data-toggle="tab" >NEWS</a></li>
+    <li role="presentation" class="nav-item"><a href="#result" class="nav-link"  aria-controls="result" role="tab" data-toggle="tab" >RESULTS</a></li>
+    <li role="presentation" class="nav-item"><a href="#achievements" class="nav-link" aria-controls="achievements" role="tab" data-toggle="tab">ACHIEVEMENTS</a></li>
+    <li role="presentation" class="nav-item"><a href="#archive" class="nav-link" aria-controls="archive" role="tab" data-toggle="tab">ARCHIVE</a></li>
   </ul>
       </div>
   
   <!-- Tab panes -->
                 
          <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade" id="news">                                 
+    <div role="tabpanel" class="tab-pane fade show active" id="news"> 
+        
+
       </div>
-    <div role="tabpanel" class="tab-pane fade show active selected" id="result">
+    <div role="tabpanel" class="tab-pane fade" id="result">
         <div class="row">
             <div class="col mt-1">
                <h5 class="font-13">Champions League <span class="font-10"><a href="">Finals</a></span></h5> 
@@ -1032,23 +1105,99 @@
              
              
       <div role="tabpanel" class="tab-pane fade" id="achievements"><!-- START OF ACHIEVEMENTS  --> 
-          <ul class="text-white">
+          <div class="container-fluid awardee">
+          
                <li>OVERALL BEST PLAYER</li>
+              <p class="OBP"><a href="forward.html"><img src="images/cr7.jpeg" alt=""><span class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Cristiano Ronaldo Alveiro Dos Santos</span></a></p>
                <li>TOP SCORER</li>
+              <p class="OBP"><a href="forward.html"><img src="images/cr7.jpeg" alt=""><span class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Cristiano Ronaldo Alveiro Dos Santos</span></a></p>
                <li>TOP ASSIST</li>
+              <p class="TA"><a href="Midfielder.html"><img src="images/bruno.jpeg" alt=""><span class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Bruno Fernandez</span></a></p>
                <li>BEST FORWARD</li>
+              <p class="BF"><a href="forward.html"><img src="images/cr7.jpeg" alt=""><span class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Cristiano Ronaldo Alveiro Dos Santos</span></a></p>
                <li>BEST MIDFIELDER</li>
+              <p class="BM"><a href="Midfielder.html"><img src="images/bruno.jpeg" alt=""><span class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Bruno Fernandez</span></a></p>
                <li>BEST DEFENDER</li>
+              <p class="BD"><a href="defender.html"><img src="images/lucha.jpeg" alt=""><span class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Lisandro "Licha" Martinez</span></a></p>
                <li>BEST GOALKEEPER</li>
+              <p class="BGK"><a href="goalkeeper.html"><img src="images/onana.jpeg" alt=""><span class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Andre Onana</span></a></p>
                <li>THE BEST ELEVEN</li>
+              <div class="container">
+                  <span class="text-white">4-2-3-1</span>
+                  <div class="row">
+                      <div class="col-4"></div>
+                      <div class="col-4 justify-items-center">
+                          <span class="worldbest-goalkeeper" style="justify-content: center"><a href="goalkeeper.html"><img src="images/onana.jpeg" style="margin-left: 25px;" alt=""><p class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Andre Onana</p></a></span>
+                      </div>
+                      <div class="col-4"></div>
+                  </div>
+                  <div class="row mb-2">
+                                        <div class="col-3 justify-items-center">
+                          <span class="worldbest-defender" style="justify-content: center"><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><p class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Diogo Dalot</p></a></span>
+                      </div>
+                                            <div class="col-3 justify-items-center">
+                          <span class="worldbest-defender" style="justify-content: center"><a href="defender.html"><img src="images/lucha.jpeg" alt=""><p class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Lisandro Martinez</p></a></span>
+                      </div>
+                                            <div class="col-3 justify-items-center">
+                          <span class="worldbest-defender" style="justify-content: center"><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><p class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Raphaël Varane</p></a></span>
+                      </div>
+                                            <div class="col-3 justify-items-center">
+                          <span class="worldbest-defender" style="justify-content: center"><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg"  alt=""><p class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Aaron Wan-Bissaka</p></a></span>
+                      </div>
+                  </div>
+                  
+                                    <div class="row mb-2">
+                                        <div class="col-2 justify-items-center">
+                          
+                      </div>
+                                            <div class="col-4 justify-items-center">
+                          <span class="worldbest-defender" style="justify-content: center"><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><p class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Scott McTominay</p></a></span>
+                      </div>
+                                            <div class="col-4 justify-items-center">
+                          <span class="worldbest-defender" style="justify-content: center"><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><p class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Kobbie Mainoo</p></a></span>
+                      </div>
+                                            <div class="col-2 justify-items-center">
+                          
+                      </div>
+                  </div>
+                  
+                    <div class="row mb-2">
+                                        <div class="col-4 justify-items-center">
+                          <span class="worldbest-defender" style="justify-content: center"><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><p class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Alejandro Garnacho</p></a></span>
+                      </div>
+                                            <div class="col-4 justify-items-center">
+                          <span class="worldbest-defender" style="justify-content: center"><a href="Midfielder.html"><img src="images/bruno.jpeg" alt=""><p class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Bruno Fernandes</p></a></span>
+                      </div>
+                                            <div class="col-4 justify-items-center">
+                          <span class="worldbest-defender" style="justify-content: center"><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><p class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Marcus Rashford</p></a></span>
+                      </div>
+                                            
+                  </div>
+                  
+                    
+                    <div class="row">
+                      <div class="col-4"></div>
+                      <div class="col-4 justify-items-center">
+                          <span class="worldbest-goalkeeper" style="justify-content: center"><a href="forward.html"><img src="images/cr7.jpeg" style="margin-left: 25px;" alt=""><p class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Cristiano Ronaldo</p></a></span>
+                      </div>
+                      <div class="col-4"></div>
+                  </div>
+                  <div class="subs text-white mb-3">SUBS: <span><a href="" class="text-white">Tom Heaton</a></span>, <span><a href="" class="text-white">Harry Maguire</a></span>, <span><a href="" class="text-white">Victor Lindelof</a></span>, <span><a href="" class="text-white">Luke Shaw</a></span>, <span><a href="" class="text-white">Christia Eriksen</a></span>, <span><a href="" class="text-white">Mason Mount</a></span>, <span><a href="" class="text-white">Sofyan Amrabat</a></span>, <span><a href="" class="text-white">Antony</a></span>, <span><a href="" class="text-white">Amad Diallo</a></span>, <span><a href="" class="text-white">Rasmus Hojlund</a></span>, <span><a href="" class="text-white">Anthony Martial</a></span></div>
+              </div>
                <li>THE GOAL OF THE TOURNAMENT</li>
-               <li>THE BEST YOUNG PLAYER OF THE TOUNAMENT</li>
-               <li>THE BEST COACH</li>
-               <li>THE BEST TEAM</li>
-               <li>THE BEST SUPPORTERS</li>
-               <li>FAIR PLAY </li>
+              <p class="GOTT"><a href=""><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Alejandro Garnacho Overhead kick Vs Everton</span></a></p>
             
-          </ul>   
+               <li>THE BEST YOUNG PLAYER OF THE TOUNAMENT</li>
+              <p class="BYPOTT"><a href="goalkeeper.html"><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Kobbie Mainoo</span></a></p>
+               <li>THE BEST COACH</li>
+              <p class="BC"><a href="goalkeeper.html"><img src="images/male-avatar-profile-picture-vector-10211761.jpeg" alt=""><span class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Ebenezer Quaye</span></a></p>
+               <li>THE BEST TEAM</li>
+              <p class="BT"><a href="goalkeeper.html"><img src="teams_flag/mucg.png" alt=""><span class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">Methodist University Ghana</span></a></p>
+               <li>THE BEST SUPPORTERS</li>
+              <p class="BS"><a href="goalkeeper.html"><img src="teams_flag/knust.png" alt=""><span class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">KNUST Supporters Club</span></a></p>
+               <li>FAIR PLAY </li> 
+              <p class="FP"><a href="goalkeeper.html"><img src="teams_flag/ug.png" alt=""><span class="fw-bold" style="font-size: 13px; padding: 0 5px; color: #aaa">University Of Ghana</span></a></p>
+          </div>
     </div><!-- END OF ACHIEVEMENTS  -->
              
    <div role="tabpanel" class="tab-pane fade" id="archive"><!-- START OF ARCHIVES  --> 
@@ -1057,11 +1206,17 @@
                <div class="col-6 mt-3">
                    <div class="h4">SEASON</div>
                    <p class="season mb-3">MAGaS Tertiary Champions League 2024</p>
-                    <p class="season mb-3">MAGaS Tertiary Champions League 2023</p>
                </div>
                <div class="col-6 mt-3">
                    <div class="h4">WINNER</div>
                    <p class="winner mb-3"><a href="methodist_university.html"> <img src="teams_flag/mucg.png" alt="" >Methodist University Ghana</a></p>
+               </div>
+           </div> 
+                      <div class="row">
+               <div class="col-6">
+                    <p class="season mb-3">MAGaS Tertiary Champions League 2023</p>
+               </div>
+               <div class="col-6">
                    <p class="winner mb-3"><a href=""> <img src="teams_flag/ug.png" alt="" >University of Ghana</a></p>
                </div>
            </div> 
