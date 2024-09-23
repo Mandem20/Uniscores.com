@@ -37,10 +37,10 @@ $(document).ready(function(){
                   text-decoration: underline;
                   font-family: sans-serif;
                 }
-        .font-18w{
-                  font-size: 18px;
+        .font-20w{
+                  font-size: 20px;
                   color: #fff;
-                  font-weight: bold;
+                  font-weight: 400;
                   font-family: sans-serif;
         }     
         .font-10{
@@ -69,7 +69,7 @@ $(document).ready(function(){
                     font-weight: bold;        
                 }
          .full-time{
-                    font-size: 10px;
+                    font-size: 12px;
                     text-align:center;
                     margin:12px 0px;
                     font-weight: 700
@@ -77,11 +77,11 @@ $(document).ready(function(){
         .favourite_date{
                   color: #fff;
                   text-align: right;
-                  font-size: 10px;
+                  font-size: 14px;
                   border-bottom-color: aliceblue;
                 }
         .font-time{
-            font-size: 10px;
+            font-size: 12px;
             text-align:center;
             margin:20px 1px;
         }
@@ -110,12 +110,10 @@ $(document).ready(function(){
                 background-color: #000;
             }            
 
-	
+              
 .nav-tabs li{
 		position:relative;
-		display:inline-block;
-      
-        
+		display:inline-block;      
 	}
 	
 .nav-tabs li a{
@@ -127,9 +125,9 @@ $(document).ready(function(){
         font-size: 12px
 	}
 	
-	nav-tabs li.active a,
-	nav-tabs li:hover a{
-		color : #999999;
+	.nav-tabs li.active a,
+	.nav-tabs li:hover a{
+		color : #fff;
 	}
 	
 
@@ -161,7 +159,7 @@ $(document).ready(function(){
 		
 	}            
 .score-card {
-    font-size: 10px; 
+    font-size: 12px; 
     text-overflow: ellipsis;
     overflow: hidden;
     font-weight: 700;
@@ -181,7 +179,21 @@ $(document).ready(function(){
               color: #fff;
               margin: 5px 8px;
               font-weight: bold;
-          }          
+          } 
+.away-team{
+           font-size: 13px;
+            padding: 1px 1px;
+            color: #fff;
+            font-weight: 400; 
+            text-transform: capitalize;
+        }  
+.home-team{
+           font-size: 13px;
+            padding: 1px 1px;
+            color: #fff;
+            font-weight: 400; 
+           text-transform: capitalize;
+        }  
  /*ARCHIVE NAV-TABS CSS*/ 
 .h4{
     font-size: 14px;
@@ -191,7 +203,7 @@ $(document).ready(function(){
     font-family:  "Times New Roman", serif;
                   }
 .season, .winner{
-    font-size: 12px;
+    font-size: 15px;
     color: #fff;
     font-weight: 900;
     font-family:  Cambria, Cochin, Georgia;
@@ -224,7 +236,7 @@ $(document).ready(function(){
 		color:#fff;
 		font-weight:bold;
 		text-decoration: none;
-        font-size: 10px
+        font-size: 12px
 	}
 OBP{
     padding: 3px 9px;
@@ -262,7 +274,10 @@ align-content: space-between;
                
     } 
 }
-
+.row .bg-2 .col-sm-12 .hovering :hover > *{
+    background-color: red;
+    height: 60px;
+        }
       </style>
          </head>
             <body style="background-color: black">
@@ -275,7 +290,7 @@ align-content: space-between;
                                             </div> 
                                             
                                             <div class="col-10">
-                                                <h5 class="font-18w">Tertiary Champions League</h5>
+                                                <h5 class="font-20w">Tertiary Champions League</h5>
                                                 <p class="font-12">GHANA <select class="form-select form-select-sm  text-center" aria-label=".form-select-sm example" style="background-color: #aaa">
  <option selected>Select season</option>
  <option value="1"><a href="">23/24</a></option>
@@ -293,8 +308,8 @@ align-content: space-between;
   <div class="tabs-animated">
 
   <!-- Nav tabs -->
-  <ul class="nav nav-tabs last_tab" id="myTab" role="tablist">
-    <li role="presentation" class="nav-item"><a href="#news" class="nav-link" aria-controls="news" role="news-tab" data-toggle="tab" >NEWS</a></li>
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li role="presentation" class="nav-item"><a href="#news" class="nav-link active" aria-controls="news" role="news-tab" data-toggle="tab" >NEWS</a></li>
     <li role="presentation" class="nav-item"><a href="#result" class="nav-link"  aria-controls="result" role="tab" data-toggle="tab" >RESULTS</a></li>
     <li role="presentation" class="nav-item"><a href="#achievements" class="nav-link" aria-controls="achievements" role="tab" data-toggle="tab">ACHIEVEMENTS</a></li>
     <li role="presentation" class="nav-item"><a href="#archive" class="nav-link" aria-controls="archive" role="tab" data-toggle="tab">ARCHIVE</a></li>
@@ -317,7 +332,7 @@ align-content: space-between;
         <div class="row">
             <div class="col favourite_date">DECEMBER 25</div>
                         <div class="col-sm-12 hovering">
-        <a href="MUCG_vrs_KNUST.html" class="hovering">
+        <a href="MUCG_vrs_KNUST.html">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
                                         Finished 
@@ -326,8 +341,8 @@ align-content: space-between;
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
-                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
+                                        <span class="text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -345,7 +360,7 @@ align-content: space-between;
         </div>
         <div class="row">
             <div class="col favourite_date">NOVEMBBER 29</div>
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 hovering">
         <a href="">
                                 <div class="row bg-2">
                                    <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -355,8 +370,8 @@ align-content: space-between;
                                     </p>
                                     </div>              
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
+                                        <span class="text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -369,7 +384,7 @@ align-content: space-between;
             
             
             <div class="col favourite_date">NOVEMBER 28</div>
-        <div class="col-sm-12">
+        <div class="col-sm-12 hovering">
         <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -379,8 +394,8 @@ align-content: space-between;
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
+                                        <span class="text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -398,7 +413,7 @@ align-content: space-between;
         </div>
         <div class="row">
             <div class="col favourite_date">NOVEMBBER 25</div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
         <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -408,8 +423,8 @@ align-content: space-between;
                                     </p>
                                     </div>              
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
+                                        <span class="text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -419,7 +434,7 @@ align-content: space-between;
                                 </div>
                      </a>
         </div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
                <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -429,8 +444,8 @@ align-content: space-between;
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
+                                        <span class="text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -442,7 +457,7 @@ align-content: space-between;
                </div>
 
             <div class="col favourite_date">NOVEMBER 24</div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
         <a href="" class="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -452,8 +467,8 @@ align-content: space-between;
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">Uiversity of Cape Coast</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
+                                        <span class="text-truncate home-team"><img src="teams_flag/ucc.png" alt="">Uiversity of Cape Coast</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -463,7 +478,7 @@ align-content: space-between;
                                 </div>
                      </a>
             </div>
-        <div class="col-sm-12">
+        <div class="col-sm-12 hovering">
         <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -473,8 +488,8 @@ align-content: space-between;
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                        <span class="text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -494,7 +509,7 @@ align-content: space-between;
         <div class="row">
             <div class="col favourite_date">NOVEMBBER 20</div>
             
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 hovering">
         <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -504,8 +519,8 @@ align-content: space-between;
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
+                                        <span class="text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -515,7 +530,7 @@ align-content: space-between;
                                 </div>
                      </a>
         </div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
         <a href="">
                                 <div class="row bg-2">
                                       <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -525,8 +540,8 @@ align-content: space-between;
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
+                                        <span class="text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -536,7 +551,7 @@ align-content: space-between;
                                 </div>
                      </a>
             </div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
                <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -546,8 +561,8 @@ align-content: space-between;
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
+                                        <span class="text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -557,7 +572,7 @@ align-content: space-between;
                                 </div>
                     </a>
                </div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
         <a href="" class="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -567,8 +582,8 @@ align-content: space-between;
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">Uiversity of Cape Coast</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
+                                        <span class="text-truncate home-team"><img src="teams_flag/ucc.png" alt="">Uiversity of Cape Coast</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -581,7 +596,7 @@ align-content: space-between;
             
             
             <div class="col favourite_date">NOVEMBER 21</div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
                <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -591,8 +606,8 @@ align-content: space-between;
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
+                                        <span class="text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -602,7 +617,7 @@ align-content: space-between;
                                 </div>
                     </a>
                </div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
         <a href="" class="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -612,8 +627,8 @@ align-content: space-between;
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
+                                        <span class="text-truncate home-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -623,7 +638,7 @@ align-content: space-between;
                                 </div>
                      </a>
             </div>
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 hovering">
                 <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -633,8 +648,8 @@ align-content: space-between;
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
+                                        <span class="text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -644,7 +659,7 @@ align-content: space-between;
                                 </div>
                      </a>
         </div>
-        <div class="col-sm-12">
+        <div class="col-sm-12 hovering">
         <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -654,8 +669,8 @@ align-content: space-between;
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
+                                        <span class="text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -674,7 +689,7 @@ align-content: space-between;
         </div>
         <div class="row">
             <div class="col favourite_date">SEPTEMBER 20</div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
                <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -684,8 +699,8 @@ align-content: space-between;
                                     </p>
                                     </div>              
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
+                                        <span class="text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -695,8 +710,8 @@ align-content: space-between;
                                 </div>
                     </a>
                </div>
-            <div class="col-sm-12">
-        <a href="" class="">
+            <div class="col-sm-12 hovering">
+        <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
                                         Finished 
@@ -705,8 +720,8 @@ align-content: space-between;
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
+                                        <span class="text-truncate home-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -724,7 +739,7 @@ align-content: space-between;
         </div>
         <div class="row">
             <div class="col favourite_date">SEPTEMBER 13</div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
         <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -734,8 +749,8 @@ align-content: space-between;
                                     </p>
                                     </div>             
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
+                                        <span class="text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -745,7 +760,7 @@ align-content: space-between;
                                 </div>
                      </a>
         </div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
         <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -755,8 +770,8 @@ align-content: space-between;
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
+                                        <span class="text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -774,7 +789,7 @@ align-content: space-between;
         </div>
         <div class="row">
             <div class="col favourite_date">SEPTEMBER 6</div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
         <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -784,8 +799,8 @@ align-content: space-between;
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span>
+                                        <span class="text-truncate home-team"> <img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -795,7 +810,7 @@ align-content: space-between;
                                 </div>
                      </a>
         </div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
         <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -805,8 +820,8 @@ align-content: space-between;
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
+                                        <span class="text-truncate home-team"> <img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -824,7 +839,7 @@ align-content: space-between;
         </div>
         <div class="row">
             <div class="col favourite_date">SEPTEMBER 01</div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
         <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -834,8 +849,8 @@ align-content: space-between;
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
+                                        <span class="text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -845,7 +860,7 @@ align-content: space-between;
                                 </div>
                      </a>
         </div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
         <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -855,8 +870,8 @@ align-content: space-between;
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
+                                        <span class="text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -874,7 +889,7 @@ align-content: space-between;
         </div>
         <div class="row">
             <div class="col favourite_date">SEPTEMBER 20</div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
                <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -884,8 +899,8 @@ align-content: space-between;
                                     </p>
                                     </div>              
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
+                                        <span class="text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -895,8 +910,8 @@ align-content: space-between;
                                 </div>
                     </a>
                </div>
-            <div class="col-sm-12">
-        <a href="" class="">
+            <div class="col-sm-12 hovering">
+        <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
                                         Finished 
@@ -905,8 +920,8 @@ align-content: space-between;
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
+                                        <span class="text-truncate home-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -925,7 +940,7 @@ align-content: space-between;
         <div class="row">
             <div class="col favourite_date">MAY 05</div>
             
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 hovering">
              <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -935,8 +950,8 @@ align-content: space-between;
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">Uiversity of Cape Coast</span>
+                                        <span class="text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/ucc.png" alt="">Uiversity of Cape Coast</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -946,7 +961,7 @@ align-content: space-between;
                                 </div>
                      </a>
             </div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
              <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -956,8 +971,8 @@ align-content: space-between;
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
+                                        <span class="text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -967,7 +982,7 @@ align-content: space-between;
                                 </div>
                      </a>
             </div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
                <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -977,8 +992,8 @@ align-content: space-between;
                                     </p>
                                     </div>                 
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
+                                        <span class="text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -988,7 +1003,7 @@ align-content: space-between;
                                 </div>
                     </a>
                </div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
         <a href="" class="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -998,8 +1013,8 @@ align-content: space-between;
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
+                                        <span class="text-truncate home-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -1012,7 +1027,7 @@ align-content: space-between;
             
             
             <div class="col favourite_date">MAY 04</div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
                <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -1022,8 +1037,8 @@ align-content: space-between;
                                     </p>
                                     </div>                 
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
+                                        <span class="text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/knust.png" alt="">KNUST</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -1033,7 +1048,7 @@ align-content: space-between;
                                 </div>
                     </a>
                </div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
         <a href="" class="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -1043,8 +1058,8 @@ align-content: space-between;
                                     </p>
                                     </div>                
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
+                                        <span class="text-truncate home-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -1054,7 +1069,7 @@ align-content: space-between;
                                 </div>
                      </a>
             </div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 hovering">
                   <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -1064,8 +1079,8 @@ align-content: space-between;
                                     </p>
                                     </div>               
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
+                                        <span class="text-truncate home-team"> <img src="teams_flag/mucg.png" alt="">Methodist University Ghana</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/ucc.png" alt="">University of Cape Coast</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
@@ -1075,7 +1090,7 @@ align-content: space-between;
                                 </div>
                      </a>
         </div>
-        <div class="col-sm-12">
+        <div class="col-sm-12 hovering">
         <a href="">
                                 <div class="row bg-2">
                                     <div class="col-2 col-md-2 col-sm-2 full-time">
@@ -1085,8 +1100,8 @@ align-content: space-between;
                                     </p>
                                     </div>                 
                                     <div class="col-8 col-lg-8 col-md-8 score-card">
-                                        <span class="font-10 text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
-                                        <span class="font-10 text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical</span>
+                                        <span class="text-truncate home-team"><img src="teams_flag/knust.png" alt="">KNUST</span><br>
+                                        <span class="text-truncate away-team"><img src="teams_flag/accratechnical.png" alt="">Accra Technical University</span>
                                     </div>
 
                                     <div class="col-1 home_scores">
