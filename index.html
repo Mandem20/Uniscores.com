@@ -30,7 +30,12 @@
              font-size: 10px;
              line-height: 1px;
         }
-    
+ .col-10 a{     
+            color: #aaa;
+            text-decoration: none;
+            font-family: serif;
+            font-weight: bold;
+        }   
 .font-10 a{     
             color: #aaa;
             font-size: 10px;
@@ -49,7 +54,15 @@
          font-size: 15px;
          color: #fff;
         
-        }       
+        }  
+ .font-17{
+         font-size: 17px;
+         color: #fff;
+         text-decoration: none;
+         font-weight: 700;
+        font-family:  Roboto, Arial, sans-serif;
+        }
+ 
 .font-13{
          font-size: 13px;
          color: #fff;
@@ -264,7 +277,7 @@
         
 /* LEFT SIDEBAR  */
 .all-teams a{
-            font-size: 10px;
+            font-size: 12px;
             color: #fff;
             font-weight: 400;
         }
@@ -342,26 +355,29 @@
          font-size: 12px;
         }
         
-        
+  .font-12table{
+            font-size: 12px;
+            color: #fff;         
+        }      
         
         
 /*MIDDLE PAGE, FIXTURES & RESULTS*/              
 .font-time,.font-time a{
-            font-size: 10px;
+            font-size: 12px;
             text-align:center;
             margin:20px 0px;
             color: #aaa;
+           
         }
-.score-card {
-    font-size: 10px; 
+.score-card { 
     text-overflow: ellipsis;
     overflow: hidden
             }
 .home-team{
-           font-size: 10px;
+           font-size: 13px;
             padding: 1px 1px;
             color: #fff;
-            font-weight: bold; 
+            font-weight: 400; 
            text-transform: capitalize;
         }   
 
@@ -375,10 +391,10 @@
    
         }       
 .away-team{
-           font-size: 10px;
+           font-size: 13px;
             padding: 1px 1px;
             color: #fff;
-            font-weight: bold; 
+            font-weight: 400; 
             text-transform: capitalize;
         }   
 
@@ -401,17 +417,21 @@
           text-align-last: right;
           font-size: 1rem;
           color: #fff;
+          font-weight: 700;
         }
 .contain{
            position: relative; 
            display: inline-flex;
-          width: auto
+           width: auto
         } 
-.hovering :hover{
-            background-color: #000;
-            height: 60px;
+.favourite_match :hover{
+            color: gold;
+            
         }        
- 
+.row.bg-2:hover > * {
+    background-color: #222;
+    height: 60px;
+        }
 /*BODY CONTAINER*/
 .body-container{
             padding-top: 20px;
@@ -821,8 +841,8 @@
                                     <a href="#" class="calendar_link text-white font-12" >Sun <br><span class="font-10">13 NOV </span></a>
                                 </div>
     
-                                <div class="col-auto  text-center">
-                                    <a href="#" class="calendar_link text-white font-12">Sat <br><span class="font-10">20 NOV </span></a>
+                                <div class="col-auto  text-center activation">
+                                    <a href="#" class="calendar_link dot text-white font-12">LIVE <br><span class="font-10">20 NOV </span></a>
                                 </div>
     
                                 <div class="col-auto  text-center">
@@ -836,8 +856,8 @@
                                     <a href="#" class="calendar_link text-white font-12 dot">Sat <br><span class="font-10" >30 NOV </span></a>
                                 </div>
 
-                                 <div class="col-auto  text-center activation">
-                                    <a href="#" class="calendar_link dot  font-12 text-white">LIVE <br><span class="font-10">01 DEC </span></a>
+                                 <div class="col-auto  text-center">
+                                    <a href="#" class="calendar_link  font-12 text-white">Sat <br><span class="font-10">01 DEC </span></a>
                                 </div>
     
                                 <div class="col-auto text-center">
@@ -887,9 +907,11 @@
                                         <img src="teams_flag/Coat_of_arms_of_Ghana.svg.png" alt="" style="width: 20px;">
                                     </div> 
                                     
-                                    <div class="col-10">
-                                        <h5 class="font-13">Champions League</h5>
-                                        <p class="font-10"><a href="Champions_League_Group_A.html">Group A</a></p>
+                                    <div class="col-10 col-sm-11 col-md-11">
+                                        <a href="Champions_League_Group_A.html">
+                                        <h5 class="font-17">Champions League <div class="pull-right" style="text-align: end; display: inline-block; margin-top: 8px; font-size: 18px"><i class="fas fa-angle-right"></i></div></h5>
+                                            <p class="font-10">Group A</p> 
+                                        </a>
                                     </div>
                                 </div>
                                
@@ -903,11 +925,9 @@
                                         FT
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
-            
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
                                         <span class="home-team text-truncate"> <img src="teams_flag/mucg.png" alt="" >Methodist University Ghana</span><br>
-                                        <span class="away-team text-truncate"><img src="teams_flag/knust.png" alt="" >KNUST</span>
-                                        
+                                        <span class="away-team text-truncate"><img src="teams_flag/knust.png" alt="" >KNUST</span>   
                                     </div>
                                         <div class="col-1 col-md-1 col-lg-1 col-sm-1 fw-bold home_scores">
                                         3
@@ -927,7 +947,7 @@
                                         4:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/ucc.png" alt="" > University of Cape Coast</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/accratechnical.png" alt="" >Accra Technical University</span>
@@ -948,10 +968,11 @@
                                     <div class="col-1">
                                         <img src="teams_flag/Coat_of_arms_of_Ghana.svg.png" alt="" style="width: 20px;">
                                     </div> 
-                                    
-                                    <div class="col-10">
-                                        <h5 class="font-13">Champions League</h5>
-                                        <p class="font-10"><a href="">Group B</a></p>
+                                    <div class="col-10 col-sm-11 col-md-11">
+                                        <a href="Champions_League_Group_A.html">
+                                        <h5 class="font-17">Champions League <div class="pull-right" style="text-align: end; display: inline-block; margin-top: 8px; font-size: 18px"><i class="fas fa-angle-right"></i></div></h5>
+                                            <p class="font-10">Group B</p> 
+                                        </a>
                                     </div>
                                 </div>
                                
@@ -965,7 +986,7 @@
                                         3:30
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/ug.png" alt="" > University of Ghana</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/koforiduatechnical.png" alt="" >Koforidua Technical University</span>
@@ -989,7 +1010,7 @@
                                         3:30
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/gimpa.png" alt="" > GIMPA </span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/uew.png" alt="" >University of Education</span>
@@ -1010,10 +1031,11 @@
                                     <div class="col-1">
                                         <img src="teams_flag/Coat_of_arms_of_Ghana.svg.png" alt="" style="width: 20px;">
                                     </div> 
-                                    
-                                    <div class="col-10">
-                                        <h5 class="font-13">Champions League</h5>
-                                        <p class="font-10"><a href="">Group C</a></p>
+                                     <div class="col-10 col-sm-11 col-md-11">
+                                        <a href="Champions_League_Group_A.html">
+                                        <h5 class="font-17">Champions League <div class="pull-right" style="text-align: end; display: inline-block; margin-top: 8px; font-size: 18px"><i class="fas fa-angle-right"></i></div></h5>
+                                            <p class="font-10">Group C</p> 
+                                        </a>
                                     </div>
                                 </div>
                                
@@ -1027,7 +1049,7 @@
                                         4:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/UPSA.png" alt="" > UPS</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/hotechnical.png" alt="" >HO Technical University</span>
@@ -1051,7 +1073,7 @@
                                         4:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/capecoasttechnical.png" alt="" >Cape Coast Technical University </span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/UMAT.png" alt="" >UMAT</span>
@@ -1072,10 +1094,11 @@
                                     <div class="col-1">
                                         <img src="teams_flag/Coat_of_arms_of_Ghana.svg.png" alt="" style="width: 20px;">
                                     </div> 
-                                    
-                                    <div class="col-10">
-                                        <h5 class="font-13">Champions League</h5>
-                                        <p class="font-10"><a href="">Group D</a></p>
+                                      <div class="col-10 col-sm-11 col-md-11">
+                                        <a href="Champions_League_Group_A.html">
+                                        <h5 class="font-17">Champions League <div class="pull-right" style="text-align: end; display: inline-block; margin-top: 8px; font-size: 18px"><i class="fas fa-angle-right"></i></div></h5>
+                                            <p class="font-10">Group D</p> 
+                                        </a>
                                     </div>
                                 </div>
                                
@@ -1089,7 +1112,7 @@
                                         3:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/anu.png" alt="" > All Nations University</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/UHAS.png" alt="" >UHAS</span>
@@ -1113,7 +1136,7 @@
                                         3:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/kumasitechnical.png" alt="" >Kumasi Technical University </span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/uds.png" alt="" >University Development Studies</span>
@@ -1134,10 +1157,11 @@
                                     <div class="col-1">
                                         <img src="teams_flag/Coat_of_arms_of_Ghana.svg.png" alt="" style="width: 20px;">
                                     </div> 
-                                    
-                                    <div class="col-10">
-                                        <h5 class="font-13">Champions League</h5>
-                                        <p class="font-10"><a href="">Group E</a></p>
+                                  <div class="col-10 col-sm-11 col-md-11">
+                                        <a href="Champions_League_Group_A.html">
+                                        <h5 class="font-17">Champions League <div class="pull-right" style="text-align: end; display: inline-block; margin-top: 8px; font-size: 18px"><i class="fas fa-angle-right"></i></div></h5>
+                                            <p class="font-10">Group E</p> 
+                                        </a>
                                     </div>
                                 </div>
                                
@@ -1151,7 +1175,7 @@
                                         2:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/UCOMS.png" alt="">UCOMS</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/ghanatech.png" alt="" >ghana technology university</span>
@@ -1164,7 +1188,7 @@
                                         </div>
                                      </a>
                                     </div> 
-                                 <!--match 2 of group D-->
+                                 <!--match 2 of group E-->
                                   <div class="row bg-2">
                                     <div class="col-1 col-md-1 col-lg-1 col-sm-1  favourite_match">
                                         <a href="" data-toggle="tooltip" title="Add this game to favourite!"> <i class="far fa-star"></i></a>
@@ -1175,7 +1199,7 @@
                                         4:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/watechnical.png" alt="" >Wa Technical University </span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/sunyanitechnical.png" alt="" >sunyani technical university</span>
@@ -1196,10 +1220,11 @@
                                     <div class="col-1">
                                         <img src="images/flagofgh.png" alt="" style="width: 20px;">
                                     </div> 
-                                    
-                                    <div class="col-10">
-                                        <h5 class="font-13">Congress League</h5>
-                                        <p class="font-10"><a href="">Group A</a></p>
+                                    <div class="col-10 col-sm-11 col-md-11">
+                                        <a href="Champions_League_Group_A.html">
+                                        <h5 class="font-17">Congress League <div class="pull-right" style="text-align: end; display: inline-block; margin-top: 8px; font-size: 18px"><i class="fas fa-angle-right"></i></div></h5>
+                                            <p class="font-10">Group A</p> 
+                                        </a>
                                     </div>
                                 </div>
                                
@@ -1213,7 +1238,7 @@
                                         2:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/pentecost.png" alt="">pentecost university</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/central.png" alt="" >central university</span>
@@ -1237,7 +1262,7 @@
                                         4:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/kaaf.png" alt="" >KAAF University college</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/VVU.png" alt="" >Valley view university college</span>
@@ -1258,10 +1283,11 @@
                                     <div class="col-1">
                                         <img src="images/flagofgh.png" alt="" style="width: 20px;">
                                     </div> 
-                                    
-                                    <div class="col-10">
-                                        <h5 class="font-13">Congress League</h5>
-                                        <p class="font-10"><a href="">Group B</a></p>
+                                <div class="col-10 col-sm-11 col-md-11">
+                                        <a href="Champions_League_Group_A.html">
+                                        <h5 class="font-17">Congress League <div class="pull-right" style="text-align: end; display: inline-block; margin-top: 8px; font-size: 18px"><i class="fas fa-angle-right"></i></div></h5>
+                                            <p class="font-10">Group B</p> 
+                                        </a>
                                     </div>
                                 </div>
                                
@@ -1275,7 +1301,7 @@
                                         2:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/kingsuni.png" alt="">kings university college</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/zenith.png" alt="" >zenith university college</span>
@@ -1299,7 +1325,7 @@
                                         4:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/islamicuni.png" alt="" >islamic University college</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/gardencity.png" alt="" >Garden city university college</span>
@@ -1320,10 +1346,11 @@
                                     <div class="col-1">
                                         <img src="images/flagofgh.png" alt="" style="width: 20px;">
                                     </div> 
-                                    
-                                    <div class="col-10">
-                                        <h5 class="font-13">Congress League</h5>
-                                        <p class="font-10"><a href="">Group C</a></p>
+                                <div class="col-10 col-sm-11 col-md-11">
+                                        <a href="Champions_League_Group_A.html">
+                                        <h5 class="font-17">Congress League <div class="pull-right" style="text-align: end; display: inline-block; margin-top: 8px; font-size: 18px"><i class="fas fa-angle-right"></i></div></h5>
+                                            <p class="font-10">Group C</p> 
+                                        </a>
                                     </div>
                                 </div>
                                
@@ -1337,7 +1364,7 @@
                                         2:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/regent.png" alt="">Regent university college</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/catholicuni.png" alt="" >catholic university college</span>
@@ -1361,7 +1388,7 @@
                                         4:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/bluecrest.png" alt="" >bluecrest University college</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/advancedbusinesscollege.png" alt="" >advanced business college</span>
@@ -1382,10 +1409,11 @@
                                     <div class="col-1">
                                         <img src="images/flagofgh.png" alt="" style="width: 20px;">
                                     </div> 
-                                    
-                                    <div class="col-10">
-                                        <h5 class="font-13">Congress League</h5>
-                                        <p class="font-10"><a href="">Group D</a></p>
+                                  <div class="col-10 col-sm-11 col-md-11">
+                                        <a href="Champions_League_Group_A.html">
+                                        <h5 class="font-17">Congress League <div class="pull-right" style="text-align: end; display: inline-block; margin-top: 8px; font-size: 18px"><i class="fas fa-angle-right"></i></div></h5>
+                                            <p class="font-10">Group D</p> 
+                                        </a>
                                     </div>
                                 </div>
                                
@@ -1399,7 +1427,7 @@
                                         2:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/anglican.png" alt="">anglican university college</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/akimstate.png" alt="" >akim state college</span>
@@ -1423,7 +1451,7 @@
                                         4:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/christapostolic.png" alt="" >christ apostolic college</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/wisconsin.png" alt="" >wisconsin university college</span>
@@ -1444,10 +1472,11 @@
                                     <div class="col-1">
                                         <img src="images/flagofgh.png" alt="" style="width: 20px;">
                                     </div> 
-                                    
-                                    <div class="col-10">
-                                        <h5 class="font-13">Congress League</h5>
-                                        <p class="font-10"><a href="">Group E</a></p>
+                                <div class="col-10 col-sm-11 col-md-11">
+                                        <a href="Champions_League_Group_A.html">
+                                        <h5 class="font-17">Congress League <div class="pull-right" style="text-align: end; display: inline-block; margin-top: 8px; font-size: 18px"><i class="fas fa-angle-right"></i></div></h5>
+                                            <p class="font-10">Group E</p> 
+                                        </a>
                                     </div>
                                 </div>
                                
@@ -1461,7 +1490,7 @@
                                         2:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/jayee.png" alt="">jayee university college</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/kessben.png" alt="" >kessben university college</span>
@@ -1485,7 +1514,7 @@
                                         4:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/presbytarianuni.png" alt="" >presbytarian University college</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/almondinst.png" alt="" >almond university college</span>
@@ -1519,10 +1548,10 @@
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
                                     <div class="col-1 col-md-1 col-lg-1 col-sm-1">
                                     <p class="font-time">
-                                        After Penalty
+                                        Postp
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/AIT_CREST.png" alt="">Accra Institue of Technology</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/aucc.png" alt="" >AUCC<i class="fas fa-arrow-alt-circle-up" style="color: greenyellow; font-size: 15px"></i></span>
@@ -1546,7 +1575,7 @@
                                         4:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/ashesi.png" alt="" >Ashesi  University college</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/Lancaster.png" alt="" >lancaster university ghana</span>
@@ -1567,10 +1596,10 @@
                                   <a href="" data-toggle="tooltip" title="Click for match detail!"  class="contain col-10 col-lg-10 col-md-10 col-sm">
                                     <div class="col-1 col-md-1 col-lg-1 col-sm-1">
                                     <p class="font-time">
-                                        Finished
+                                        Susp..
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/bmfi.png" alt="" >BMFI  University college</span><br>
                                          <span class="away-team text-truncate"><img src="teams_flag/christianservice.png" alt="">christian service college <i class="fas fa-arrow-alt-circle-up" style="color: greenyellow; font-size: 15px"></i></span>
@@ -1594,7 +1623,7 @@
                                         4:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/datalink.png" alt="" >datalinnk  University college</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/heritagechristian.png" alt="" >heritage christian college</span>
@@ -1618,7 +1647,7 @@
                                         4:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/westend.png" alt="" >westEnd  University college</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/webster.png" alt="" >webster university college</span>
@@ -1656,7 +1685,7 @@
                                         2:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/AIT_CREST.png" alt="">Accra Institue of Technology</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/aucc.png" alt="" >AUCC</span>
@@ -1680,7 +1709,7 @@
                                         4:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/ashesi.png" alt="" >Ashesi  University college</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/Lancaster.png" alt="" >lancaster university Ghana</span>
@@ -1704,7 +1733,7 @@
                                         4:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/bmfi.png" alt="" >BMFI  University college</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/christianservice.png" alt="" >christian service college</span>
@@ -1728,7 +1757,7 @@
                                         4:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/datalink.png" alt="" >datalinnk  University college</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/heritagechristian.png" alt="" >heritage christian college</span>
@@ -1752,7 +1781,7 @@
                                         4:00
                                     </p>
                                     </div> 
-                                     <div class="col-9 col-lg-10 col-md-10 col-sm score-card">
+                                     <div class="col-10 col-lg-10 col-md-10 col-sm score-card">
             
                                         <span class="home-team text-truncate"> <img src="teams_flag/westend.png" alt="" >westEnd  University college</span><br>
                                         <span class="away-team text-truncate"><img src="teams_flag/webster.png" alt="" >webster university college</span>
@@ -1793,7 +1822,7 @@
             <th class="text-center">PTS</th>
    </tr>
 </thead>
-<tbody>
+<tbody class="font-12table">
       <tr>
             <td class="next-stage">1</td>
             <td>KNUST</td>
@@ -1837,7 +1866,7 @@
             <th class="text-center">GOALS</th>
        </tr>
     </thead>
-<tbody>
+<tbody class="font-12table">
         <tr>
             <td>1</td>
             <td>Belinda Lamiley</td>
@@ -1884,7 +1913,7 @@
             <th class="text-center">ASSIST</th>
       </tr>
    </thead>
-<tbody>
+<tbody class="font-12table">
      <tr>
             <td>1</td>
             <td>Belinda Lamiley</td>
@@ -1932,7 +1961,7 @@
             <th class="text-center">PTS</th>
      </tr>
 </thead>
- <tbody>
+ <tbody class="font-12table">
      <tr>
             <td class="next-stage" title="Next stage">1</td>
             <td>KNUST</td>
@@ -1977,7 +2006,7 @@
             <th class="text-center">GOALS</th>
      </tr>
   </thead>
-<tbody>
+<tbody class="font-12table">
      <tr>
             <td>1</td>
             <td>Belinda Lamiley</td>
@@ -2023,7 +2052,7 @@
             <th class="text-center">ASSIST</th>
      </tr>
 </thead>
-     <tbody>
+     <tbody class="font-12table">
       <tr>
             <td>1</td>
             <td>Belinda Lamiley</td>
@@ -2076,7 +2105,7 @@
 <th class="text-center">PTS</th>
 </tr>
 </thead>
-<tbody>
+<tbody class="font-12table">
 <tr>
 <td class="next-stage">1</td>
 <td>KNUST</td>
@@ -2122,7 +2151,7 @@
 <th class="text-center">Goal(s)</th>
 </tr>
 </thead>
-<tbody>
+<tbody class="font-12table">
 <tr>
 <td>1</td>
 <td>Belinda Lamiley</td>
@@ -2173,7 +2202,7 @@
 <th class="text-center">Assist</th>
 </tr>
 </thead>
-<tbody>
+<tbody class="font-12table">
 <tr>
 <td>1</td>
 <td>Belinda Lamiley</td>
@@ -2230,7 +2259,7 @@
             <th class="text-center">PTS</th>
      </tr>
 </thead>
- <tbody>
+ <tbody class="font-12table">
      <tr>
             <td class="next-stage" title="Next stage">1</td>
             <td>KNUST</td>
@@ -2275,7 +2304,7 @@
             <th class="text-center">Goal(s)</th>
      </tr>
   </thead>
-<tbody>
+<tbody class="font-12table">
      <tr>
             <td>1</td>
             <td>Belinda Lamiley</td>
@@ -2321,7 +2350,7 @@
             <th class="text-center">Assist</th>
      </tr>
 </thead>
-     <tbody>
+     <tbody class="font-12table">
       <tr>
             <td>1</td>
             <td>Belinda Lamiley</td>
@@ -2374,7 +2403,7 @@
 <th class="text-center">PTS</th>
 </tr>
 </thead>
-<tbody>
+<tbody class="font-12table">
 <tr>
 <td class="next-stage">1</td>
 <td>KNUST</td>
@@ -2420,7 +2449,7 @@
 <th class="text-center">Goal(s)</th>
 </tr>
 </thead>
-<tbody>
+<tbody class="font-12table">
 <tr>
 <td>1</td>
 <td>Belinda Lamiley</td>
@@ -2471,7 +2500,7 @@
 <th class="text-center">Assist</th>
 </tr>
 </thead>
-<tbody>
+<tbody class="font-12table">
 <tr>
 <td>1</td>
 <td>Belinda Lamiley</td>
@@ -2528,7 +2557,7 @@
             <th class="text-center">PTS</th>
      </tr>
 </thead>
- <tbody>
+ <tbody class="font-12table">
      <tr>
             <td class="next-stage" title="Next stage">1</td>
             <td>KNUST</td>
@@ -2573,7 +2602,7 @@
             <th class="text-center">Goal(s)</th>
      </tr>
   </thead>
-<tbody>
+<tbody class="font-12table">
      <tr>
             <td>1</td>
             <td>Belinda Lamiley</td>
@@ -2619,7 +2648,7 @@
             <th class="text-center">Assist</th>
      </tr>
 </thead>
-     <tbody>
+     <tbody class="font-12table">
       <tr>
             <td>1</td>
             <td>Belinda Lamiley</td>
@@ -2672,7 +2701,7 @@
             <th class="text-center">PTS</th>
 </tr>
 </thead>
-<tbody>
+<tbody class="font-12table">
 <tr>
             <td class="next-stage">1</td>
             <td>KNUST</td>
@@ -2718,7 +2747,7 @@
             <th class="text-center">Goal(s)</th>
 </tr>
 </thead>
-<tbody>
+<tbody class="font-12table">
 <tr>
             <td>1</td>
             <td>Belinda Lamiley</td>
@@ -2763,7 +2792,7 @@
             <th class="text-center">Assist</th>
 </tr>
 </thead>
-<tbody>
+<tbody class="font-12table">
 <tr>
             <td>1</td>
             <td>Belinda Lamiley</td>
@@ -2937,14 +2966,9 @@
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div
-         class="text-center p-3"
-         style="background-color: rgba(0, 0, 0, 0.2)"
-         >
+    <div  class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
       © 2024 Copyright:
-      <a class="text-white" href="https://uniscores.com/"
-         >Uniscores.com</a
-        >
+      <a class="text-white" href="https://uniscores.com/">Uniscores.com</a>
     </div>
     <!-- Copyright -->
   </footer>
@@ -2959,7 +2983,7 @@
 <div class="container-fluid bottom-navbar-show text-white" style="display: none;">
     <nav class="navbar bg-dark navbar-dark navbar-expand-lg  fixed-bottom">
         <div class="container-fluid">
-            <div class="navbar-collapse justify-content-center" id="" style="height: 30px">
+            <div class="navbar-collapse justify-content-center" id="" style="height: 40px">
                 <div class="row">
                     <div class="col-3 text-center"><a href="" class="text-white"><i class="fas fa-futbol" style="font-size: 15px; text-align:center"></i><p class="font-12">Matches </p></a></div>
                     <div class="col-3 text-center"><a href="favourite.html" class="text-white"><i class="far fa-star" style=" font-size: 15px; text-align:center"></i><p class="font-12">Favourite</p></a></div>
